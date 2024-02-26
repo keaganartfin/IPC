@@ -57,8 +57,10 @@ const FindJob = () => {
                   Find The <span className="text-primary">Parts</span> You Need
                 </h1>
                 <p className="text-muted">
-                  Click the button below to see our extensive catalog of parts. <br />Already know what you want? 
-                  Give us a <a href="tel:+16307710700">call</a>!
+                  Click the button below to see our extensive catalog of parts.{" "}
+                  <br />
+                  Already know what you want? Give us a{" "}
+                  <a href="tel:+16307710700">call</a>!
                 </p>
               </div>
             </Col>

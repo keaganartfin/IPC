@@ -69,6 +69,19 @@
     color: $white;
     text-shadow: 3px 4px $success;
 }
+.coming-soon-text2{
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    color: $white;
+    text-shadow: 3px 4px $info;
+}
+
+.coming-soon-text3{
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    color: $white;
+    text-shadow: 3px 4px $primary;
+}
 
 .countdown-input-group{
     max-width: 400px;

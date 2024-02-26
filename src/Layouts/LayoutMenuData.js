@@ -38,17 +38,17 @@ const Navdata = () => {
     {
       id: "about",
       label: "About Us",
-      link: "/about",
+      link: "/company",
     },
     {
       id: "faqs",
       label: "FAQs",
-      link: "/faqs",
+      link: "/company",
     },
     {
       id: "contactus",
       label: "Contact Us",
-      link: "/contact",
+      link: "/company",
     },
     {
       label: "products",

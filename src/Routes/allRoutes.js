@@ -243,6 +243,7 @@ import TermsCondition from "../pages/Pages/TermsCondition";
 import JobLanding from "../pages/Landing/Job";
 import ContactUs from "../pages/Pages/ContactUs/ContactUs";
 import OurSuppliers from "../pages/Pages/OurSuppliers/OurSuppliers";
+import Company from "../pages/Pages/About/company";
 import { ipcPages } from "../common/data";
 import ProductInsights from "../pages/Pages/Products/ProductInsights/ProductInsights";
 
@@ -466,6 +467,7 @@ const authProtectedRoutes = [
   { path: "/contact", component: <ContactUs /> },
   { path: "/our-suppliers", component: <OurSuppliers /> },
   { path: "/product-catalog", component: <ProductCatalog /> },
+  { path: "/company", component: <Company /> },
 ];
 
 const publicRoutes = [

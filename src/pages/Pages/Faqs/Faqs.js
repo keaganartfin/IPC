@@ -176,10 +176,10 @@ const Faqs = () => {
     setCol17(false);
   };
 
-  const [activeTab, setActiveTab] = useState("1");
-  const toggleTab = (tab) => {
-    if (activeTab !== tab) {
-      setActiveTab(tab);
+  const [activeFaqTab, setActiveFaqTab] = useState("1");
+  const toggleFaqTab = (faqTab) => {
+    if (activeFaqTab !== faqTab) {
+      setActiveFaqTab(faqTab);
     }
   };
 
@@ -190,7 +190,7 @@ const Faqs = () => {
       <div className="page-content">
         <Container fluid>
           <Row>
-            <Col>
+            <Col xxl={9}>
               <Card className="rounded-0 bg-success-subtle mx-n4 mt-n4 border-top pt-10">
                 <div className="px-4">
                   <Row>
@@ -619,9 +619,9 @@ const Faqs = () => {
                         </h2>
                         <Collapse isOpen={col13} className="accordion-collapse">
                           <div className="accordion-body">
-                            Melt Wall Polyolefin has an inner meltable wall that
+                            Melt Wall Polyolefin has an inner melfaqTable wall that
                             flows and encapsulates. Adhesive Lined Polyolefin
-                            has an inner meltable wall that flows and adheres.
+                            has an inner melfaqTable wall that flows and adheres.
                           </div>
                         </Collapse>
                       </div>

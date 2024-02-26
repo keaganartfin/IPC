@@ -81,7 +81,7 @@ const Footer = () => {
                   <div className="text-muted mt-3">
                     <ul className="list-unstyled ff-secondary footer-list fs-14">
                       <li>
-                        <NavLink to="/about">About Us</NavLink>
+                        <NavLink to="/company">About Us</NavLink>
                       </li>
                       <li>
                         <NavLink to="/customer-service">

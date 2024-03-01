@@ -9,7 +9,7 @@ import Client from "../OnePage/client";
 import Faqs from "../OnePage/faq";
 
 const JobLanding = () => {
-  document.title = "Job Landing | Velzon - React Admin & Dashboard Template";
+  document.title = "IPC | Materials For The Electrical & Electronic Industry";
 
   window.onscroll = function () {
     scrollFunction();

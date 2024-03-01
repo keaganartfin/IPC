@@ -8,6 +8,8 @@ const Navdata = () => {
   const [isServices, setIsServices] = useState(false);
   const [isHeatShrinkTubing, setIsHeatShrinkTubing] = useState(false);
   const [isNonShrinkTubing, setIsNonShrinkTubing] = useState(false);
+  const [isSupport, setIsSupport] = useState(false);
+  const [isAboutCompany, setIsAboutCompany] = useState(false);
 
   const [iscurrentState, setIscurrentState] = useState("Home");
 
@@ -36,19 +38,88 @@ const Navdata = () => {
       link: "/home",
     },
     {
-      id: "about",
+      label: "support",
+      isHeader: true,
+    },
+    {
+      id: "support",
+      label: "Support",
+      link: "/#",
+      click: function (e) {
+        e.preventDefault();
+        setIsSupport(!isSupport);
+        setIscurrentState("Support");
+        updateIconSidebar(e);
+      },
+      stateVariables: isSupport,
+      subItems: [
+        {
+          id: "contactus",
+          label: "Contact Us",
+          link: "/company?tab=3",
+          parentId: "support",
+        },
+        {
+          id: "customersurvey",
+          label: "Customer Survey",
+          link: "/company?tab=5",
+          parentId: "support",
+        },
+        {
+          id: "wheretobuy",
+          label: "Where To Buy",
+          link: "/company?tab=9",
+          parentId: "support",
+        },
+      ]
+    },
+    {
+      label: "aboutcompany",
+      isHeader: true,
+    },
+    {
+      id: "aboutcompany",
       label: "About Us",
-      link: "/company",
-    },
-    {
-      id: "faqs",
-      label: "FAQs",
-      link: "/company",
-    },
-    {
-      id: "contactus",
-      label: "Contact Us",
-      link: "/company",
+      link: "/#",
+      click: function (e) {
+        e.preventDefault();
+        setIsAboutCompany(!isAboutCompany);
+        setIscurrentState("aboutcompany");
+        updateIconSidebar(e);
+      },
+      stateVariables: isAboutCompany,
+      subItems: [
+        {
+          id: "companyprofile",
+          label: "Company Profile",
+          link: "/company?tab=1",
+          parentId: "aboutcompany",
+        },
+        {
+          id: "faqs",
+          label: "FAQs",
+          link: "/company?tab=2",
+          parentId: "aboutcompany",
+        },
+        {
+          id: "ipcpartners",
+          label: "IPC Partners",
+          link: "/company?tab=6",
+          parentId: "aboutcompany",
+        },
+        {
+          id: "awards",
+          label: "Awards",
+          link: "/company?tab=7",
+          parentId: "aboutcompany",
+        },
+        {
+          id: "mediaresources",
+          label: "Media Resources",
+          link: "/company?tab=8",
+          parentId: "aboutcompany",
+        },
+      ]
     },
     {
       label: "products",
@@ -56,7 +127,7 @@ const Navdata = () => {
     },
     {
       id: "products",
-      label: "Products",
+      label: "All Products",
       link: "/#",
       click: function (e) {
         e.preventDefault();
@@ -66,12 +137,6 @@ const Navdata = () => {
       },
       stateVariables: isProducts,
       subItems: [
-        {
-          id: "productscatalog",
-          label: "Product Catalog",
-          link: "/product-catalog",
-          parentId: "products",
-        },
         {
           id: "productspecifications",
           label: "Product Specifications",

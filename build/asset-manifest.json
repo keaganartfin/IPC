@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IPC/static/css/main.39fad0ea.css",
-    "main.js": "/IPC/static/js/main.ebc66d27.js",
+    "main.js": "/IPC/static/js/main.0833419c.js",
     "static/js/522.dd54d15a.chunk.js": "/IPC/static/js/522.dd54d15a.chunk.js",
     "static/media/remixicon.svg?t=1690730386070": "/IPC/static/media/remixicon.db77551b8efc76571c4f.svg",
     "static/media/img-5.gif": "/IPC/static/media/img-5.bfb4402d4c7cd4dff7fa.gif",
@@ -855,6 +855,6 @@
   },
   "entrypoints": [
     "static/css/main.39fad0ea.css",
-    "static/js/main.ebc66d27.js"
+    "static/js/main.0833419c.js"
   ]
 }

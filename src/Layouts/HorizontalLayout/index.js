@@ -163,6 +163,17 @@ const HorizontalLayout = (props) => {
                                           {item.subItems[key].label}
                                         </Link>
                                       </li>
+                                      <li>
+                                        <span
+                                          className="navbar-phone-number"
+                                          style={{ marginRight: "15px" }}
+                                        >
+                                          (630) 771-0700
+                                        </span>
+                                        <span className="navbar-email">
+                                          sales@insulationproducts.com
+                                        </span>
+                                      </li>
                                     </ul>
                                   </Col>
                                 )}
@@ -307,6 +318,17 @@ const HorizontalLayout = (props) => {
           </React.Fragment>
         );
       })}
+      <div className="d-flex align-items-center" style={{ marginLeft: "auto" }}>
+        <Link
+          to="/company?tab=3"
+          type="button"
+          className="nav-link menu-link"
+          style={{ color: "#055c9e" }}
+        >
+          <b>Contact Us</b>
+        </Link>
+      </div>
+
       {/* menu Items */}
     </React.Fragment>
   );

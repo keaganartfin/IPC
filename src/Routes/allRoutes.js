@@ -245,7 +245,7 @@ import ContactUs from "../pages/Pages/ContactUs/ContactUs";
 import OurSuppliers from "../pages/Pages/OurSuppliers/OurSuppliers";
 import Company from "../pages/Pages/About/company";
 import { ipcPages } from "../common/data";
-import ProductInsights from "../pages/Pages/Products/ProductInsights/ProductInsights";
+import ProductInsights from "../pages/Pages/Products/ProductInsights";
 
 
 const authProtectedRoutes = [

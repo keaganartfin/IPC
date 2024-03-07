@@ -30,6 +30,10 @@ import Contact from "./contact";
 import AboutUs from "./aboutus";
 import ProductCatalog from "./ProductCatalog";
 import CustomerSurvey from "./customersurvey";
+import Partners from "./partners";
+import Awards from "./awards";
+import MediaResources from "./mediaresources";
+import WhereToBuy from "./wheretobuy";
 
 const Company = () => {
   SwiperCore.use([Autoplay]);
@@ -38,14 +42,13 @@ const Company = () => {
   const [activityTab, setActivityTab] = useState("1");
   const location = useLocation();
 
-useEffect(() => {
-  const searchParams = new URLSearchParams(location.search);
-  const tab = searchParams.get('tab');
-  if (tab) {
-    setActiveTab(tab);
-  }
-}, [location]);
-
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const tab = searchParams.get("tab");
+    if (tab) {
+      setActiveTab(tab);
+    }
+  }, [location]);
 
   const toggleTab = (tab) => {
     if (activeTab !== tab) {
@@ -58,7 +61,7 @@ useEffect(() => {
   return (
     <React.Fragment>
       <div className="page-content">
-        <Container fluid style={{maxWidth: "1800px"}}>
+        <Container fluid style={{ maxWidth: "1800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -69,8 +72,7 @@ useEffect(() => {
               <Col xs={12} className="col-lg-auto order-last order-lg-0">
                 <Row className="text text-white-50 text-center">
                   <Col lg={6} xs={4}>
-                    <div className="p-2">
-                    </div>
+                    <div className="p-2"></div>
                   </Col>
                 </Row>
               </Col>
@@ -80,9 +82,7 @@ useEffect(() => {
             <Col lg={12}>
               <div>
                 <div className="d-flex">
-                  <Nav
-                    role="tablist"
-                  >
+                  <Nav role="tablist">
                     <NavItem>
                       <NavLink
                         to="#about"
@@ -93,8 +93,7 @@ useEffect(() => {
                         onClick={() => {
                           toggleTab("1");
                         }}
-                      >
-                      </NavLink>
+                      ></NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
@@ -106,8 +105,7 @@ useEffect(() => {
                         onClick={() => {
                           toggleTab("2");
                         }}
-                      >
-                      </NavLink>
+                      ></NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
@@ -119,8 +117,7 @@ useEffect(() => {
                         onClick={() => {
                           toggleTab("3");
                         }}
-                      >
-                      </NavLink>
+                      ></NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
@@ -132,8 +129,7 @@ useEffect(() => {
                         onClick={() => {
                           toggleTab("4");
                         }}
-                      >
-                      </NavLink>
+                      ></NavLink>
                     </NavItem>
                   </Nav>
                 </div>
@@ -163,8 +159,32 @@ useEffect(() => {
                   </TabPane>
                   <TabPane tabId="5">
                     <Row>
-                      <Contact />
                       <CustomerSurvey />
+                      <LeftSideTables />
+                    </Row>
+                  </TabPane>
+                  <TabPane tabId="6">
+                    <Row>
+                      <Partners />
+                      <LeftSideTables />
+                    </Row>
+                  </TabPane>
+                  <TabPane tabId="7">
+                    <Row>
+                      <Awards />
+                      <LeftSideTables />
+                    </Row>
+                  </TabPane>
+                  <TabPane tabId="8">
+                    <Row>
+                      <MediaResources />
+                      <LeftSideTables />
+                    </Row>
+                  </TabPane>
+                  <TabPane tabId="9">
+                    <Row>
+                      <WhereToBuy />
+                      <LeftSideTables />
                     </Row>
                   </TabPane>
                 </TabContent>

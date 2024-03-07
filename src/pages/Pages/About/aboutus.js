@@ -46,7 +46,12 @@ const AboutUs = () => {
                   style={{ width: "32rem" }}
                 >
                   <div className="h-100 mb-n5 pb-1 d-none d-lg-flex align-items-center">
-                    <img src={StaffPhoto} alt="" className="img-fluid" style={{maxHeight: "100%"}} />
+                    <img
+                      src={StaffPhoto}
+                      alt=""
+                      className="img-fluid"
+                      style={{ maxHeight: "100%" }}
+                    />
                   </div>
                 </div>
               </Row>
@@ -84,7 +89,7 @@ const AboutUs = () => {
               Our Commitment to Excellence
             </h3>
 
-            <p className="mt-3 mb-5 fs-5 px-5" >
+            <p className="mt-3 mb-5 fs-5 px-5">
               At the core of IPC's ethos is an unwavering dedication to customer
               satisfaction. We understand that our clients are the heartbeat of
               our business, which is why we place unparalleled emphasis on
@@ -120,7 +125,7 @@ const AboutUs = () => {
               Engage with Us
             </h3>
 
-            <p className="mt-3 mb-5 fs-5 px-5" >
+            <p className="mt-3 mb-5 fs-5 px-5">
               We invite you to engage with us and explore the diverse range of
               products and services that IPC offers. Our team is on standby to
               address any inquiries or concerns you may have, from quote
@@ -143,10 +148,26 @@ const AboutUs = () => {
               className="card-title mb-3 fs-4"
               style={{ paddingLeft: "1.5rem" }}
             >
+              Customer Service
+            </h3>
+
+            <p className="mt-3 mb-5 fs-5 px-5">
+              At Insulation Products Corporation, our first priority is our
+              customer experience. The lasting relationship that we build with
+              our customers generates from the communication of our
+              representatives shared with the high quality of products that we
+              carry. Your call or e-mail will always be handled with
+              professionalism and your orders processed quickly and accurately.
+            </p>
+
+            <h3
+              className="card-title mb-3 fs-4"
+              style={{ paddingLeft: "1.5rem" }}
+            >
               Get In Touch
             </h3>
 
-            <p className="mt-3 mb-5 fs-5 px-5" >
+            <p className="mt-3 mb-5 fs-5 px-5">
               Experience the IPC difference firsthand. Reach out to us at{" "}
               <a href="tel:6307710700">(630) 771-0700</a> or via email at{" "}
               <a href="mailto:sales@insulationproducts.com">

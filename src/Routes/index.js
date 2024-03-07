@@ -9,7 +9,7 @@ import VerticalLayout from "../Layouts/index";
 import { authProtectedRoutes, publicRoutes } from "./allRoutes";
 import { AuthProtected } from "./AuthProtected";
 import { ipcPages } from "../common/data";
-import ProductInsights from "../pages/Pages/Products/ProductInsights/ProductInsights";
+import ProductInsights from "../pages/Pages/Products/ProductInsights";
 
 const Index = () => {
   return (

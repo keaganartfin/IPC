@@ -13,7 +13,7 @@ import {
 import classnames from "classnames";
 
 // Import Images
-import faqImg from "../../../assets/images/faq-img.png";
+import faqImg from "../../../assets/images/illustrations/faqs.png";
 import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 const Faqs = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardBody, Col, Row, Label, Input } from "reactstrap";
 
-import faqImg from "../../../assets/images/faq-img.png";
+import customerreview from "../../../assets/images/illustrations/reviews.png";
 
 const CustomerSurvey = () => {
   return (
@@ -42,7 +42,7 @@ const CustomerSurvey = () => {
                 </Col>
                 <div className="col-xxl-3 ms-auto">
                   <div className="mb-n5 pb-1 faq-img d-none d-xxl-block">
-                    <img src={faqImg} alt="" className="img-fluid" />
+                    <img src={customerreview} alt="" className="img-fluid" />
                   </div>
                 </div>
               </Row>

@@ -29,7 +29,7 @@ const Home = () => {
         <Container>
           <Row className="justify-content-between align-items-center">
             <Col lg={6}>
-              <div className="text-center mt-lg-5 pt-5">
+              <div className="text-center mt-lg-5 pt-5" data-aos="fade-right">
                 <h1 className="display-6 fw-semibold mb-3 lh-base">
                   The better way to manage your inventory with{" "}
                   <span className="text-primary">IPC </span>
@@ -151,9 +151,14 @@ const Home = () => {
                     </Link>
                   </div>
                 </Card>
-                <img src={JobProfile2} alt="" className="user-img" />
+                <img
+                  src={JobProfile2}
+                  alt=""
+                  className="user-img"
+                  data-aos="fade-left"
+                />
 
-                <div className="circle-effect">
+                <div className="circle-effect" data-aos="fade-right">
                   <div className="circle"></div>
                   <div className="circle2"></div>
                   <div className="circle3"></div>

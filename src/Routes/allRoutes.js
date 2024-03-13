@@ -246,7 +246,29 @@ import OurSuppliers from "../pages/Pages/OurSuppliers/OurSuppliers";
 import Company from "../pages/Pages/About/company";
 import { ipcPages } from "../common/data";
 import ProductInsights from "../pages/Pages/Products/ProductInsights";
-
+import HeatShrinkAdhesiveLinedPoly from "../pages/Pages/Products/ProductCategories/heatshrink-adhesivelinedpoly";
+import HeatShrinkEndCaps from "../pages/Pages/Products/ProductCategories/heatshrink-endcaps";
+import HeatShrinkPVC from "../pages/Pages/Products/ProductCategories/heatshrink-pvc";
+import HeatShrinkPolyolefin from "../pages/Pages/Products/ProductCategories/heatshrink-polyolefin";
+import HeatShrinkMedicalGradePoly from "../pages/Pages/Products/ProductCategories/heatshrink-medicalgradepoly";
+import HeatShrinkNeopreneFluro from "../pages/Pages/Products/ProductCategories/heatshrink-neoprenefluro";
+import HeatShrinkKynar from "../pages/Pages/Products/ProductCategories/heatshrink-kynar";
+import HeatShrinkModifiedFluoro from "../pages/Pages/Products/ProductCategories/heatshrink-modifiedfluoropoly";
+import HeatShrinkMylar from "../pages/Pages/Products/ProductCategories/heatshrink-mylar";
+import HeatShrinkHighTemp from "../pages/Pages/Products/ProductCategories/heatshrink-hightemp";
+import NonShrinkPVC from "../pages/Pages/Products/ProductCategories/nonshrink-pvc";
+import NonShrinkPTFE from "../pages/Pages/Products/ProductCategories/nonshrink-ptfe";
+import NonShrinkSleeving from "../pages/Pages/Products/ProductCategories/nonshrink-sleeving";
+import NonShrinkSpiralWrap from "../pages/Pages/Products/ProductCategories/nonshrink-spiralwrap";
+import NonShrinkSlitConduit from "../pages/Pages/Products/ProductCategories/nonshrink-slitconduit";
+import SpecialtyConduitTubing from "../pages/Pages/Products/ProductCategories/specialtyproducts-conduittubing";
+import SpecialtyConduitConnectors from "../pages/Pages/Products/ProductCategories/specialtyproducts-conduitconnectors";
+import SpecialtyAdhesives from "../pages/Pages/Products/ProductCategories/specialtyproducts-adhesives";
+import SpecialtyHeatShrinkTape from "../pages/Pages/Products/ProductCategories/specialtyproducts-heatshrinktape";
+import SpecialtyHeatGun from "../pages/Pages/Products/ProductCategories/specialtyproducts-heatgun";
+import SpecialtyValueAdded from "../pages/Pages/Products/ProductCategories/specialtyproducts-valueadded";
+import SpecialtyHotStamp from "../pages/Pages/Products/ProductCategories/specialtyproducts-hotstamp";
+import SpecialtyTubingKits from "../pages/Pages/Products/ProductCategories/specialtyproducts-tubingkits";
 
 const authProtectedRoutes = [
   { path: "/dashboard-analytics", component: <DashboardAnalytics /> },
@@ -450,6 +472,120 @@ const authProtectedRoutes = [
   //User Profile
   { path: "/profile", component: <UserProfile /> },
 
+  { path: "/home", component: <JobLanding /> },
+  { path: "/sitemap", component: <SiteMap /> },
+  { path: "/privacy-policy", component: <PrivacyPolicy /> },
+  { path: "/term-conditions", component: <TermsCondition /> },
+  { path: "/faqs", component: <Faqs /> },
+  { path: "/contact", component: <ContactUs /> },
+  { path: "/our-suppliers", component: <OurSuppliers /> },
+  { path: "/product-catalog", component: <ProductInsights /> },
+  { path: "/product-specifications", component: <ProductCatalog /> },
+  { path: "/company", component: <Company /> },
+
+  // Product Categories
+  {
+    path: "/product-catalog/heat-shrink-tubing",
+    component: <ProductInsights />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/adhesive-lined-polyolefin",
+    component: <HeatShrinkAdhesiveLinedPoly />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/end-caps",
+    component: <HeatShrinkEndCaps />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/pvc",
+    component: <HeatShrinkPVC />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/polyolefin",
+    component: <HeatShrinkPolyolefin />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/medical-grade-polyolefin",
+    component: <HeatShrinkMedicalGradePoly />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/neoprene-and-fluoroelastomer",
+    component: <HeatShrinkNeopreneFluro />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/kynar",
+    component: <HeatShrinkKynar />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/modified-fluoroelastomer",
+    component: <HeatShrinkModifiedFluoro />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/mylar",
+    component: <HeatShrinkMylar />,
+  },
+  {
+    path: "/product-catalog/heat-shrink-tubing/high-tempeture",
+    component: <HeatShrinkHighTemp />,
+  },
+  {
+    path: "/product-catalog/non-shrink-tubing",
+    component: <ProductInsights />,
+  },
+  {
+    path: "/product-catalog/non-shrink-tubing/pvc",
+    component: <NonShrinkPVC />,
+  },
+  {
+    path: "/product-catalog/non-shrink-tubing/ptfe-spaghetti-tubing",
+    component: <NonShrinkPTFE />,
+  },
+  {
+    path: "/product-catalog/non-shrink-tubing/sleeving",
+    component: <NonShrinkSleeving />,
+  },
+  {
+    path: "/product-catalog/non-shrink-tubing/spiral-wrap",
+    component: <NonShrinkSpiralWrap />,
+  },
+  {
+    path: "/product-catalog/non-shrink-tubing/slit-conduit",
+    component: <NonShrinkSlitConduit />,
+  },
+  { path: "/product-catalog/specialty", component: <ProductInsights /> },
+  {
+    path: "/product-catalog/specialty/conduit-tubing",
+    component: <SpecialtyConduitTubing />,
+  },
+  {
+    path: "/product-catalog/specialty/conduit-connectors-and-couplings",
+    component: <SpecialtyConduitConnectors />,
+  },
+  {
+    path: "/product-catalog/specialty/adhesives",
+    component: <SpecialtyAdhesives />,
+  },
+  {
+    path: "/product-catalog/specialty/heat-shrink-tape",
+    component: <SpecialtyHeatShrinkTape />,
+  },
+  {
+    path: "/product-catalog/specialty/heat-gun",
+    component: <SpecialtyHeatGun />,
+  },
+  {
+    path: "/product-catalog/specialty/value-added",
+    component: <SpecialtyValueAdded />,
+  },
+  {
+    path: "/product-catalog/specialty/hot-stamp-marking",
+    component: <SpecialtyHotStamp />,
+  },
+  {
+    path: "/product-catalog/specialty/tubing-kits",
+    component: <SpecialtyTubingKits />,
+  },
+
   // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
   {
@@ -458,16 +594,6 @@ const authProtectedRoutes = [
     component: <Navigate to="/home" />,
   },
   { path: "*", component: <Navigate to="/home" /> },
-
-  { path: "/home", component: <JobLanding /> },
-  { path: "/sitemap", component: <SiteMap /> },
-  { path: "/privacy-policy", component: <PrivacyPolicy /> },
-  { path: "/term-conditions", component: <TermsCondition /> },
-  { path: "/faqs", component: <Faqs /> },
-  { path: "/contact", component: <ContactUs /> },
-  { path: "/our-suppliers", component: <OurSuppliers /> },
-  { path: "/product-catalog", component: <ProductCatalog /> },
-  { path: "/company", component: <Company /> },
 ];
 
 const publicRoutes = [

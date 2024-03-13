@@ -81,58 +81,6 @@ const Company = () => {
           <Row>
             <Col lg={12}>
               <div>
-                <div className="d-flex">
-                  <Nav role="tablist">
-                    <NavItem>
-                      <NavLink
-                        to="#about"
-                        className={classnames(
-                          { active: activeTab === "1" },
-                          "fs-14"
-                        )}
-                        onClick={() => {
-                          toggleTab("1");
-                        }}
-                      ></NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        to="#faqs"
-                        className={classnames(
-                          { active: activeTab === "2" },
-                          "fs-14"
-                        )}
-                        onClick={() => {
-                          toggleTab("2");
-                        }}
-                      ></NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        to="#contact"
-                        className={classnames(
-                          { active: activeTab === "3" },
-                          "fs-14"
-                        )}
-                        onClick={() => {
-                          toggleTab("3");
-                        }}
-                      ></NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        to="#documents"
-                        className={classnames(
-                          { active: activeTab === "4" },
-                          "fs-14"
-                        )}
-                        onClick={() => {
-                          toggleTab("4");
-                        }}
-                      ></NavLink>
-                    </NavItem>
-                  </Nav>
-                </div>
                 <TabContent activeTab={activeTab} className="pt-4">
                   <TabPane tabId="1">
                     <Row>

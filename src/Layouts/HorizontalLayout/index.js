@@ -325,6 +325,7 @@ const HorizontalLayout = (props) => {
           className="nav-link menu-link"
           style={{ color: "#055c9e" }}
         >
+          <i className="ri-phone-fill label-icon me-n2"></i>
           <b>Contact Us</b>
         </Link>
       </div>

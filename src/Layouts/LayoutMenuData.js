@@ -60,6 +60,12 @@ const Navdata = () => {
           parentId: "support",
         },
         {
+          id: "faqs",
+          label: "FAQs",
+          link: "/company?tab=2",
+          parentId: "support",
+        },
+        {
           id: "customersurvey",
           label: "Customer Survey",
           link: "/company?tab=5",
@@ -93,12 +99,6 @@ const Navdata = () => {
           id: "companyprofile",
           label: "Company Profile",
           link: "/company?tab=1",
-          parentId: "aboutcompany",
-        },
-        {
-          id: "faqs",
-          label: "FAQs",
-          link: "/company?tab=2",
           parentId: "aboutcompany",
         },
         {

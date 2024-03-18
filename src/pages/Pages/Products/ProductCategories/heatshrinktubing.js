@@ -13,7 +13,7 @@ import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
 
 
-const SpecialtyTubingKits = () => {
+const HeatShrinkTubing = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
 
 
@@ -44,55 +44,31 @@ const SpecialtyTubingKits = () => {
                   <Card>
                     <CardBody>
                       <Row className="justify-content-evenly mb-4 about-content">
-                        <h3 className="mb-3 card-header">
-                          Tubing Kits Solutions
-                        </h3>
+                        <h3 className="mb-3 card-header">Heat Shrink Tubing</h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          At Insulation Products Corporation, we offer custom{" "}
-                          <strong>Tubing Kits</strong> tailored to meet your
-                          specific requirements. Whether you need kits packaged
-                          in single tubs, divided boxes, or zipper bags, we have
-                          the flexibility and resources to accommodate your
-                          needs. Our team is dedicated to assisting you with the
-                          design, including layout, sizing, and selection of the
-                          appropriate types of tubing for your application.
+                          Insulation Products Corporation has proudly served the
+                          electrical and electronic sectors as a leading
+                          provider of heat shrink tubing for over 40 years. Our
+                          comprehensive selection includes a variety of premium
+                          materials that not only meet but exceed the rigorous
+                          standards of SAE QPL-AS23053, alongside carrying U/L
+                          and CSA certifications. Offering a diverse lineup, our
+                          heat shrink tubing comes in several material options,
+                          each with distinctive properties to suit different
+                          needs. Our range features Polyolefin, PVC, Layflat
+                          PVC, PTFE, PVDF, Mylar®, Neoprene®, and
+                          Fluoroelastomer tubing. Additionally, we provide
+                          options equipped with an adhesive liner on the inside,
+                          designed for those requiring a durable, flexible, and
+                          waterproof solution.
                           <br />
                           <br />
-                          Our kits can incorporate a variety of tubing options,
-                          including our own products, your products, or a
-                          combination thereof. To enhance identification and
-                          personalization, tubing within the kits can be marked
-                          with size, type, or even your company’s name and logo.
-                          <br />
-                          <br />
-                          Additionally, we ensure that the packaging—be it
-                          boxes, bags, or tubs—is clearly labeled with your
-                          company information, contents, and part numbers,
-                          providing a professional presentation that's perfect
-                          for sales samples, whether used in-office or on the
-                          road.
-                          <br />
-                          <br />
-                          Our custom Tubing Kits are an excellent resource for
-                          sales representatives and technicians alike, offering
-                          a convenient and organized way to present a range of
-                          tubing solutions to customers and clients.
-                          <br />
-                          <br />
-                          For more information on our Tubing Kits or to discuss
-                          your specific needs, please reach out to our sales
-                          team. We’re here to create the perfect solution for
-                          your tubing kit requirements.
-                          <br />
-                          <br />
-                          Connect with Insulation Products Corporation by
-                          calling{" "}
-                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or
-                          emailing us at{" "}
-                          <a href="mailto:sales@insulationproducts.com">
-                            sales@insulationproducts.com
-                          </a>{" "}
-                          for detailed information and assistance.
+                          For further assistance, feel free to reach out to our
+                          customer service team at 1.630.771.0700 or via email
+                          at sales@insulationproducts.com. For quick, easy
+                          access to more information, our Product FAQ and
+                          Specifications pages are also available to address
+                          common inquiries.
                         </p>
                         <Row>
                           <Col xs={6} md={4}>
@@ -141,4 +117,4 @@ const SpecialtyTubingKits = () => {
   );
 };
 
-export default SpecialtyTubingKits;
+export default HeatShrinkTubing;

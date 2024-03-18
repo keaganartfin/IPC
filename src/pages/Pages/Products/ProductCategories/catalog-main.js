@@ -1,14 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
-//Small Images
-import pdfPath from "../../../../assets/images/pdfs/Heat-Gun.pdf";
+import * as Pdfs from "../../../../assets/images/pdfs";
 import LeftSideTables from "../../About/LeftSideTables";
 
-const SpecialtyHeatGun = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+const CatalogMain = () => {
+  document.title = "PDF Display | Velzon - React Admin & Dashboard Template";
+  const { pdfName } = useParams();
+  const pdfPath = Pdfs[pdfName];
+  document.title = `${pdfName} | PDF Display`;
 
+  console.log("PDF Name from URL:", pdfName);
+  console.log("Available PDFs:", Object.keys(Pdfs));
+
+  if (!pdfPath) {
+    return <Navigate to="/404" />;
+  }
   return (
     <React.Fragment>
       <div className="page-content">
@@ -35,12 +43,12 @@ const SpecialtyHeatGun = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                      <h5>VT-1100 Heat Gun</h5>
+                    <h5>{pdfName.replace(/-/g, ' ')}</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}
                         frameBorder="0"
-                        title="VT-1100 Heat Gun"
+                        title={pdfName}
                       >
                         This browser does not support PDFs. Please download the
                         PDF to view it: <a href={pdfPath}>Download PDF</a>.
@@ -58,4 +66,4 @@ const SpecialtyHeatGun = () => {
   );
 };
 
-export default SpecialtyHeatGun;
+export default CatalogMain;

@@ -77,7 +77,7 @@ const Navdata = () => {
           link: "/company?tab=9",
           parentId: "support",
         },
-      ]
+      ],
     },
     {
       label: "aboutcompany",
@@ -119,7 +119,7 @@ const Navdata = () => {
           link: "/company?tab=8",
           parentId: "aboutcompany",
         },
-      ]
+      ],
     },
     {
       label: "products",
@@ -127,7 +127,7 @@ const Navdata = () => {
     },
     {
       id: "products",
-      label: "All Products",
+      label: "Our Products",
       link: "/#",
       click: function (e) {
         e.preventDefault();
@@ -140,13 +140,13 @@ const Navdata = () => {
         {
           id: "productspecifications",
           label: "Product Specifications",
-          link: "/product-catalog",
+          link: "/product-specs",
           parentId: "products",
         },
         {
           id: "heatshrinktubing",
           label: "Heat Shrink Tubing",
-          link: "/#",
+          link: "/poroducts/heat-shrink-tubing",
           isChildItem: true,
           click: function (e) {
             e.preventDefault();
@@ -155,46 +155,62 @@ const Navdata = () => {
           parentId: "products",
           stateVariables: isHeatShrinkTubing,
           childItems: [
-            { id: 1, label: "PVC", link: "/heat-shrink-tubing/pvc" },
+            {
+              id: 1,
+              label: "PVC",
+              link: "/products/heat-shrink-tubing/pvc",
+            },
             {
               id: 2,
               label: "Polyolefin",
-              link: "/heat-shrink-tubing/polyolefin",
+              link: "/products/heat-shrink-tubing/polyolefin",
             },
             {
               id: 3,
               label: "Adhesive Lined Polyolefin",
-              link: "/heat-shrink-tubing/adhesive-lined-polyolefin",
+              link: "/products/heat-shrink-tubing/adhesive-lined-polyolefin",
             },
-            { id: 4, label: "End Caps", link: "/heat-shrink-tubing/end-caps" },
+            {
+              id: 4,
+              label: "End Caps",
+              link: "/products/heat-shrink-tubing/end-caps",
+            },
             {
               id: 5,
               label: "Medical grade Polyolefin",
-              link: "/heat-shrink-tubing/medical-grade-polyolefin",
+              link: "/products/heat-shrink-tubing/medical-grade-polyolefin",
             },
             {
               id: 6,
               label: "Neoprene & Fluoroelastomer",
-              link: "/heat-shrink-tubing/neoprene-and-fluoroelastomer",
+              link: "/products/heat-shrink-tubing/neoprene-and-fluoroelastomer",
             },
-            { id: 7, label: "Kynar (PVDF)", link: "/heat-shrink-tubing/kynar" },
+            {
+              id: 7,
+              label: "Kynar (PVDF)",
+              link: "/products/heat-shrink-tubing/kynar",
+            },
             {
               id: 8,
               label: "Modified Fluoropolymer",
-              link: "/heat-shrink-tubing/modified-fluoropolymer",
+              link: "/products/heat-shrink-tubing/modified-fluoroelastomer",
             },
-            { id: 9, label: "Mylar", link: "/heat-shrink-tubing/mylar" },
+            {
+              id: 9,
+              label: "Mylar",
+              link: "/products/heat-shrink-tubing/mylar",
+            },
             {
               id: 10,
               label: "High Temperature",
-              link: "/heat-shrink-tubing/high-temperature",
+              link: "/products/heat-shrink-tubing/high-tempeture",
             },
           ],
         },
         {
           id: "nonshrinktubing",
           label: "Non-Shrink Tubing",
-          link: "/#",
+          link: "/poroducts/non-shrink-tubing",
           isChildItem: true,
           click: function (e) {
             e.preventDefault();
@@ -203,33 +219,37 @@ const Navdata = () => {
           parentId: "products",
           stateVariables: isNonShrinkTubing,
           childItems: [
-            { id: 1, label: "PVC", link: "/non-shrink-tubing/pvc" },
+            {
+              id: 1,
+              label: "PVC",
+              link: "/products/non-shrink-tubing/pvc",
+            },
             {
               id: 2,
               label: "PTFE Spaghetti Tubing",
-              link: "/non-shrink-tubing/ptfe-spaghetti-tubing",
+              link: "/products/non-shrink-tubing/ptfe-spaghetti-tubing",
             },
             {
               id: 3,
               label: "Sleeving",
-              link: "/non-shrink-tubing/sleeving",
+              link: "/products/non-shrink-tubing/sleeving",
             },
             {
               id: 4,
               label: "Spiral Wrap",
-              link: "/non-shrink-tubing/spiral-wrap",
+              link: "/products/non-shrink-tubing/spiral-wrap",
             },
             {
               id: 5,
               label: "Slit Conduit",
-              link: "/non-shrink-tubing/slit-conduit",
+              link: "/products/non-shrink-tubing/slit-conduit",
             },
           ],
         },
         {
           id: "specialtyproducts",
-          label: "Specialty Products",
-          link: "/#",
+          label: "Specialty Products & Services",
+          link: "/products/specialty-products-services",
           isChildItem: true,
           click: function (e) {
             e.preventDefault();
@@ -241,45 +261,43 @@ const Navdata = () => {
             {
               id: 1,
               label: "Non-Metallic Conduit Tubing",
-              link: "/specialty-products/non-metallic-conduit-tubing",
+              link: "/products/specialty-products-services/non-metallic-conduit-tubing",
             },
             {
               id: 2,
               label: "Non-Metallic Conduit Connectors & Couplings",
-              link: "/specialty-products/non-metallic-conduit-connectors-and-couplings",
+              link: "/products/specialty-products-services/non-metallic-conduit-connectors-and-couplings",
             },
             {
               id: 3,
               label: "Adhesives",
-              link: "/specialty-products/adhesives",
+              link: "/products/specialty-products-services/adhesives",
             },
             {
               id: 4,
               label: "Heat Shrink Tape",
-              link: "/specialty-products/heat-shrink-tape",
+              link: "/products/specialty-products-services/heat-shrink-tape",
             },
-            { id: 5, label: "Heat Gun", link: "/specialty-products/heat-gun" },
-          ],
-        },
-        {
-          id: "services",
-          label: "Services",
-          link: "/#",
-          isChildItem: true,
-          click: function (e) {
-            e.preventDefault();
-            setIsServices(!isServices);
-          },
-          parentId: "products",
-          stateVariables: isServices,
-          childItems: [
-            { id: 1, label: "Value Added", link: "/services/value-added" },
             {
-              id: 1,
-              label: "Hot Stamp Marking",
-              link: "/services/hot-stamp-marking",
+              id: 5,
+              label: "Heat Gun",
+              link: "/products/specialty-products-services/heat-gun",
             },
-            { id: 1, label: "Tubing Kits", link: "/services/tubing-kits" },
+            {
+              id: 6,
+              label: "Value Added",
+              link: "/products/specialty-products-services/value-added",
+            },
+            {
+              id: 7,
+              label: "Identification Markers",
+              link: "/products/specialty-products-services/identification-markers",
+            },
+            {
+              id: 8,
+              label: "Tubing Kits",
+              link: "/products/specialty-products-services/tubing-kits",
+            },
           ],
         },
       ],

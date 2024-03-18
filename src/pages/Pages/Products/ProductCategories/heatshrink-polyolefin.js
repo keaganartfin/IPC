@@ -1,254 +1,21 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   Card,
   CardBody,
   Col,
   Container,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Form,
-  Input,
-  Label,
-  Modal,
-  ModalBody,
-  Offcanvas,
-  OffcanvasBody,
   Row,
-  UncontrolledDropdown,
-  FormFeedback,
 } from "reactstrap";
-import profileBg from "../../../assets/images/profile-bg.jpg";
-import BreadCrumb from "../../../Components/Common/BreadCrumb";
-import { ipcPages } from "../../../common/data";
-
-//User Images
-import avatar2 from "../../../assets/images/users/avatar-2.jpg";
-import userdummyimg from "../../../assets/images/users/user-dummy-img.jpg";
-
+import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import smallImage9 from "../../../assets/images/small/img-9.jpg";
-//redux
-import { useSelector, useDispatch } from "react-redux";
+import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
+import LeftSideTables from "../../About/LeftSideTables";
 
-//import action
-import {
-  getTeamData as onGetTeamData,
-  deleteTeamData as onDeleteTeamData,
-  addTeamData as onAddTeamData,
-  updateTeamData as onUpdateTeamData,
-} from "../../../slices/thunks";
-
-// Formik
-import * as Yup from "yup";
-import { useFormik } from "formik";
-import { createSelector } from "reselect";
-import LeftSideTables from "../About/LeftSideTables";
 
 const HeatShrinkPolyolefin = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
 
-  const dispatch = useDispatch();
-
-  const selectteamData = createSelector(
-    (state) => state.Team,
-    (teamData) => teamData.teamData
-  );
-  // Inside your component
-  const teamData = useSelector(selectteamData);
-
-  const [team, setTeam] = useState(null);
-  const [deleteModal, setDeleteModal] = useState(false);
-  const [teamList, setTeamlist] = useState([]);
-
-  //Modal
-  const [teamMem, setTeamMem] = useState(null);
-  const [isEdit, setIsEdit] = useState(false);
-  const [modal, setModal] = useState(false);
-
-  useEffect(() => {
-    dispatch(onGetTeamData());
-  }, [dispatch]);
-
-  useEffect(() => {
-    setTeam(teamData);
-    setTeamlist(teamData);
-  }, [teamData]);
-
-  const toggle = useCallback(() => {
-    if (modal) {
-      setModal(false);
-      setTeamMem(null);
-    } else {
-      setModal(true);
-    }
-  }, [modal]);
-
-  // Update To do
-  const handleTeamClick = useCallback(
-    (arg) => {
-      const teamMem = arg;
-      setTeamMem({
-        id: teamMem.id,
-        name: teamMem.name,
-        designation: teamMem.designation,
-        projectCount: teamMem.projectCount,
-        taskCount: teamMem.taskCount,
-      });
-
-      setIsEdit(true);
-      toggle();
-    },
-    [toggle]
-  );
-
-  // Add To do
-  const handleTeamClicks = () => {
-    setTeamMem("");
-    setModal(!modal);
-    setIsEdit(false);
-    toggle();
-  };
-
-  // delete
-  const onClickData = (team) => {
-    setTeam(team);
-    setDeleteModal(true);
-  };
-
-  const handleDeleteTeamData = () => {
-    if (team) {
-      dispatch(onDeleteTeamData(team.id));
-      setDeleteModal(false);
-    }
-  };
-
-  useEffect(() => {
-    const list = document.querySelectorAll(".team-list");
-    const buttonGroups = document.querySelectorAll(".filter-button");
-    for (let i = 0; i < buttonGroups.length; i++) {
-      buttonGroups[i].addEventListener("click", onButtonGroupClick);
-    }
-
-    function onButtonGroupClick(event) {
-      if (
-        event.target.id === "list-view-button" ||
-        event.target.parentElement.id === "list-view-button"
-      ) {
-        document.getElementById("list-view-button").classList.add("active");
-        document.getElementById("grid-view-button").classList.remove("active");
-        list.forEach(function (el) {
-          el.classList.add("list-view-filter");
-          el.classList.remove("grid-view-filter");
-        });
-      } else {
-        document.getElementById("grid-view-button").classList.add("active");
-        document.getElementById("list-view-button").classList.remove("active");
-        list.forEach(function (el) {
-          el.classList.remove("list-view-filter");
-          el.classList.add("grid-view-filter");
-        });
-      }
-    }
-  }, []);
-
-  const favouriteBtn = (ele) => {
-    if (ele.closest("button").classList.contains("active")) {
-      ele.closest("button").classList.remove("active");
-    } else {
-      ele.closest("button").classList.add("active");
-    }
-  };
-
-  const searchList = (e) => {
-    let inputVal = e.toLowerCase();
-
-    const filterItems = (arr, query) => {
-      return arr.filter((el) => {
-        return el.name.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-      });
-    };
-
-    let filterData = filterItems(teamData, inputVal);
-    setTeamlist(filterData);
-    if (filterData.length === 0) {
-      document.getElementById("noresult").style.display = "block";
-      document.getElementById("teamlist").style.display = "none";
-    } else {
-      document.getElementById("noresult").style.display = "none";
-      document.getElementById("teamlist").style.display = "block";
-    }
-  };
-
-  //OffCanvas
-  const [isOpen, setIsOpen] = useState(false);
-  const [sideBar, setSideBar] = useState([]);
-
-  //Dropdown
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggledropDown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
-  // validation
-  const validation = useFormik({
-    // enableReinitialize : use this flag when initial values needs to be changed
-    enableReinitialize: true,
-
-    initialValues: {
-      name: (teamMem && teamMem.name) || "",
-      designation: (teamMem && teamMem.designation) || "",
-    },
-    validationSchema: Yup.object({
-      name: Yup.string().required("Please Enter team Name"),
-      designation: Yup.string().required("Please Enter Your designation"),
-    }),
-    onSubmit: (values) => {
-      if (isEdit) {
-        const updateTeamData = {
-          id: teamMem ? teamMem.id : 0,
-          name: values.name,
-          designation: values.designation,
-          projectCount: values.projectCount,
-          taskCount: values.taskCount,
-        };
-        // save edit Team data
-        dispatch(onUpdateTeamData(updateTeamData));
-        validation.resetForm();
-      } else {
-        const newTeamData = {
-          id: (Math.floor(Math.random() * (30 - 20)) + 20).toString(),
-          name: values.name,
-          designation: values.designation,
-          projectCount: 0,
-          taskCount: 0,
-          backgroundImg: smallImage9,
-        };
-        // save new TeamData
-        dispatch(onAddTeamData(newTeamData));
-        validation.resetForm();
-      }
-      toggle();
-    },
-  });
-
-  const truncateHtml = (html, maxLength) => {
-    // Ensure html is treated as a string
-    let htmlString = String(html);
-    let strippedHtml = htmlString.replace(/<[^>]+>/g, ""); // Strip out HTML tags
-
-    if (strippedHtml.length <= maxLength) {
-      return htmlString; // Return original if within maxLength
-    }
-
-    let truncatedText = strippedHtml.substring(0, maxLength); // Truncate text
-    let lastIndex = truncatedText.lastIndexOf(" "); // Find last space to avoid breaking words
-    truncatedText = truncatedText.substring(0, lastIndex) + " ..."; // Add ellipsis
-
-    return truncatedText;
-  };
 
   return (
     <React.Fragment>
@@ -272,84 +39,69 @@ const HeatShrinkPolyolefin = () => {
           </div>
           <Row>
             <Col lg={12}>
-              <div>
+              <Row>
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                      <Card className="rounded-0 bg-secondary-subtle mx-n4 mt-n3 border-top pt-10">
-                        <div className="px-4">
-                          <Row>
-                            <Col xxl={5} className="align-self-center">
-                              <div className="py-4">
-                                <h4 className="display-6 coming-soon-text3">
-                                  PVC Heat Shrink Tubing
-                                </h4>
-                                <p className="text-secondary fs-15 mt-3">
-                                  At Insulation Products Corporation, we offer a
-                                  variety of PVC Heat Shrinkable tubing. Heat
-                                  shrink PVC provides excellent electrical
-                                  insulation and is available in many colors.
-                                </p>
-                                <div className="hstack gap-2">
-                                  <button
-                                    type="button"
-                                    className="btn btn-primary btn-label rounded-pill me-1"
-                                    href="mailto:sales@insulationproducts.com"
-                                  >
-                                    <i className="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i>{" "}
-                                    Email Us
-                                  </button>
-                                  <button
-                                    type="button"
-                                    className="btn btn-info btn-label rounded-pill"
-                                    href="tel:+16307710700"
-                                  >
-                                    <i className="ri-phone-line label-icon align-middle rounded-pill fs-16 me-2"></i>{" "}
-                                    Give us a call
-                                  </button>
-                                </div>
-                              </div>
-                            </Col>
-                            <div
-                              className="col-xxl-3 ms-auto mr-3 faq-img"
-                              style={{ width: "32rem" }}
-                            >
-                              <div className="h-100 mb-n5 pb-1 d-none d-lg-flex align-items-center">
-                                <img
-                                  src={StaffPhoto}
-                                  alt=""
-                                  className="img-fluid"
-                                  style={{ maxHeight: "100%" }}
-                                />
-                              </div>
-                            </div>
-                          </Row>
-                        </div>
-                      </Card>
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
-                          PVC Heat Shrink Tubing
+                          Polyolefin Shrink Tubing Solutions
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          Heat Shrinkable PVC Tubing has one of the lowest
-                          shrink temperatures of any electrical insulation
-                          tubing. This tubing is the best alternative for
-                          avoiding heat damage for enclosed or adjacent
-                          components. PVC tubing shrinks a full 50% quickly at
-                          200°F.
+                          Insulation Products Corporation is your go-to source
+                          for an expansive selection of{" "}
+                          <strong>Polyolefin Shrink Tubing</strong>. Our
+                          offerings encompass a broad range of styles and shrink
+                          ratios, including both single-wall and dual-wall
+                          configurations. Our lineup includes commercial-grade
+                          options as well as a wide variety of military and
+                          medical-grade products, ensuring we meet the diverse
+                          needs of our clients.
                           <br />
                           <br />
-                          The approximate 20% of longitudinal shrinkage allows
-                          ripple free conformance around sharp bends to form a
-                          tight fitting insulation in most general applications
-                          while retaining a high degree of flexibility. PVC Heat
-                          Shrink Tubing resists most chemicals and oils as well
-                          as sunlight, moisture and fungus. IP30HS meets the
-                          requirements of AMS-DTL-23053/2 Class 2.
+                          Our products adhere to the highest standards, being
+                          both RoHS and U/L compliant. They boast
+                          flame-retardant properties and are resistant to a
+                          plethora of environmental factors, including
+                          chemicals, oils, sunlight, moisture, and fungus.
+                          Application is seamless with the use of a heat gun,
+                          presenting a variety of options such as:
+                          <ul>
+                            <li>
+                              <strong>Thin Wall Polyolefin Tubing:</strong>{" "}
+                              Highly flexible and ideal for conserving space in
+                              compact areas.
+                            </li>
+                            <li>
+                              <strong>Semi-Rigid Polyolefin Tubing:</strong>{" "}
+                              Designed to retain its integrity without splitting
+                              upon shrinking.
+                            </li>
+                            <li>
+                              <strong>Adhesive-Lined Polyolefin Tubing:</strong>{" "}
+                              Perfect for any scenario necessitating additional
+                              moisture protection or strain relief.
+                            </li>
+                          </ul>
                           <br />
                           <br />
-                          Heat Shrinkable PVC Tubing is also available in
-                          irradiated (IP32IP below) and 1/32″ heavy wall.
+                          Available in an extensive array of sizes and colors,
+                          our polyolefin tubing is highly compatible with hot
+                          stamping, allowing you to achieve that polished,
+                          professional appearance for your products. Discover
+                          our exceptional range of heat shrink polyolefin
+                          products and enhance the finish and durability of your
+                          projects.
+                          <br />
+                          <br />
+                          For a closer look at our selection or to consult with
+                          our knowledgeable customer service team, reach out to
+                          us at <a href="tel:630.771.0700">630.771.0700</a> or
+                          via email at{" "}
+                          <a href="mailto:sales@insulationproducts.com">
+                            sales@insulationproducts.com
+                          </a>{" "}
+                          today!
                         </p>
                         <h3
                           className="card-title mb-3 fs-4"
@@ -451,7 +203,7 @@ const HeatShrinkPolyolefin = () => {
                   </Card>
                 </Col>
                 <LeftSideTables />
-              </div>
+              </Row>
             </Col>
           </Row>
         </Container>

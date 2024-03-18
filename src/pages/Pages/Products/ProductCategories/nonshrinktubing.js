@@ -13,7 +13,7 @@ import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
 
 
-const NonShrinkPTFE = () => {
+const NonShrinkTubing = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
 
 
@@ -45,90 +45,71 @@ const NonShrinkPTFE = () => {
                     <CardBody>
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
-                          PVC Heat Shrink Tubing
+                          Non-Heat Shrink Tubing Solutions
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          Heat Shrinkable PVC Tubing has one of the lowest
-                          shrink temperatures of any electrical insulation
-                          tubing. This tubing is the best alternative for
-                          avoiding heat damage for enclosed or adjacent
-                          components. PVC tubing shrinks a full 50% quickly at
-                          200°F.
-                          <br />
-                          <br />
-                          The approximate 20% of longitudinal shrinkage allows
-                          ripple free conformance around sharp bends to form a
-                          tight fitting insulation in most general applications
-                          while retaining a high degree of flexibility. PVC Heat
-                          Shrink Tubing resists most chemicals and oils as well
-                          as sunlight, moisture and fungus. IP30HS meets the
-                          requirements of AMS-DTL-23053/2 Class 2.
-                          <br />
-                          <br />
-                          Heat Shrinkable PVC Tubing is also available in
-                          irradiated (IP32IP below) and 1/32″ heavy wall.
+                          At Insulation Products Corporation, we specialize in
+                          providing <strong>Non-Heat Shrink Tubing</strong> for
+                          a variety of needs within the electronic and
+                          electrical industries. Our tubing options serve as
+                          excellent electrical insulators and are versatile
+                          enough for uses ranging from fluid transfer to various
+                          other applications. We pride ourselves on delivering{" "}
+                          <strong>premium quality products</strong>, with an
+                          unrivaled attention to detail and deep industry
+                          knowledge that sets us apart from our competitors.
                         </p>
                         <h3
                           className="card-title mb-3 fs-4"
                           style={{ paddingLeft: "1.5rem" }}
                         >
-                          Layflat PVC Heat Shrink Tubing
+                          Our Non-Heat Shrink Tubing Offerings
                         </h3>
 
                         <p className="mt-3 mb-5 fs-5 px-5">
-                          Layflat PVC Heat Shrink Tubing is a thin-wall low cost
-                          material offering good electrical and mechanical
-                          characteristics. When exposed to heat in excess of
-                          275°F for a few seconds, the specially formulated
-                          polyvinyl chloride material will shrink rapidly and
-                          uniformly conforming to the shape of the object to be
-                          covered.
+                          Among the most popular types of non-heat shrink tubing
+                          we offer is{" "}
+                          <strong>
+                            extruded polyvinylchloride (PVC) tubing
+                          </strong>
+                          . Known for its inherent flame-retardant properties,
+                          our PVC tubing is available in a wide array of grades,
+                          sizes, and colors to meet your specific needs.
+                          Additionally, we supply <strong>PTFE tubing</strong>{" "}
+                          for applications requiring non-toxic materials or
+                          resistance to high temperatures. Our catalog also
+                          includes various forms of{" "}
+                          <strong>slit conduit and spiral wrap tubing</strong>,
+                          ideal for bundling purposes where flexibility and easy
+                          access are key.
                           <br />
                           <br />
-                          Layflat PVC is available in diameters from .250″ to 6″
-                          and larger. The standard wall thickness is .004″-
-                          .006″ but is also available as thin as .0015″ or as
-                          thick as .012″ (for thicker walls, use product
-                          IP30HS). Standard colors are white, black, and clear
-                          but can be specially ordered in almost any color.
-                          <br />
-                          <br />
-                          Applications include insulation and jacketing of
-                          batteries, capacitors and production of industrial
-                          equipment, toys, sporting goods, medical and consumer
-                          products. A portable heat gun can be used for
-                          shrinking in most applications of our low temperature
-                          heat shrink tubing.
+                          Beyond Non-Shrink Tubing, our product range extends to{" "}
+                          <strong>woven and expandable sleeving</strong> for
+                          scenarios demanding superior abrasion resistance. Our
+                          selection features woven fiberglass and expandable
+                          polyester sleevings, engineered to accommodate a broad
+                          spectrum of application requirements, available in
+                          multiple sizes and styles.
                         </p>
                         <h3
                           className="card-title mb-3 fs-4"
                           style={{ paddingLeft: "1.5rem" }}
                         >
-                          Irradiated PVC Heat Shrink Tubing
+                          Contact Us
                         </h3>
 
                         <p className="mt-3 mb-5 fs-5 px-5">
-                          IP32IP provides excellent electrical insulation along
-                          with the lowest shrink temperature of any of our
-                          tubings. When high shrink temperatures can damage
-                          enclosed or adjacent components this tubing is the
-                          best choice. PVC tubing shrinks a full 50% quickly at
-                          100°C.
-                          <br />
-                          <br />
-                          Approximately 15% longitudinal shrinkage allows ripple
-                          free conformance around sharp bends to form a tight
-                          fitting insulation for most general applications with
-                          a high degree of flexibility. Our Irradiated PVC Heat
-                          Shrink tubing resists most chemicals and oils as well
-                          as sunlight, moisture and fungus. IP32IP meet the
-                          requirements of AMS-DTL-23053/2 Class 1 with the
-                          exception of longitudinal shrinkage.
-                          <br />
-                          <br />
-                          Improved solder iron cut-through and abrasion
-                          resistance with outstanding dielectric and mechanical
-                          protection.
+                          For more detailed information about our Non-Shrink
+                          electrical insulation tubing options, reach out to our{" "}
+                          <strong>dedicated customer service team</strong> at{" "}
+                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or
+                          connect with our sales department via email at{" "}
+                          <a href="mailto:sales@insulationproducts.com">
+                            sales@insulationproducts.com
+                          </a>
+                          . We're here to assist you in selecting the right
+                          products for your needs.
                         </p>
                         <Row>
                           <Col xs={6} md={4}>
@@ -177,4 +158,4 @@ const NonShrinkPTFE = () => {
   );
 };
 
-export default NonShrinkPTFE;
+export default NonShrinkTubing;

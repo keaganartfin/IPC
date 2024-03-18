@@ -1,254 +1,21 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   Card,
   CardBody,
   Col,
   Container,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Form,
-  Input,
-  Label,
-  Modal,
-  ModalBody,
-  Offcanvas,
-  OffcanvasBody,
   Row,
-  UncontrolledDropdown,
-  FormFeedback,
 } from "reactstrap";
-import profileBg from "../../../assets/images/profile-bg.jpg";
-import BreadCrumb from "../../../Components/Common/BreadCrumb";
-import { ipcPages } from "../../../common/data";
-
-//User Images
-import avatar2 from "../../../assets/images/users/avatar-2.jpg";
-import userdummyimg from "../../../assets/images/users/user-dummy-img.jpg";
-
+import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import smallImage9 from "../../../assets/images/small/img-9.jpg";
-//redux
-import { useSelector, useDispatch } from "react-redux";
+import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
+import LeftSideTables from "../../About/LeftSideTables";
 
-//import action
-import {
-  getTeamData as onGetTeamData,
-  deleteTeamData as onDeleteTeamData,
-  addTeamData as onAddTeamData,
-  updateTeamData as onUpdateTeamData,
-} from "../../../slices/thunks";
-
-// Formik
-import * as Yup from "yup";
-import { useFormik } from "formik";
-import { createSelector } from "reselect";
-import LeftSideTables from "../About/LeftSideTables";
 
 const NonShrinkPVC = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
 
-  const dispatch = useDispatch();
-
-  const selectteamData = createSelector(
-    (state) => state.Team,
-    (teamData) => teamData.teamData
-  );
-  // Inside your component
-  const teamData = useSelector(selectteamData);
-
-  const [team, setTeam] = useState(null);
-  const [deleteModal, setDeleteModal] = useState(false);
-  const [teamList, setTeamlist] = useState([]);
-
-  //Modal
-  const [teamMem, setTeamMem] = useState(null);
-  const [isEdit, setIsEdit] = useState(false);
-  const [modal, setModal] = useState(false);
-
-  useEffect(() => {
-    dispatch(onGetTeamData());
-  }, [dispatch]);
-
-  useEffect(() => {
-    setTeam(teamData);
-    setTeamlist(teamData);
-  }, [teamData]);
-
-  const toggle = useCallback(() => {
-    if (modal) {
-      setModal(false);
-      setTeamMem(null);
-    } else {
-      setModal(true);
-    }
-  }, [modal]);
-
-  // Update To do
-  const handleTeamClick = useCallback(
-    (arg) => {
-      const teamMem = arg;
-      setTeamMem({
-        id: teamMem.id,
-        name: teamMem.name,
-        designation: teamMem.designation,
-        projectCount: teamMem.projectCount,
-        taskCount: teamMem.taskCount,
-      });
-
-      setIsEdit(true);
-      toggle();
-    },
-    [toggle]
-  );
-
-  // Add To do
-  const handleTeamClicks = () => {
-    setTeamMem("");
-    setModal(!modal);
-    setIsEdit(false);
-    toggle();
-  };
-
-  // delete
-  const onClickData = (team) => {
-    setTeam(team);
-    setDeleteModal(true);
-  };
-
-  const handleDeleteTeamData = () => {
-    if (team) {
-      dispatch(onDeleteTeamData(team.id));
-      setDeleteModal(false);
-    }
-  };
-
-  useEffect(() => {
-    const list = document.querySelectorAll(".team-list");
-    const buttonGroups = document.querySelectorAll(".filter-button");
-    for (let i = 0; i < buttonGroups.length; i++) {
-      buttonGroups[i].addEventListener("click", onButtonGroupClick);
-    }
-
-    function onButtonGroupClick(event) {
-      if (
-        event.target.id === "list-view-button" ||
-        event.target.parentElement.id === "list-view-button"
-      ) {
-        document.getElementById("list-view-button").classList.add("active");
-        document.getElementById("grid-view-button").classList.remove("active");
-        list.forEach(function (el) {
-          el.classList.add("list-view-filter");
-          el.classList.remove("grid-view-filter");
-        });
-      } else {
-        document.getElementById("grid-view-button").classList.add("active");
-        document.getElementById("list-view-button").classList.remove("active");
-        list.forEach(function (el) {
-          el.classList.remove("list-view-filter");
-          el.classList.add("grid-view-filter");
-        });
-      }
-    }
-  }, []);
-
-  const favouriteBtn = (ele) => {
-    if (ele.closest("button").classList.contains("active")) {
-      ele.closest("button").classList.remove("active");
-    } else {
-      ele.closest("button").classList.add("active");
-    }
-  };
-
-  const searchList = (e) => {
-    let inputVal = e.toLowerCase();
-
-    const filterItems = (arr, query) => {
-      return arr.filter((el) => {
-        return el.name.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-      });
-    };
-
-    let filterData = filterItems(teamData, inputVal);
-    setTeamlist(filterData);
-    if (filterData.length === 0) {
-      document.getElementById("noresult").style.display = "block";
-      document.getElementById("teamlist").style.display = "none";
-    } else {
-      document.getElementById("noresult").style.display = "none";
-      document.getElementById("teamlist").style.display = "block";
-    }
-  };
-
-  //OffCanvas
-  const [isOpen, setIsOpen] = useState(false);
-  const [sideBar, setSideBar] = useState([]);
-
-  //Dropdown
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggledropDown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
-  // validation
-  const validation = useFormik({
-    // enableReinitialize : use this flag when initial values needs to be changed
-    enableReinitialize: true,
-
-    initialValues: {
-      name: (teamMem && teamMem.name) || "",
-      designation: (teamMem && teamMem.designation) || "",
-    },
-    validationSchema: Yup.object({
-      name: Yup.string().required("Please Enter team Name"),
-      designation: Yup.string().required("Please Enter Your designation"),
-    }),
-    onSubmit: (values) => {
-      if (isEdit) {
-        const updateTeamData = {
-          id: teamMem ? teamMem.id : 0,
-          name: values.name,
-          designation: values.designation,
-          projectCount: values.projectCount,
-          taskCount: values.taskCount,
-        };
-        // save edit Team data
-        dispatch(onUpdateTeamData(updateTeamData));
-        validation.resetForm();
-      } else {
-        const newTeamData = {
-          id: (Math.floor(Math.random() * (30 - 20)) + 20).toString(),
-          name: values.name,
-          designation: values.designation,
-          projectCount: 0,
-          taskCount: 0,
-          backgroundImg: smallImage9,
-        };
-        // save new TeamData
-        dispatch(onAddTeamData(newTeamData));
-        validation.resetForm();
-      }
-      toggle();
-    },
-  });
-
-  const truncateHtml = (html, maxLength) => {
-    // Ensure html is treated as a string
-    let htmlString = String(html);
-    let strippedHtml = htmlString.replace(/<[^>]+>/g, ""); // Strip out HTML tags
-
-    if (strippedHtml.length <= maxLength) {
-      return htmlString; // Return original if within maxLength
-    }
-
-    let truncatedText = strippedHtml.substring(0, maxLength); // Truncate text
-    let lastIndex = truncatedText.lastIndexOf(" "); // Find last space to avoid breaking words
-    truncatedText = truncatedText.substring(0, lastIndex) + " ..."; // Add ellipsis
-
-    return truncatedText;
-  };
 
   return (
     <React.Fragment>
@@ -272,7 +39,7 @@ const NonShrinkPVC = () => {
           </div>
           <Row>
             <Col lg={12}>
-              <div>
+              <Row>
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
@@ -282,13 +49,17 @@ const NonShrinkPVC = () => {
                             <Col xxl={5} className="align-self-center">
                               <div className="py-4">
                                 <h4 className="display-6 coming-soon-text3">
-                                  PVC Heat Shrink Tubing
+                                  Non-Shrink PVC Tubing Solutions
                                 </h4>
                                 <p className="text-secondary fs-15 mt-3">
-                                  At Insulation Products Corporation, we offer a
-                                  variety of PVC Heat Shrinkable tubing. Heat
-                                  shrink PVC provides excellent electrical
-                                  insulation and is available in many colors.
+                                  Insulation Products Corporation offers a
+                                  diverse array of{" "}
+                                  <strong>
+                                    flame-retardant Non-Shrink PVC Tubing
+                                  </strong>
+                                  , showcasing excellent electrical, chemical,
+                                  and physical properties suitable for a wide
+                                  range of applications.
                                 </p>
                                 <div className="hstack gap-2">
                                   <button
@@ -328,90 +99,101 @@ const NonShrinkPVC = () => {
                       </Card>
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
-                          PVC Heat Shrink Tubing
+                          Low Temperature Vinyl Tubing
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          Heat Shrinkable PVC Tubing has one of the lowest
-                          shrink temperatures of any electrical insulation
-                          tubing. This tubing is the best alternative for
-                          avoiding heat damage for enclosed or adjacent
-                          components. PVC tubing shrinks a full 50% quickly at
-                          200°F.
-                          <br />
-                          <br />
-                          The approximate 20% of longitudinal shrinkage allows
-                          ripple free conformance around sharp bends to form a
-                          tight fitting insulation in most general applications
-                          while retaining a high degree of flexibility. PVC Heat
-                          Shrink Tubing resists most chemicals and oils as well
-                          as sunlight, moisture and fungus. IP30HS meets the
-                          requirements of AMS-DTL-23053/2 Class 2.
-                          <br />
-                          <br />
-                          Heat Shrinkable PVC Tubing is also available in
-                          irradiated (IP32IP below) and 1/32″ heavy wall.
+                          <strong>Product Number: IP1274</strong>
+                          <br />A premier choice for low temperature PVC tubing,
+                          featuring:
+                          <ul>
+                            <li>Exceptional low temperature flexibility</li>
+                            <li>Flame retardancy</li>
+                            <li>Designed specifically for aircraft devices</li>
+                            <li>
+                              Soft durometer for superior flexibility and high
+                              cut-through resistance
+                            </li>
+                            <li>
+                              Meets MIL-I-7444 Types 1&3 and MIL-I-22076
+                              standards
+                            </li>
+                          </ul>
                         </p>
                         <h3
                           className="card-title mb-3 fs-4"
                           style={{ paddingLeft: "1.5rem" }}
                         >
-                          Layflat PVC Heat Shrink Tubing
+                          Extruded 105°C Vinyl Tubing
                         </h3>
 
                         <p className="mt-3 mb-5 fs-5 px-5">
-                          Layflat PVC Heat Shrink Tubing is a thin-wall low cost
-                          material offering good electrical and mechanical
-                          characteristics. When exposed to heat in excess of
-                          275°F for a few seconds, the specially formulated
-                          polyvinyl chloride material will shrink rapidly and
-                          uniformly conforming to the shape of the object to be
-                          covered.
+                          <strong>Product Number: IP10EX</strong>
                           <br />
-                          <br />
-                          Layflat PVC is available in diameters from .250″ to 6″
-                          and larger. The standard wall thickness is .004″-
-                          .006″ but is also available as thin as .0015″ or as
-                          thick as .012″ (for thicker walls, use product
-                          IP30HS). Standard colors are white, black, and clear
-                          but can be specially ordered in almost any color.
-                          <br />
-                          <br />
-                          Applications include insulation and jacketing of
-                          batteries, capacitors and production of industrial
-                          equipment, toys, sporting goods, medical and consumer
-                          products. A portable heat gun can be used for
-                          shrinking in most applications of our low temperature
-                          heat shrink tubing.
+                          This high-temperature PVC tubing offers:
+                          <ul>
+                            <li>Excellent dielectric strength up to 105°C</li>
+                            <li>U/L recognized and CSA certified</li>
+                            <li>
+                              Cost-effectiveness for a range of applications
+                            </li>
+                            <li>Meets MIL-I-631D, Grade C requirements</li>
+                          </ul>
+                          Available in standard and .032" wall thickness for
+                          special orders requiring a 600V rating.
                         </p>
                         <h3
                           className="card-title mb-3 fs-4"
                           style={{ paddingLeft: "1.5rem" }}
                         >
-                          Irradiated PVC Heat Shrink Tubing
+                          General Purpose Vinyl Tubing
                         </h3>
 
                         <p className="mt-3 mb-5 fs-5 px-5">
-                          IP32IP provides excellent electrical insulation along
-                          with the lowest shrink temperature of any of our
-                          tubings. When high shrink temperatures can damage
-                          enclosed or adjacent components this tubing is the
-                          best choice. PVC tubing shrinks a full 50% quickly at
-                          100°C.
+                          <strong>Product Number: IP12GA</strong>
+                          <br />A versatile general purpose PVC tubing, known
+                          for:
+                          <ul>
+                            <li>Wide operational temperature range</li>
+                            <li>Flame retardancy and flexibility</li>
+                            <li>
+                              High dielectric strength and fungus resistance
+                            </li>
+                            <li>Non-corrosive properties</li>
+                            <li>Compliance with MIL-I-631D, Grades A & B</li>
+                          </ul>
+                        </p>
+                        <h3
+                          className="card-title mb-3 fs-4"
+                          style={{ paddingLeft: "1.5rem" }}
+                        >
+                          Fractional Wall Plastic Tubing
+                        </h3>
+
+                        <p className="mt-3 mb-5 fs-5 px-5">
+                          <strong>Product Number: IP15PV</strong>
                           <br />
-                          <br />
-                          Approximately 15% longitudinal shrinkage allows ripple
-                          free conformance around sharp bends to form a tight
-                          fitting insulation for most general applications with
-                          a high degree of flexibility. Our Irradiated PVC Heat
-                          Shrink tubing resists most chemicals and oils as well
-                          as sunlight, moisture and fungus. IP32IP meet the
-                          requirements of AMS-DTL-23053/2 Class 1 with the
-                          exception of longitudinal shrinkage.
-                          <br />
-                          <br />
-                          Improved solder iron cut-through and abrasion
-                          resistance with outstanding dielectric and mechanical
-                          protection.
+                          Ideal for low-pressure FDA applications, offering:
+                          <ul>
+                            <li>Food-grade vinyl construction</li>
+                            <li>Heavy wall for durability</li>
+                            <li>Kink resistance</li>
+                            <li>
+                              Compliance with U.S. Pharmacopoeia Classes I
+                              through VI and Federal Specification L-T-790B
+                            </li>
+                          </ul>
+                          Available in 100 ft. coils or 50' lengths with options
+                          for custom sizes.
+                        </p>
+                        <p className="mt-3 mb-5 fs-5 px-5">
+                          To discover more about our Non-Shrink PVC Tubing
+                          solutions or for any inquiries, please contact us at{" "}
+                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or
+                          email{" "}
+                          <a href="mailto:sales@insulationproducts.com">
+                            sales@insulationproducts.com
+                          </a>
+                          .
                         </p>
                         <Row>
                           <Col xs={6} md={4}>
@@ -451,7 +233,7 @@ const NonShrinkPVC = () => {
                   </Card>
                 </Col>
                 <LeftSideTables />
-              </div>
+              </Row>
             </Col>
           </Row>
         </Container>

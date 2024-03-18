@@ -13,7 +13,7 @@ import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
 
 
-const SpecialtyTubingKits = () => {
+const SpecialtyProductsAndServices = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
 
 
@@ -45,54 +45,59 @@ const SpecialtyTubingKits = () => {
                     <CardBody>
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
-                          Tubing Kits Solutions
+                          Specialty Products and Services
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          At Insulation Products Corporation, we offer custom{" "}
-                          <strong>Tubing Kits</strong> tailored to meet your
-                          specific requirements. Whether you need kits packaged
-                          in single tubs, divided boxes, or zipper bags, we have
-                          the flexibility and resources to accommodate your
-                          needs. Our team is dedicated to assisting you with the
-                          design, including layout, sizing, and selection of the
-                          appropriate types of tubing for your application.
-                          <br />
-                          <br />
-                          Our kits can incorporate a variety of tubing options,
-                          including our own products, your products, or a
-                          combination thereof. To enhance identification and
-                          personalization, tubing within the kits can be marked
-                          with size, type, or even your company’s name and logo.
-                          <br />
-                          <br />
-                          Additionally, we ensure that the packaging—be it
-                          boxes, bags, or tubs—is clearly labeled with your
-                          company information, contents, and part numbers,
-                          providing a professional presentation that's perfect
-                          for sales samples, whether used in-office or on the
-                          road.
-                          <br />
-                          <br />
-                          Our custom Tubing Kits are an excellent resource for
-                          sales representatives and technicians alike, offering
-                          a convenient and organized way to present a range of
-                          tubing solutions to customers and clients.
-                          <br />
-                          <br />
-                          For more information on our Tubing Kits or to discuss
-                          your specific needs, please reach out to our sales
-                          team. We’re here to create the perfect solution for
-                          your tubing kit requirements.
-                          <br />
-                          <br />
-                          Connect with Insulation Products Corporation by
-                          calling{" "}
-                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or
-                          emailing us at{" "}
-                          <a href="mailto:sales@insulationproducts.com">
-                            sales@insulationproducts.com
-                          </a>{" "}
-                          for detailed information and assistance.
+                          At <strong>Insulation Products Corporation</strong>,
+                          we are proud to offer an extensive array of{" "}
+                          <strong>Specialty Products and Services</strong>{" "}
+                          tailored to meet the diverse needs of electrical
+                          insulation tubing and wire harness applications. Our
+                          selection includes{" "}
+                          <strong>
+                            printed wire & cable markers, custom spooling,
+                            cutting-to-length services, bagging, tubing kits,
+                            industrial adhesives, heat guns,
+                          </strong>{" "}
+                          and various other complementary products designed to
+                          facilitate your project requirements efficiently.
+                        </p>
+                        <h3
+                          className="card-title mb-3 fs-4"
+                          style={{ paddingLeft: "1.5rem" }}
+                        >
+                          Value-Added Services
+                        </h3>
+
+                        <p className="mt-3 mb-5 fs-5 px-5">
+                          Our <strong>Value-Added Services</strong> are
+                          carefully crafted to enhance your operational
+                          efficiencies and boost your profits. Backed by a vast
+                          inventory and the expertise of our experienced
+                          engineers, we are equipped to provide personalized
+                          guidance and solutions for all your tubing, sleeving,
+                          and adhesive needs. Our commitment to excellence is
+                          underscored by our adherence to strict{" "}
+                          <strong>ISO quality standards</strong>, ensuring you
+                          receive only the highest level of performance and
+                          reliability from our products and services.
+                        </p>
+                        <h3
+                          className="card-title mb-3 fs-4"
+                          style={{ paddingLeft: "1.5rem" }}
+                        >
+                          Contact Us
+                        </h3>
+
+                        <p className="mt-3 mb-5 fs-5 px-5">
+                          For further details about our electrical insulation
+                          tubing, value-added services, or to explore our range
+                          of specialty products, please don't hesitate to
+                          contact our friendly{" "}
+                          <strong>customer service team</strong> at{" "}
+                          <a href="tel:1.630.771.0700">1.630.771.0700</a>. We
+                          are here to support your project's success from start
+                          to finish.
                         </p>
                         <Row>
                           <Col xs={6} md={4}>
@@ -141,4 +146,4 @@ const SpecialtyTubingKits = () => {
   );
 };
 
-export default SpecialtyTubingKits;
+export default SpecialtyProductsAndServices;

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/IPC/static/css/main.c5fb4cdf.css",
-    "main.js": "/IPC/static/js/main.27c34985.js",
-    "static/js/522.37032619.chunk.js": "/IPC/static/js/522.37032619.chunk.js",
+    "main.css": "/IPC/static/css/main.278d955e.css",
+    "main.js": "/IPC/static/js/main.93d707b6.js",
+    "static/js/496.9e5cc384.chunk.js": "/IPC/static/js/496.9e5cc384.chunk.js",
     "static/media/IPC-Catalog-2.pdf": "/IPC/static/media/IPC-Catalog-2.e095c93ef66ee59f9a0d.pdf",
     "static/media/IPC-Catalog.pdf": "/IPC/static/media/IPC-Catalog.7d27d0f448f2f72001cb.pdf",
     "static/media/contactus.png": "/IPC/static/media/contactus.8a2150880ebf1c12a25c.png",
@@ -486,10 +486,13 @@
     "static/media/nl.svg": "/IPC/static/media/nl.34bff82216db8c0c5cad766ede486622.svg",
     "static/media/pl.svg": "/IPC/static/media/pl.7237d83fc2100d8f506957394aee807f.svg",
     "static/media/de.svg": "/IPC/static/media/de.0fce3f5135eaf251a726573f8471b664.svg",
-    "static/media/bd.svg": "/IPC/static/media/bd.5ec0fab3bc8aa5078e1610b715b7427c.svg"
+    "static/media/bd.svg": "/IPC/static/media/bd.5ec0fab3bc8aa5078e1610b715b7427c.svg",
+    "main.278d955e.css.map": "/IPC/static/css/main.278d955e.css.map",
+    "main.93d707b6.js.map": "/IPC/static/js/main.93d707b6.js.map",
+    "496.9e5cc384.chunk.js.map": "/IPC/static/js/496.9e5cc384.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5fb4cdf.css",
-    "static/js/main.27c34985.js"
+    "static/css/main.278d955e.css",
+    "static/js/main.93d707b6.js"
   ]
 }

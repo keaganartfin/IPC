@@ -37,7 +37,6 @@ const SpecialtyConduitConnectors = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                      <h5>NON METALLIC ELECTRICAL CONDUIT TUBING</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}
@@ -51,7 +50,6 @@ const SpecialtyConduitConnectors = () => {
                   </Card>
                   <Card>
                     <CardBody>
-                      <h5>NON METALLIC LIQUID TIGHT 90° CONNECTORS</h5>
                       <iframe
                         src={pdfPath1}
                         style={{ width: "100%", height: "1150px" }}
@@ -65,7 +63,6 @@ const SpecialtyConduitConnectors = () => {
                   </Card>
                   <Card>
                     <CardBody>
-                      <h5>NON METALLIC LIQUID TIGHT STRAIGHT CONNECTORS</h5>
                       <iframe
                         src={pdfPath2}
                         style={{ width: "100%", height: "1150px" }}

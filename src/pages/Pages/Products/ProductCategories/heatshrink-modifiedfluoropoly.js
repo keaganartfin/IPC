@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
@@ -35,7 +34,6 @@ const HeatShrinkModifiedFluoro = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                      <h5>Modified Fluoropolymer Heat Shrink Tubing</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}

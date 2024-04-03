@@ -146,7 +146,7 @@ const Navdata = () => {
         {
           id: "heatshrinktubing",
           label: "Heat Shrink Tubing",
-          link: "/poroducts/heat-shrink-tubing",
+          link: "/products/heat-shrink-tubing",
           isChildItem: true,
           click: function (e) {
             e.preventDefault();
@@ -210,7 +210,7 @@ const Navdata = () => {
         {
           id: "nonshrinktubing",
           label: "Non-Shrink Tubing",
-          link: "/poroducts/non-shrink-tubing",
+          link: "/products/non-shrink-tubing",
           isChildItem: true,
           click: function (e) {
             e.preventDefault();

@@ -1,21 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Row,
-} from "reactstrap";
+import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
+import picture1 from "../../../../assets/images/ipc/Marker-Sample-2.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
-
 
 const SpecialtyHotStamp = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
-
 
   return (
     <React.Fragment>
@@ -46,29 +38,54 @@ const SpecialtyHotStamp = () => {
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
                           Identification Markers for Wire and Cable
+                          <span className="fs-5 float float-end">
+                            Spec Sheet:{" "}
+                            <a
+                              className="badge bg-primary-subtle text-primary badge-border"
+                              target="_blank"
+                              href="/IPC/product-catalog/Markers"
+                            >
+                              Identification Markers{" "}
+                              <i className="bx bx-link-external"></i>
+                            </a>{" "}
+                          </span>
                         </h3>
+                        <Col md={8}>
+                          <p className="mt-3 mb-5 px-5 fs-5">
+                            At Insulation Products Corporation, we provide
+                            advanced <strong>Identification Markers</strong> for
+                            wire and cable, utilizing our hot stamp technology.
+                            This cost-effective, simple, and aesthetically
+                            pleasing method offers a completely dry process for
+                            marking or coding your products for identification.
+                            Hot stamp markers are ideal for enhancing product
+                            identification, thereby increasing production
+                            efficiency and the overall appearance of your
+                            products.
+                            <br />
+                            <br />
+                            Our hot stamping service allows for customization
+                            with your manufacturer's logo, part number, date
+                            code, and serial number across all types of
+                            sleevings, heat shrinkable tubing, and cable ties.
+                            Choose from a wide variety of type sizes, tubing
+                            colors, and imprint colors to achieve the perfect
+                            finished look for your products.
+                          </p>
+                        </Col>
+                        <Col
+                          md={4}
+                          className="d-flex justify-content-center align-items-center w-full "
+                        >
+                          <div>
+                            <img
+                              className="img-fluid rounded img-thumbnail"
+                              src={picture1}
+                              alt=""
+                            />
+                          </div>
+                        </Col>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          At Insulation Products Corporation, we provide
-                          advanced <strong>Identification Markers</strong> for
-                          wire and cable, utilizing our hot stamp technology.
-                          This cost-effective, simple, and aesthetically
-                          pleasing method offers a completely dry process for
-                          marking or coding your products for identification.
-                          Hot stamp markers are ideal for enhancing product
-                          identification, thereby increasing production
-                          efficiency and the overall appearance of your
-                          products.
-                          <br />
-                          <br />
-                          Our hot stamping service allows for customization with
-                          your manufacturer's logo, part number, date code, and
-                          serial number across all types of sleevings, heat
-                          shrinkable tubing, and cable ties. Choose from a wide
-                          variety of type sizes, tubing colors, and imprint
-                          colors to achieve the perfect finished look for your
-                          products.
-                          <br />
-                          <br />
                           We pride ourselves on marking U/L, CSA, and military
                           approved materials with a high-quality, permanent
                           imprint. Our services include precise cutting to
@@ -102,7 +119,7 @@ const SpecialtyHotStamp = () => {
                           wire and cable products. For more information or to
                           place an order, contact Insulation Products
                           Corporation at{" "}
-                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or
+                          <a href="tel:6307710700">+1 (630) 771-0700</a> or
                           email us at{" "}
                           <a href="mailto:sales@insulationproducts.com">
                             sales@insulationproducts.com
@@ -110,37 +127,7 @@ const SpecialtyHotStamp = () => {
                           .
                         </p>
                         <Row>
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-user-2-fill"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Designation :</p>
-                                <h6 className="text-truncate mb-0">
-                                  Lead Designer / Developer
-                                </h6>
-                              </div>
-                            </div>
-                          </Col>
-
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-global-line"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Website :</p>
-                                <Link to="#" className="fw-semibold">
-                                  www.velzon.com
-                                </Link>
-                              </div>
-                            </div>
-                          </Col>
+                          
                         </Row>
                       </Row>
                     </CardBody>

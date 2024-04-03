@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
 import LeftSideTables from "../../About/LeftSideTables";
-import pdfPath from "../../../../assets/images/pdfs/IP52EC-Heat-Shrink-End-Caps.pdf" 
+import pdfPath from "../../../../assets/images/pdfs/IP52EC-Heat-Shrink-End-Caps.pdf";
 
 const HeatShrinkEndCaps = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
@@ -34,7 +33,6 @@ const HeatShrinkEndCaps = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                    <h5>Heat Shrinkable End Caps</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}

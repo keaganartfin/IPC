@@ -11,9 +11,6 @@ const CatalogMain = () => {
   const pdfPath = Pdfs[pdfName];
   document.title = `${pdfName} | PDF Display`;
 
-  console.log("PDF Name from URL:", pdfName);
-  console.log("Available PDFs:", Object.keys(Pdfs));
-
   if (!pdfPath) {
     return <Navigate to="/404" />;
   }
@@ -43,7 +40,6 @@ const CatalogMain = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                    <h5>{pdfName.replace(/-/g, ' ')}</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}

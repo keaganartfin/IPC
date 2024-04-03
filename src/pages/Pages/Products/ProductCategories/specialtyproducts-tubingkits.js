@@ -1,21 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Row,
-} from "reactstrap";
+import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
+import picture1 from "../../../../assets/images/ipc/tubingkits-e1470671026976.png";
 import LeftSideTables from "../../About/LeftSideTables";
-
 
 const SpecialtyTubingKits = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
-
 
   return (
     <React.Fragment>
@@ -46,25 +38,52 @@ const SpecialtyTubingKits = () => {
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
                           Tubing Kits Solutions
+                          <span className="fs-5 float float-end">
+                            Spec Sheet:{" "}
+                            <a
+                              className="badge bg-danger-subtle text-danger badge-border"
+                              target="_blank"
+                              href="/IPC/product-catalog/TubingKits"
+                            >
+                              Tubing Kits{" "}
+                              <i className="bx bx-link-external"></i>
+                            </a>{" "}
+                          </span>
                         </h3>
+                        <Col md={8}>
+                          <p className="mt-3 mb-5 px-5 fs-5">
+                            At Insulation Products Corporation, we offer custom{" "}
+                            <strong>Tubing Kits</strong> tailored to meet your
+                            specific requirements. Whether you need kits
+                            packaged in single tubs, divided boxes, or zipper
+                            bags, we have the flexibility and resources to
+                            accommodate your needs. Our team is dedicated to
+                            assisting you with the design, including layout,
+                            sizing, and selection of the appropriate types of
+                            tubing for your application.
+                            <br />
+                            <br />
+                            Our kits can incorporate a variety of tubing
+                            options, including our own products, your products,
+                            or a combination thereof. To enhance identification
+                            and personalization, tubing within the kits can be
+                            marked with size, type, or even your company’s name
+                            and logo.
+                          </p>
+                        </Col>
+                        <Col
+                          md={4}
+                          className="d-flex justify-content-center align-items-center w-full "
+                        >
+                          <div>
+                            <img
+                              className="img-fluid rounded img-thumbnail"
+                              src={picture1}
+                              alt=""
+                            />
+                          </div>
+                        </Col>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          At Insulation Products Corporation, we offer custom{" "}
-                          <strong>Tubing Kits</strong> tailored to meet your
-                          specific requirements. Whether you need kits packaged
-                          in single tubs, divided boxes, or zipper bags, we have
-                          the flexibility and resources to accommodate your
-                          needs. Our team is dedicated to assisting you with the
-                          design, including layout, sizing, and selection of the
-                          appropriate types of tubing for your application.
-                          <br />
-                          <br />
-                          Our kits can incorporate a variety of tubing options,
-                          including our own products, your products, or a
-                          combination thereof. To enhance identification and
-                          personalization, tubing within the kits can be marked
-                          with size, type, or even your company’s name and logo.
-                          <br />
-                          <br />
                           Additionally, we ensure that the packaging—be it
                           boxes, bags, or tubs—is clearly labeled with your
                           company information, contents, and part numbers,
@@ -87,45 +106,16 @@ const SpecialtyTubingKits = () => {
                           <br />
                           Connect with Insulation Products Corporation by
                           calling{" "}
-                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or
+                          <a href="tel:6307710700">+1 (630) 771-0700</a> or
                           emailing us at{" "}
                           <a href="mailto:sales@insulationproducts.com">
-                            sales@insulationproducts.com
+                            sales@insulationproducts.com{" "}
+                            <i className="bx bx-link-external"></i>
                           </a>{" "}
                           for detailed information and assistance.
                         </p>
                         <Row>
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-user-2-fill"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Designation :</p>
-                                <h6 className="text-truncate mb-0">
-                                  Lead Designer / Developer
-                                </h6>
-                              </div>
-                            </div>
-                          </Col>
-
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-global-line"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Website :</p>
-                                <Link to="#" className="fw-semibold">
-                                  www.velzon.com
-                                </Link>
-                              </div>
-                            </div>
-                          </Col>
+                          
                         </Row>
                       </Row>
                     </CardBody>

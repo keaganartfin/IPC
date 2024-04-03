@@ -35,7 +35,6 @@ const SpecialtyHeatShrinkTape = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                      <h5>HEAT SHRINK POLYOLEFIN TAPE</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}

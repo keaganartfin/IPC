@@ -1,21 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Row,
-} from "reactstrap";
+import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
+import picture1 from "../../../../assets/images/ipc/value-added.png";
 import LeftSideTables from "../../About/LeftSideTables";
-
 
 const SpecialtyValueAdded = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
-
 
   return (
     <React.Fragment>
@@ -47,34 +39,59 @@ const SpecialtyValueAdded = () => {
                         <h3 className="mb-3 card-header">
                           Value-Added Services at Insulation Products
                           Corporation
+                          <span className="fs-5 float float-end">
+                            Spec Sheet:{" "}
+                            <a
+                              className="badge bg-primary-subtle text-primary badge-border"
+                              target="_blank"
+                              href="/IPC/product-catalog/ValueAdded"
+                            >
+                              Value Added Spec Sheet{" "}
+                              <i className="bx bx-link-external"></i>
+                            </a>{" "}
+                          </span>
                         </h3>
-                        <p className="mt-3 mb-5 px-5 fs-5">
-                          At Insulation Products Corporation, we excel in
-                          providing <strong>Value-Added Services</strong> that
-                          cater to a wide range of customization and processing
-                          needs. Our services include spooling, coiling, and
-                          precision cutting to custom lengths, all tailored to
-                          fit the unique specifications of any tubing
-                          application.
-                        </p>
-                        <h3
-                          className="card-title mb-3 fs-4"
-                          style={{ paddingLeft: "1.5rem" }}
-                        >
-                          Custom Spooling and Coiling{" "}
-                        </h3>
+                        <Col md={8}>
+                          <p className="mt-3 mb-5 px-5 fs-5">
+                            At Insulation Products Corporation, we excel in
+                            providing <strong>Value-Added Services</strong> that
+                            cater to a wide range of customization and
+                            processing needs. Our services include spooling,
+                            coiling, and precision cutting to custom lengths,
+                            all tailored to fit the unique specifications of any
+                            tubing application.
+                          </p>
+                          <h3
+                            className="card-title mb-3 fs-4"
+                            style={{ paddingLeft: "1.5rem" }}
+                          >
+                            Custom Spooling and Coiling{" "}
+                          </h3>
 
-                        <p className="mt-3 mb-5 fs-5 px-5">
-                          Whether you require small volume or high volume
-                          orders, with tight tolerances or specific lengths, IPC
-                          is equipped to deliver. Our state-of-the-art facility
-                          operates under strict{" "}
-                          <em>ISO 9001 quality standards</em>, ensuring the
-                          highest level of precision and quality in every order.
-                          Spools and coils can be customized with your specific
-                          labeling requirements, ensuring seamless integration
-                          into your operations.
-                        </p>
+                          <p className="mt-3 mb-5 fs-5 px-5">
+                            Whether you require small volume or high volume
+                            orders, with tight tolerances or specific lengths,
+                            IPC is equipped to deliver. Our state-of-the-art
+                            facility operates under strict{" "}
+                            <em>ISO 9001 quality standards</em>, ensuring the
+                            highest level of precision and quality in every
+                            order. Spools and coils can be customized with your
+                            specific labeling requirements, ensuring seamless
+                            integration into your operations.
+                          </p>
+                        </Col>
+                        <Col
+                          md={4}
+                          className="d-flex justify-content-center align-items-center w-full "
+                        >
+                          <div>
+                            <img
+                              className="img-fluid rounded img-thumbnail"
+                              src={picture1}
+                              alt=""
+                            />
+                          </div>
+                        </Col>
                         <h3
                           className="card-title mb-3 fs-4"
                           style={{ paddingLeft: "1.5rem" }}
@@ -89,8 +106,14 @@ const SpecialtyValueAdded = () => {
                           ready-to-use solution that fits perfectly into your
                           project or product assembly.
                         </p>
+                      </Row>
+                    </CardBody>
+                  </Card>
+                  <Card>
+                    <CardBody>
+                      <Row className="justify-content-evenly mb-4 about-content">
                         <h3
-                          className="card-title mb-3 fs-4"
+                          className="card-title mb-3 fs-4 card-header"
                           style={{ paddingLeft: "1.5rem" }}
                         >
                           Additional Customization Options
@@ -120,45 +143,16 @@ const SpecialtyValueAdded = () => {
                           <br />
                           <br />
                           Reach out to us at{" "}
-                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or via
+                          <a href="tel:6307710700">+1 (630) 771-0700</a> or via
                           email at{" "}
                           <a href="mailto:sales@insulationproducts.com">
-                            sales@insulationproducts.com
+                            sales@insulationproducts.com{" "}
+                            <i className="bx bx-link-external"></i>
                           </a>{" "}
                           for additional details.
                         </p>
                         <Row>
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-user-2-fill"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Designation :</p>
-                                <h6 className="text-truncate mb-0">
-                                  Lead Designer / Developer
-                                </h6>
-                              </div>
-                            </div>
-                          </Col>
-
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-global-line"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Website :</p>
-                                <Link to="#" className="fw-semibold">
-                                  www.velzon.com
-                                </Link>
-                              </div>
-                            </div>
-                          </Col>
+                          
                         </Row>
                       </Row>
                     </CardBody>

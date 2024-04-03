@@ -36,6 +36,9 @@ import SpecialtyHeatGun from "../pages/Pages/Products/ProductCategories/specialt
 import SpecialtyValueAdded from "../pages/Pages/Products/ProductCategories/specialtyproducts-valueadded";
 import SpecialtyHotStamp from "../pages/Pages/Products/ProductCategories/specialtyproducts-hotstamp";
 import SpecialtyTubingKits from "../pages/Pages/Products/ProductCategories/specialtyproducts-tubingkits";
+import HeatShrinkTubing from "../pages/Pages/Products/ProductCategories/heatshrinktubing";
+import NonShrinkTubing from "../pages/Pages/Products/ProductCategories/nonshrinktubing";
+import SpecialtyProductsAndServices from "../pages/Pages/Products/ProductCategories/specialtyproducts";
 
 const authProtectedRoutes = [
   { path: "/home", component: <JobLanding /> },
@@ -52,7 +55,7 @@ const authProtectedRoutes = [
   // Product Categories
   {
     path: "/products/heat-shrink-tubing",
-    component: <ProductInsights />,
+    component: <HeatShrinkTubing />,
   },
   {
     path: "/products/heat-shrink-tubing/adhesive-lined-polyolefin",
@@ -96,7 +99,7 @@ const authProtectedRoutes = [
   },
   {
     path: "/products/non-shrink-tubing",
-    component: <ProductInsights />,
+    component: <NonShrinkTubing />,
   },
   {
     path: "/products/non-shrink-tubing/pvc",
@@ -118,7 +121,10 @@ const authProtectedRoutes = [
     path: "/products/non-shrink-tubing/slit-conduit",
     component: <NonShrinkSlitConduit />,
   },
-  { path: "/products/specialty", component: <ProductInsights /> },
+  {
+    path: "/products/specialty-products-services",
+    component: <SpecialtyProductsAndServices />,
+  },
   {
     path: "/products/specialty-products-services/non-metallic-conduit-tubing",
     component: <SpecialtyConduitTubing />,

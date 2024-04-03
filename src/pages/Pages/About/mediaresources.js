@@ -172,7 +172,7 @@ const MediaResources = () => {
               <a href="tel:6307710700">(630) 771-0700</a> or via email at{" "}
               <a href="mailto:sales@insulationproducts.com">
                 Sales@InsulationProducts.com
-              </a>{" "}
+              {" "} <i className="bx bx-link-external"></i></a>{" "}
               for any queries, further information, or to start your journey
               with us.
               <br />

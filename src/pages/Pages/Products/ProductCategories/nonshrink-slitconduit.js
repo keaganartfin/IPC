@@ -35,7 +35,6 @@ const NonShrinkSlitConduit = () => {
                 <Col xxl={9}>
                   <Card>
                     <CardBody>
-                      <h5>Slit Conduit</h5>
                       <iframe
                         src={pdfPath}
                         style={{ width: "100%", height: "1150px" }}

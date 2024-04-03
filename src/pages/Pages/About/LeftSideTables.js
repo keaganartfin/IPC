@@ -1,32 +1,122 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardBody,
-  Col,
-  Table,
-  Nav,
-  NavItem,
-  NavLink,
-  Row,
-  TabContent,
-  TabPane,
-} from "reactstrap";
-import classnames from "classnames";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Card, CardBody, Col, Table } from "reactstrap";
 import { Autoplay } from "swiper/modules";
 import SwiperCore from "swiper";
 
 const LeftSideTables = () => {
-  const toggleActivityTab = (tab) => {
-    if (activityTab !== tab) {
-      setActivityTab(tab);
-    }
-  };
   SwiperCore.use([Autoplay]);
   return (
     <Col xxl={3}>
+      <Card>
+        <CardBody>
+          <h3 className="card-title mb-4">Helpful Links</h3>
+          <div className="verti-sitemap">
+            <ul className="mb-0 list-unstyled">
+              <li className="p-0 parent-title">
+                <Link to="/home" className="fw-medium fs-14">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <div className="first-list">
+                  <div className="list-wrap">
+                    <Link to="#" className="fw-medium text-primary">
+                      <i className="ri-airplay-line me-1 align-bottom"></i>{" "}
+                      Company
+                    </Link>
+                  </div>
+                  <ul className="second-list list-unstyled">
+                    <li>
+                      <Link to="/company?tab=1">About Us</Link>
+                    </li>
+                    <li>
+                      <Link to="/company?tab=2">FAQs</Link>
+                    </li>
+                    <li>
+                      <Link to="/company?tab=3">Contact Us</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="first-list">
+                  <div className="list-wrap">
+                    <Link to="#" className="fw-medium text-primary">
+                      <i className="ri-stack-line me-1 align-bottom"></i>{" "}
+                      Products
+                    </Link>
+                  </div>
+                  <ul className="second-list list-unstyled">
+                    <li>
+                      <Link to="/products/heat-shrink-tubing">
+                        Heat Shrink Tubing
+                      </Link>
+                      <ul className="third-list list-unstyled">
+                        <li>
+                          <Link to="/products/heat-shrink-tubing/pvc">PVC</Link>
+                        </li>
+                        <li>
+                          <Link to="/products/heat-shrink-tubing/polyolefin">
+                            Polyolefin
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/products/heat-shrink-tubing/neoprene-and-fluoroelastomer">
+                            Neoprene/Fluoroelastomer
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <Link to="/products/non-shrink-tubing">
+                        Non-Shrink Tubing
+                      </Link>
+                      <ul className="third-list list-unstyled">
+                        <li>
+                          <Link to="/products/non-shrink-tubing/sleeving">
+                            Sleeving
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/products/non-shrink-tubing/spiral-wrap">
+                            Spiral Wrap
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/products/non-shrink-tubing/slit-conduit">
+                            Slit Conduit
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <Link to="/products/specialty-products-services">
+                        Speciality Products & Services
+                      </Link>
+                      <ul className="third-list list-unstyled">
+                        <li>
+                          <Link to="/products/specialty-products-services/adhesives">
+                            Adhesives
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/products/specialty-products-services/value-added">
+                            Value Added Services
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/products/specialty-products-services/identification-markers">
+                            Identification Markers
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </CardBody>
+      </Card>
       <Card>
         <CardBody>
           <h3 className="card-title mb-3">Contact Card</h3>
@@ -102,109 +192,6 @@ const LeftSideTables = () => {
                 </span>
               </Link>
             </div>
-          </div>
-        </CardBody>
-      </Card>
-      <Card>
-        <CardBody>
-          <h3 className="card-title mb-4">Helpful Links</h3>
-          <div className="verti-sitemap">
-            <ul className="mb-0 list-unstyled">
-              <li className="p-0 parent-title">
-                <Link to="/home" className="fw-medium fs-14">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <div className="first-list">
-                  <div className="list-wrap">
-                    <Link to="#" className="fw-medium text-primary">
-                      <i className="ri-airplay-line me-1 align-bottom"></i>{" "}
-                      Company
-                    </Link>
-                  </div>
-                  <ul className="second-list list-unstyled">
-                    <li>
-                      <Link to="/company">About Us</Link>
-                    </li>
-                    <li>
-                      <Link to="/company">FAQs</Link>
-                    </li>
-                    <li>
-                      <Link to="/company">Contact Us</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="first-list">
-                  <div className="list-wrap">
-                    <Link to="#" className="fw-medium text-primary">
-                      <i className="ri-stack-line me-1 align-bottom"></i>{" "}
-                      Products
-                    </Link>
-                  </div>
-                  <ul className="second-list list-unstyled">
-                    <li>
-                      <Link to="/heat-shrink-tubing">Heat Shrink Tubing</Link>
-                      <ul className="third-list list-unstyled">
-                        <li>
-                          <Link to="/heat-shrink-tubing/polyolefin">
-                            Polyolefin
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/heat-shrink-tubing/kynar">
-                            Kynar (PVDF)
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/heat-shrink-tubing/mylar">Mylar</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link to="/heat-shrink-tubing">Non-Shrink Tubing</Link>
-                      <ul className="third-list list-unstyled">
-                        <li>
-                          <Link to="/non-shrink-tubing/sleeving">Sleeving</Link>
-                        </li>
-                        <li>
-                          <Link to="/non-shrink-tubing/spiral-wrap">
-                            Spiral Wrap
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/non-shrink-tubing/slit-conduit">
-                            Slit Conduit
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link to="/speciality-products/">
-                        Speciality Products
-                      </Link>
-                      <ul className="third-list list-unstyled">
-                        <li>
-                          <Link to="/speciality-products/adhesives">
-                            Adhesives
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/speciality-products/heat-shrink-tape">
-                            Heat Shrink Tape
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/speciality-products/heat-gun">
-                            Heat Gun
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
           </div>
         </CardBody>
       </Card>

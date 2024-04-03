@@ -1,21 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Row,
-} from "reactstrap";
+import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
+import picture1 from "../../../../assets/images/ipc/adhesives.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
-
 
 const SpecialtyAdhesives = () => {
   document.title = "Team | Velzon - React Admin & Dashboard Template";
-
 
   return (
     <React.Fragment>
@@ -46,31 +38,55 @@ const SpecialtyAdhesives = () => {
                       <Row className="justify-content-evenly mb-4 about-content">
                         <h3 className="mb-3 card-header">
                           Adhesive Solutions at Insulation Products Corporation
+                          <span className="fs-5 float float-end">
+                            Product Number:{" "}
+                            <a
+                              className="badge bg-primary-subtle text-primary badge-border"
+                              target="_blank"
+                              href="/IPC/product-catalog/IP75AD"
+                            >
+                              IP75AD <i className="bx bx-link-external"></i>
+                            </a>{" "}
+                          </span>
                         </h3>
-                        <p className="mt-3 mb-5 px-5 fs-5">
-                          At Insulation Products Corporation, we pride ourselves
-                          on offering a comprehensive lineup of adhesive
-                          products tailored to meet a variety of application
-                          needs. Our selection ranges from Instant Adhesives
-                          (Cyanoacrylates) and Threadlockers (Anaerobic) to
-                          Structural Adhesives (Methacrylates) and
-                          state-of-the-art Dispensing Equipment.
-                        </p>
-                        <h3
-                          className="card-title mb-3 fs-4"
-                          style={{ paddingLeft: "1.5rem" }}
-                        >
-                          Instant Adhesives (Cyanoacrylates)
-                        </h3>
+                        <Col md={8}>
+                          <p className="mt-3 mb-5 px-5 fs-5">
+                            At Insulation Products Corporation, we pride
+                            ourselves on offering a comprehensive lineup of
+                            adhesive products tailored to meet a variety of
+                            application needs. Our selection ranges from Instant
+                            Adhesives (Cyanoacrylates) and Threadlockers
+                            (Anaerobic) to Structural Adhesives (Methacrylates)
+                            and state-of-the-art Dispensing Equipment.
+                          </p>
+                          <h3
+                            className="card-title mb-3 fs-4"
+                            style={{ paddingLeft: "1.5rem" }}
+                          >
+                            Instant Adhesives (Cyanoacrylates)
+                          </h3>
 
-                        <p className="mt-3 mb-5 fs-5 px-5">
-                          For the ultimate in convenience, ease of use,
-                          dependability, and bonding strength across a variety
-                          of surfaces like rubber, plastic, metal, and wood, our
-                          Cyanoacrylate Instant Adhesives are unmatched. Ideal
-                          for applications requiring fast fixture speed and
-                          minimal spacing.
-                        </p>
+                          <p className="mt-3 mb-5 fs-5 px-5">
+                            For the ultimate in convenience, ease of use,
+                            dependability, and bonding strength across a variety
+                            of surfaces like rubber, plastic, metal, and wood,
+                            our Cyanoacrylate Instant Adhesives are unmatched.
+                            Ideal for applications requiring fast fixture speed
+                            and minimal spacing.
+                          </p>
+                        </Col>
+                        <Col
+                          md={4}
+                          className="d-flex justify-content-center align-items-center w-full "
+                        >
+                          <div>
+                            <img
+                              className="img-fluid rounded img-thumbnail"
+                              src={picture1}
+                              alt=""
+                            />
+                          </div>
+                        </Col>
                         <h3
                           className="card-title mb-3 fs-4"
                           style={{ paddingLeft: "1.5rem" }}
@@ -117,8 +133,14 @@ const SpecialtyAdhesives = () => {
                           and sealing properties on glass, ceramics, masonry,
                           wood, painted surfaces, metals, and plastics.
                         </p>
+                      </Row>
+                    </CardBody>
+                  </Card>
+                  <Card>
+                    <CardBody>
+                      <Row className="justify-content-evenly mb-4 about-content">
                         <h3
-                          className="card-title mb-3 fs-4"
+                          className="card-title mb-3 fs-4 card-header"
                           style={{ paddingLeft: "1.5rem" }}
                         >
                           Application Systems
@@ -141,7 +163,7 @@ const SpecialtyAdhesives = () => {
                           <br />
                           Explore our adhesive solutions further by contacting
                           our specialists at{" "}
-                          <a href="tel:1.630.771.0700">1.630.771.0700</a> or via
+                          <a href="tel:6307710700">+1 (630) 771-0700</a> or via
                           email at{" "}
                           <a href="mailto:sales@insulationproducts.com">
                             sales@insulationproducts.com
@@ -149,37 +171,7 @@ const SpecialtyAdhesives = () => {
                           .
                         </p>
                         <Row>
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-user-2-fill"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Designation :</p>
-                                <h6 className="text-truncate mb-0">
-                                  Lead Designer / Developer
-                                </h6>
-                              </div>
-                            </div>
-                          </Col>
-
-                          <Col xs={6} md={4}>
-                            <div className="d-flex mt-4">
-                              <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                                <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                                  <i className="ri-global-line"></i>
-                                </div>
-                              </div>
-                              <div className="flex-grow-1 overflow-hidden">
-                                <p className="mb-1">Website :</p>
-                                <Link to="#" className="fw-semibold">
-                                  www.velzon.com
-                                </Link>
-                              </div>
-                            </div>
-                          </Col>
+                          
                         </Row>
                       </Row>
                     </CardBody>

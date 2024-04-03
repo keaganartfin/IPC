@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IPC/static/css/main.b295f7cc.css",
+    "main.css": "/IPC/static/css/main.eaba2f5e.css",
     "main.js": "/IPC/static/js/main.85e3f259.js",
     "static/js/488.c8fda7c1.chunk.js": "/IPC/static/js/488.c8fda7c1.chunk.js",
     "static/media/IPC-Catalog-2.pdf": "/IPC/static/media/IPC-Catalog-2.e095c93ef66ee59f9a0d.pdf",
@@ -511,12 +511,12 @@
     "static/media/pl.svg": "/IPC/static/media/pl.7237d83fc2100d8f506957394aee807f.svg",
     "static/media/de.svg": "/IPC/static/media/de.0fce3f5135eaf251a726573f8471b664.svg",
     "static/media/bd.svg": "/IPC/static/media/bd.5ec0fab3bc8aa5078e1610b715b7427c.svg",
-    "main.b295f7cc.css.map": "/IPC/static/css/main.b295f7cc.css.map",
+    "main.eaba2f5e.css.map": "/IPC/static/css/main.eaba2f5e.css.map",
     "main.85e3f259.js.map": "/IPC/static/js/main.85e3f259.js.map",
     "488.c8fda7c1.chunk.js.map": "/IPC/static/js/488.c8fda7c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b295f7cc.css",
+    "static/css/main.eaba2f5e.css",
     "static/js/main.85e3f259.js"
   ]
 }

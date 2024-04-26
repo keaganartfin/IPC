@@ -5,7 +5,7 @@ import withRouter from "../Components/Common/withRouter";
 //import Components
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+import Footer from "../pages/Landing/Job/Footer.js";
 import RightSidebar from "../Components/Common/RightSidebar";
 
 //import actions

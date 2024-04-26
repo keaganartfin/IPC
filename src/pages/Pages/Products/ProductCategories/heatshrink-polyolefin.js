@@ -8,14 +8,27 @@ import picture2 from "../../../../assets/images/ipc/IP34SR.png";
 import picture3 from "../../../../assets/images/ipc/IP30HS.png";
 import picture4 from "../../../../assets/images/ipc/IP32IP.png";
 import LeftSideTables from "../../About/LeftSideTables";
+import bgImg from "../../../../assets/images/background-image.png";
 
 const HeatShrinkPolyolefin = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+  document.title = "Team | Insulation Products Corporation";
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -57,7 +70,7 @@ const HeatShrinkPolyolefin = () => {
                           <p className="mt-3 mb-5 px-5 fs-5">
                             Insulation Products Corporation is your go-to source
                             for an expansive selection of{" "}
-                            <strong>Polyolefin Shrink Tubing</strong>. Our
+                            Polyolefin Shrink Tubing. Our
                             offerings encompass a broad range of styles and
                             shrink ratios, including both single-wall and
                             dual-wall configurations. Our lineup includes
@@ -91,19 +104,19 @@ const HeatShrinkPolyolefin = () => {
                           <p className="mt-3 mb-5 px-5 fs-5">
                             <ul>
                               <li>
-                                <strong>Thin Wall Polyolefin Tubing:</strong>{" "}
+                                Thin Wall Polyolefin Tubing:{" "}
                                 Highly flexible and ideal for conserving space
                                 in compact areas.
                               </li>
                               <li>
-                                <strong>Semi-Rigid Polyolefin Tubing:</strong>{" "}
+                                Semi-Rigid Polyolefin Tubing:{" "}
                                 Designed to retain its integrity without
                                 splitting upon shrinking.
                               </li>
                               <li>
-                                <strong>
+                                
                                   Adhesive-Lined Polyolefin Tubing:
-                                </strong>{" "}
+                                {" "}
                                 Perfect for any scenario necessitating
                                 additional moisture protection or strain relief.
                               </li>

@@ -9,7 +9,7 @@ import UiContent from '../../../Components/Common/UiContent';
 import BreadCrumb from '../../../Components/Common/BreadCrumb';
 
 // Import Images
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../../assets/images/background-image.png";
 import avatar2 from "../../../assets/images/users/avatar-2.jpg";
 import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 import avatar4 from "../../../assets/images/users/avatar-4.jpg";
@@ -190,7 +190,7 @@ const UiTabs = () => {
         }
     };
 
-    document.title = "Tabs | Velzon - React Admin & Dashboard Template";
+    document.title = "Tabs | Insulation Products Corporation";
 
     return (
         <React.Fragment>

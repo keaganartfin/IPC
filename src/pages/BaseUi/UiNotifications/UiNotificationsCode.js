@@ -116,7 +116,7 @@ const [position, setPosition] = useState();
             <ToastHeader toggle={() => setToast11(!toast11)}>
                 <img src={logosm} className="rounded me-2"
                     alt="..." height="20" />
-                <strong className="me-auto">Velzon</strong>
+                <strong className="me-auto">Velzon
                 <small style={{ marginLeft: "150px" }}>11 mins ago</small>
             </ToastHeader>
             <ToastBody>

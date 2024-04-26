@@ -5,7 +5,7 @@ import KYC from './KYCVerification';
 
 
 const KYCVerification = () => {
-    document.title ="KYC Application | Velzon - React Admin & Dashboard Template";
+    document.title ="KYC Application | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

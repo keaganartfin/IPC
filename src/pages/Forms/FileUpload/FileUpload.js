@@ -41,7 +41,7 @@ const FileUpload = () => {
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
   }
-  document.title ="File Upload | Velzon - React Admin & Dashboard Template";
+  document.title ="File Upload | Insulation Products Corporation";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -101,7 +101,7 @@ const FileUpload = () => {
                                   {f.name}
                                 </Link>
                                 <p className="mb-0">
-                                  <strong>{f.formattedSize}</strong>
+                                  {f.formattedSize}
                                 </p>
                               </Col>
                             </Row>

@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardBody, Col, Row, Label, Input } from "reactstrap";
 
 import contactimg from "../../../assets/images/illustrations/contactus.png";
+import bgImg from "../../../assets/images/background-image.png";
 
 const Contact = () => {
   return (
@@ -177,18 +178,15 @@ const Contact = () => {
             </Col>
             <Col md={4}>
               <div className="mb-3">
-                <Label for="ForminputState" className="form-label">
+                <Label for="statenameInput" className="form-label">
                   State
                 </Label>
-                <select
-                  id="ForminputState"
-                  className="form-select"
-                  data-choices
-                  data-choices-sorting="true"
-                >
-                  <option>Choose...</option>
-                  <option>...</option>
-                </select>
+                <Input
+                  type="text"
+                  className="form-control"
+                  placeholder="Illinois"
+                  id="statenameInput"
+                />
               </div>
             </Col>
             <Col md={12}>
@@ -196,12 +194,13 @@ const Contact = () => {
                 <Label for="ForminputState" className="form-label">
                   Message
                 </Label>
-                <Input
+                <textarea
                   required
                   type="url"
                   className="form-control"
                   id="contactMessage"
                   placeholder="What can we help with, today?"
+                  rows="4"
                 />
               </div>
             </Col>

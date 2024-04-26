@@ -207,7 +207,7 @@ const Chat = () => {
     setcurMessage(curMessage + event.emoji);
   };
 
-  document.title = "Chat | Velzon - React Admin & Dashboard Template";
+  document.title = "Chat | Insulation Products Corporation";
 
   return (
     <React.Fragment>

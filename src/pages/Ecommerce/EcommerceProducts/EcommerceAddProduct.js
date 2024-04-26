@@ -46,7 +46,7 @@ import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 const EcommerceAddProduct = (props) => {
-  document.title = "Create Product | Velzon - React Admin & Dashboard Template";
+  document.title = "Create Product | Insulation Products Corporation";
 
   const history = useNavigate();
   const dispatch = useDispatch();
@@ -393,7 +393,7 @@ const EcommerceAddProduct = (props) => {
                                     {f.name}
                                   </Link>
                                   <p className="mb-0">
-                                    <strong>{f.formattedSize}</strong>
+                                    {f.formattedSize}
                                   </p>
                                 </Col>
                               </Row>

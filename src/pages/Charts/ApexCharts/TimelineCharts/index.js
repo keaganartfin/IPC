@@ -13,7 +13,7 @@ import {
 
 
 const TimelineCharts = () => {
-    document.title = "TimeLine Charts | Velzon - React Admin & Dashboard Template";
+    document.title = "TimeLine Charts | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

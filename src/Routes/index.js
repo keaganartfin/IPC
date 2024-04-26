@@ -4,12 +4,11 @@ import { Routes, Route } from "react-router-dom";
 //Layouts
 import NonAuthLayout from "../Layouts/NonAuthLayout";
 import VerticalLayout from "../Layouts/index";
-import CatalogMain from "../pages/Pages/Products/ProductCategories/catalog-main"; // Ensure this import is correct
-
+import CatalogMain from "../pages/Pages/Products/ProductCategories/catalog-main";
 //routes
 import { authProtectedRoutes, publicRoutes } from "./allRoutes";
 import { ipcPages } from "../common/data";
-import ProductInsights from "../pages/Pages/Products/ProductInsights";
+// import ProductInsights from "../pages/Pages/Products/ProductInsights";
 
 const Index = () => {
   return (
@@ -41,7 +40,7 @@ const Index = () => {
           }
         />
 
-        {ipcPages.map((page, index) => (
+        {/* {ipcPages.map((page, index) => (
           <Route
             key={`ipc-${index}`}
             path={page.link}
@@ -49,7 +48,7 @@ const Index = () => {
               <ProductInsights title={page.title} content={page.content} />
             }
           />
-        ))}
+        ))} */}
       </Routes>
     </React.Fragment>
   );

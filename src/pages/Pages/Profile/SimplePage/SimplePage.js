@@ -69,7 +69,7 @@ const SimplePage = () => {
     }
   };
 
-  document.title = "Profile | Velzon - React Admin & Dashboard Template";
+  document.title = "Profile | Insulation Products Corporation";
 
   return (
     <React.Fragment>

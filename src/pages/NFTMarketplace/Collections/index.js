@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { topCollection } from "../../../common/data";
 
 const Collections = () => {
-    document.title = "Collections | Velzon - React Admin & Dashboard Template";
+    document.title = "Collections | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

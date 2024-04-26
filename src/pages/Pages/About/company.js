@@ -20,7 +20,7 @@ import SwiperCore from "swiper";
 
 //Images
 import profileBg from "../../../assets/images/profile-bg.jpg";
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../assets/images/background-image.png";
 
 import LeftSideTables from "./LeftSideTables";
 import Faqs from "./faq";
@@ -38,8 +38,8 @@ import WhereToBuy from "./wheretobuy";
 const Company = () => {
   SwiperCore.use([Autoplay]);
 
-  const [activeTab, setActiveTab] = useState("1");
-  const [activityTab, setActivityTab] = useState("1");
+  const [activeTab, setActiveTab] = useState("aboutus");
+  const [activityTab, setActivityTab] = useState("aboutus");
   const location = useLocation();
 
   useEffect(() => {
@@ -56,12 +56,24 @@ const Company = () => {
     }
   };
 
-  document.title = "FAQs | Velzon - React Admin & Dashboard Template";
+  // document.title = "FAQs | Insulation Products Corporation";
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -82,59 +94,59 @@ const Company = () => {
             <Col lg={12}>
               <div>
                 <TabContent activeTab={activeTab} className="pt-4">
-                  <TabPane tabId="1">
+                  <TabPane tabId="aboutus">
                     <Row>
                       <AboutUs />
                       <LeftSideTables />
                     </Row>
                   </TabPane>
-                  <TabPane tabId="2">
+                  <TabPane tabId="faqs">
                     <Row>
                       <Faqs />
                       <LeftSideTables />
                     </Row>
                   </TabPane>
-                  <TabPane tabId="3">
+                  <TabPane tabId="contact">
                     <Row>
                       <Contact />
                       <LeftSideTables />
                     </Row>
                   </TabPane>
-                  <TabPane tabId="4">
+                  <TabPane tabId="catalog">
                     <Row>
                       <ProductCatalog />
                     </Row>
                   </TabPane>
-                  <TabPane tabId="5">
+                  <TabPane tabId="survey">
                     <Row>
                       <CustomerSurvey />
                       <LeftSideTables />
                     </Row>
                   </TabPane>
-                  <TabPane tabId="6">
+                  {/* <TabPane tabId="6">
                     <Row>
                       <Partners />
                       <LeftSideTables />
                     </Row>
-                  </TabPane>
-                  <TabPane tabId="7">
+                  </TabPane> */}
+                  {/* <TabPane tabId="7">
                     <Row>
                       <Awards />
                       <LeftSideTables />
                     </Row>
-                  </TabPane>
-                  <TabPane tabId="8">
+                  </TabPane> */}
+                  <TabPane tabId="resources">
                     <Row>
                       <MediaResources />
                       <LeftSideTables />
                     </Row>
                   </TabPane>
-                  <TabPane tabId="9">
+                  {/* <TabPane tabId="9">
                     <Row>
                       <WhereToBuy />
                       <LeftSideTables />
                     </Row>
-                  </TabPane>
+                  </TabPane> */}
                 </TabContent>
               </div>
             </Col>

@@ -345,7 +345,7 @@ const UiAccordions = () => {
         setcoll9(!coll9);
     };
 
-    document.title="Accordions | Velzon - React Admin & Dashboard Template";
+    document.title="Accordions | Insulation Products Corporation";
     
     return (
         <React.Fragment>

@@ -5,11 +5,11 @@ import ParticlesAuth from "../ParticlesAuth";
 
 //import images
 import logoLight from "../../../assets/images/logo-light.png";
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../../assets/images/background-image.png";
 
 
 const BasicLockScreen = () => {
-document.title="Lock Screen | Velzon - React Admin & Dashboard Template";
+document.title="Lock Screen | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="auth-page-content">

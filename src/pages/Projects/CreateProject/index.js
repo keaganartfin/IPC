@@ -55,7 +55,7 @@ const CreateProject = () => {
         return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
     }
 
-document.title="Create Project | Velzon - React Admin & Dashboard Template";
+document.title="Create Project | Insulation Products Corporation";
 
     return (
         <React.Fragment>
@@ -184,7 +184,7 @@ document.title="Create Project | Velzon - React Admin & Dashboard Template";
                                                         {f.name}
                                                         </Link>
                                                         <p className="mb-0">
-                                                        <strong>{f.formattedSize}</strong>
+                                                        {f.formattedSize}
                                                         </p>
                                                     </Col>
                                                     </Row>

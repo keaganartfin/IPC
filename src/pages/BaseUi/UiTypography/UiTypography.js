@@ -12,7 +12,7 @@ import { DisplayHeadingExample, HeadingsExample, BlockquotesExample, BlockquoteC
 
 
 const UiTypography = () => {
-    document.title="Typography | Velzon - React Admin & Dashboard Template";
+    document.title="Typography | Insulation Products Corporation";
     return (
         <React.Fragment>
             <UiContent />
@@ -319,7 +319,7 @@ const UiTypography = () => {
                                         <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
                                         <p><u>This line of text will render as underlined</u></p>
                                         <p><small>This line of text is meant to be treated as fine print.</small></p>
-                                        <p><strong>This line rendered as bold text.</strong></p>
+                                        <p>This line rendered as bold text.</p>
                                         <p className="mb-0"><em>This line rendered as italicized text.</em></p>
                                     </div>
                                     <div className="d-none code-view">
@@ -341,8 +341,8 @@ const UiTypography = () => {
 
                                 <CardBody>
                                     <p className="text-muted">Use <code>list-unstyled</code> class Remove the default list-style and left margin on list
-                                        items (immediate children only). <strong>This only applies to immediate
-                                            children list items</strong>, meaning you will need to add the class
+                                        items (immediate children only). This only applies to immediate
+                                            children list items, meaning you will need to add the class
                                         for any nested lists.</p>
 
                                     <div className="live-preview">

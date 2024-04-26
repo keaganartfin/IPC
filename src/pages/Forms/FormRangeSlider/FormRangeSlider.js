@@ -40,7 +40,7 @@ const FormRangeSlider = () => {
       <div className="page-content">
 
         <title>
-          Range Slider | Velzon - React Admin & Dashboard Template
+          Range Slider | Insulation Products Corporation
         </title>
 
         <Container fluid>

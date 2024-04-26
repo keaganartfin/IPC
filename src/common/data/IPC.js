@@ -88920,7 +88920,7 @@ const partData = [
 ];
 const partDataOld = [
   {
-    SpecSheet: "IP33PO.pdf",
+    SpecSheet: "/IPC/product-catalog/IP33PO1",
     PartID: "IP33PO",
     PartType: "Heat Shrink Tubing",
     Description: "Standard Wall Polyolefin",
@@ -88931,7 +88931,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP29CG-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP29CG",
     PartID: "IP29CG",
     PartType: "Heat Shrink Tubing",
     Description: "Commercial Grade Poly",
@@ -88942,7 +88942,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP33TW-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP33TW",
     PartID: "IP33TW",
     PartType: "Heat Shrink Tubing",
     Description: "Thin Wall Polyolefin",
@@ -88953,7 +88953,7 @@ const partDataOld = [
     UL: "U/L & CSA",
   },
   {
-    SpecSheet: "IP49VP-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP49VP",
     PartID: "IP49VP",
     PartType: "Heat Shrink Tubing",
     Description: "Very Flexible Polyolefin",
@@ -88964,7 +88964,7 @@ const partDataOld = [
     UL: "U/L & CSA",
   },
   {
-    SpecSheet: "IP34SR.pdf",
+    SpecSheet: "/IPC/product-catalog/IP34SR",
     PartID: "IP34SR",
     PartType: "Heat Shrink Tubing",
     Description: "Semi Rigid Polyolefin",
@@ -88975,7 +88975,7 @@ const partDataOld = [
     UL: "U/L & CSA",
   },
   {
-    SpecSheet: "IP42MW.pdf",
+    SpecSheet: "/IPC/product-catalog/IP42MW",
     PartID: "IP42MW",
     PartType: "Heat Shrink Tubing",
     Description: "Melt Wall Polyolefin",
@@ -88986,7 +88986,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP44A2-IP45A3.pdf",
+    SpecSheet: "/IPC/product-catalog/IP44A2IP45A3",
     PartID: "IP44A2",
     PartType: "Heat Shrink Tubing",
     Description: "2:1 Polyolefin W/Adhesive",
@@ -88997,7 +88997,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP44A2-IP45A3.pdf",
+    SpecSheet: "/IPC/product-catalog/IP44A2IP45A3",
     PartID: "IP45A3",
     PartType: "Heat Shrink Tubing",
     Description: "3:1 Polyolefin W/Adhesive",
@@ -89008,7 +89008,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP46MD-IP47HV.pdf",
+    SpecSheet: "/IPC/product-catalog/IP46MDIP47HV",
     PartID: "IP46MD",
     PartType: "Heat Shrink Tubing",
     Description: "Med Wall Adhesive Tubing",
@@ -89019,7 +89019,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP46MD-IP47HV.pdf",
+    SpecSheet: "/IPC/product-catalog/IP46MDIP47HV",
     PartID: "IP47HV",
     PartType: "Heat Shrink Tubing",
     Description: "Heavy Wall Adhesive Tubing",
@@ -89030,7 +89030,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP53MP-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP53MP",
     PartID: "IP53MP",
     PartType: "Heat Shrink Tubing",
     Description: "Medical Grade",
@@ -89041,7 +89041,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP30HS-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP30HS",
     PartID: "IP30HS",
     PartType: "Heat Shrink Tubing",
     Description: "Standard Wall PVC",
@@ -89052,7 +89052,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP30HS-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP30HS",
     PartID: "IP30HW",
     PartType: "Heat Shrink Tubing",
     Description: "Heavy Wall PVC",
@@ -89063,7 +89063,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP32IP_Irradiated_Heat_Shrink_PVC.pdf",
+    SpecSheet: "/IPC/product-catalog/IP32IPIrradiatedHeatShrinkPVC",
     PartID: "IP32IP",
     PartType: "Heat Shrink Tubing",
     Description: "Irradiated PVC",
@@ -89074,7 +89074,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "Layflat-PVC-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/LayflatPVC",
     PartID: "IP3LF",
     PartType: "Heat Shrink Tubing",
     Description: "Layflat PVC",
@@ -89085,7 +89085,7 @@ const partDataOld = [
     UL: "U/L VW-1",
   },
   {
-    SpecSheet: "IP37SH-IP36TH-IP39LH-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP37SHIP36THIP39LH",
     PartID: "IP36TH",
     PartType: "Heat Shrink Tubing",
     Description: "Thin Wall PTFE",
@@ -89096,7 +89096,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP37SH-IP36TH-IP39LH-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP37SHIP36THIP39LH",
     PartID: "IP37SH",
     PartType: "Heat Shrink Tubing",
     Description: "Standard Wall PTFE",
@@ -89107,7 +89107,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP38FE-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP38FE",
     PartID: "IP38FE",
     PartType: "Heat Shrink Tubing",
     Description: "FEP",
@@ -89118,7 +89118,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP37SH-IP36TH-IP39LH-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP37SHIP36THIP39LHTWSWLWHSTFE",
     PartID: "IP39LH",
     PartType: "Heat Shrink Tubing",
     Description: "Light Wall PTFE",
@@ -89129,7 +89129,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP35KY.pdf",
+    SpecSheet: "/IPC/product-catalog/IP35KY",
     PartID: "IP35KY",
     PartType: "Heat Shrink Tubing",
     Description: "Kynar",
@@ -89140,7 +89140,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP48MH-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP48MH",
     PartID: "IP48MH",
     PartType: "Heat Shrink Tubing",
     Description: "Mylar",
@@ -89151,7 +89151,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP41NE-IP43VT.pdf",
+    SpecSheet: "/IPC/product-catalog/IP41NEIP43VT",
     PartID: "IP41NE",
     PartType: "Heat Shrink Tubing",
     Description: "Neoprene",
@@ -89162,7 +89162,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP56DR-Diesel-Resistant.pdf",
+    SpecSheet: "/IPC/product-catalog/IP56DRDieselResistant",
     PartID: "IP56DR",
     PartType: "Heat Shrink Tubing",
     Description: "Diesel Resistant",
@@ -89173,7 +89173,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP41NE-IP43VT.pdf",
+    SpecSheet: "/IPC/product-catalog/IP41NEIP43VT",
     PartID: "IP43VT",
     PartType: "Heat Shrink Tubing",
     Description: "Fluoroelastomer",
@@ -89184,7 +89184,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP55FL.pdf",
+    SpecSheet: "/IPC/product-catalog/IP55FL",
     PartID: "IP55FL",
     PartType: "Heat Shrink Tubing",
     Description: "Fluoropolymer",
@@ -89195,7 +89195,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP52EC-plugged-cap-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP52ECpluggedcap",
     PartID: "IP52EC",
     PartType: "Heat Shrink Tubing",
     Description: "End Caps",
@@ -89206,7 +89206,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP17TW-IP18SW-IP19LW-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP17TWIP18SWIP19LW",
     PartID: "IP17TW",
     PartType: "Non-Shrink Tubing",
     Description: "Thin Wall TFE",
@@ -89217,7 +89217,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP17TW-IP18SW-IP19LW-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP17TWIP18SWIP19LW",
     PartID: "IP18SW",
     PartType: "Non-Shrink Tubing",
     Description: "Standard Wall TFE",
@@ -89228,7 +89228,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP17TW-IP18SW-IP19LW-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP17TWIP18SWIP19LW",
     PartID: "IP19LW",
     PartType: "Non-Shrink Tubing",
     Description: "Light Wall TFE",
@@ -89239,7 +89239,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP10EX-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP10EX",
     PartID: "IP10EX",
     PartType: "Non-Shrink Tubing",
     Description: "Standard Wall PVC",
@@ -89250,7 +89250,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP10EX-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP10EXExtrudedPVC",
     PartID: "IP11HW",
     PartType: "Non-Shrink Tubing",
     Description: "Heavy Wall PVC",
@@ -89261,7 +89261,7 @@ const partDataOld = [
     UL: "U/L VW-1 & CSA OFT",
   },
   {
-    SpecSheet: "IP15PV-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP15PV",
     PartID: "IP15PV",
     PartType: "Non-Shrink Tubing",
     Description: "Fractional Wall PVC",
@@ -89272,7 +89272,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP12GA-IP1274-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP12GAIP1274",
     PartID: "IP1274",
     PartType: "Non-Shrink Tubing",
     Description: "Low Temperature PVC",
@@ -89283,7 +89283,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP12GA-IP1274-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP12GAIP1274",
     PartID: "IP12GA",
     PartType: "Non-Shrink Tubing",
     Description: "General Purpose PVC",
@@ -89294,7 +89294,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP64FS-IP65VC-IP66AC-IP67SC-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC",
     PartID: "IP64FS",
     PartType: "Non-Shrink Tubing",
     Description: "Heat Treated Fiberglass",
@@ -89305,7 +89305,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP64FS-IP65VC-IP66AC-IP67SC-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC",
     PartID: "IP65VC",
     PartType: "Non-Shrink Tubing",
     Description: "Vinyl Coated Fiberglass",
@@ -89316,7 +89316,7 @@ const partDataOld = [
     UL: "U/L & NEMA TF-1",
   },
   {
-    SpecSheet: "IP64FS-IP65VC-IP66AC-IP67SC-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC",
     PartID: "IP66AC",
     PartType: "Non-Shrink Tubing",
     Description: "Acrylic Coated Fiberglass",
@@ -89327,7 +89327,7 @@ const partDataOld = [
     UL: "U/L & NEMA TF-1",
   },
   {
-    SpecSheet: "IP64FS-IP65VC-IP66AC-IP67SC-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC",
     PartID: "IP67SC",
     PartType: "Non-Shrink Tubing",
     Description: "Silicone Coated Fiberglass",
@@ -89338,7 +89338,7 @@ const partDataOld = [
     UL: "U/L & NEMA TF-1",
   },
   {
-    SpecSheet: "IP61ES-IP62EF-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP61ESIP62EF",
     PartID: "IP61ES",
     PartType: "Non-Shrink Tubing",
     Description: "Expandable Polyester",
@@ -89349,7 +89349,7 @@ const partDataOld = [
     UL: "U/L & CSA",
   },
   {
-    SpecSheet: "IP61ES-IP62EF-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP61ESIP62EF",
     PartID: "IP62EF",
     PartType: "Non-Shrink Tubing",
     Description: "FR Expandable Polyester",
@@ -89360,7 +89360,7 @@ const partDataOld = [
     UL: "U/L VW-1",
   },
   {
-    SpecSheet: "IP63ES-Roundit2000.pdf",
+    SpecSheet: "/IPC/product-catalog/IP63ESRoundit2000",
     PartID: "IP63ES",
     PartType: "Non-Shrink Tubing",
     Description: "Roundit\u00ae",
@@ -89371,7 +89371,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "IP71NS-IP72PS-IP73PP-1.pdf",
+    SpecSheet: "/IPC/product-catalog/IP71NSIP72PSIP73PP1",
     PartID: "IP71NS",
     PartType: "Non-Shrink Tubing",
     Description: "Nylon Slit Loom",
@@ -89382,7 +89382,7 @@ const partDataOld = [
     UL: "U/L 94",
   },
   {
-    SpecSheet: "IP71NS-IP72PS-IP73PP-1.pdf",
+    SpecSheet: "/IPC/product-catalog/IP71NSIP72PSIP73PP1",
     PartID: "IP72PS",
     PartType: "Non-Shrink Tubing",
     Description: "Polyethylene Slit Loom",
@@ -89393,7 +89393,7 @@ const partDataOld = [
     UL: "U/L 94",
   },
   {
-    SpecSheet: "IP71NS-IP72PS-IP73PP-1.pdf",
+    SpecSheet: "/IPC/product-catalog/IP71NSIP72PSIP73PP1",
     PartID: "IP73PP",
     PartType: "Non-Shrink Tubing",
     Description: "Polypropylene Slit Loom",
@@ -89404,7 +89404,7 @@ const partDataOld = [
     UL: "U/L 94 V-2",
   },
   {
-    SpecSheet: "IP13SP-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP13SP",
     PartID: "IP13SP",
     PartType: "Non-Shrink Tubing",
     Description: "Spiral Wrap",
@@ -89415,7 +89415,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "Adhesives-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/Adhesives",
     PartID: "IP75AD",
     PartType: "Specialty Products & Services",
     Description: "Adhesives",
@@ -89426,7 +89426,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "IP69HT-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/IP69HT",
     PartID: "IP69HT",
     PartType: "Specialty Products & Services",
     Description: "Heat Shrink Polyolefin Tape",
@@ -89437,7 +89437,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "Markers-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/Markers",
     PartID: "Markers",
     PartType: "Specialty Products & Services",
     Description: "Identification Markers",
@@ -89448,7 +89448,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "Tubing-Kits-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/TubingKits",
     PartID: "Tubing Kits",
     PartType: "Specialty Products & Services",
     Description: "Tubing Kits",
@@ -89459,7 +89459,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "Value-Added.pdf",
+    SpecSheet: "/IPC/product-catalog/ValueAdded",
     PartID: "Value-Added",
     PartType: "Specialty Products & Services",
     Description: "Value-Added Services",
@@ -89470,7 +89470,7 @@ const partDataOld = [
     UL: "",
   },
   {
-    SpecSheet: "Non-Metallic-Tubing-CT-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/NonMetallicTubingCT",
     PartID: "Non-Metallic Conduit\u00a0Tubing",
     PartType: "Specialty Products & Services",
     Description: "Flexible, Non-Metallic Electrical Tubing",
@@ -89481,7 +89481,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "Non-Metallic-90-Connector-CC90-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/NonMetallic90ConnectorCC90",
     PartID: "90\u00b0 Conduit Connectors",
     PartType: "Specialty Products & Services",
     Description: "90\u00b0 Non-Metallic Conduit Connectors, Liquid-Tight",
@@ -89492,11 +89492,11 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "Non-Metallic-Straight-Connector-CCS-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/NonMetallicStraightConnectorCCS",
     PartID: "Straight Conduit Connectors",
     PartType: "Specialty Products & Services",
     Description:
-      "Straight Flexible, Non-Metallic, Electrical Tubing Connectors,\n          Liquid-Tight",
+      "Straight Flexible, Non-Metallic,<br> Electrical Tubing Connectors, Liquid-Tight",
     OperatingTemp: "",
     AMS: "",
     MIL: "",
@@ -89504,7 +89504,7 @@ const partDataOld = [
     UL: "U/L",
   },
   {
-    SpecSheet: "Non-Metallic-Coupling-CC-2016.pdf",
+    SpecSheet: "/IPC/product-catalog/NonMetallicCouplingCC",
     PartID: "Couplings",
     PartType: "Specialty Products & Services",
     Description: "Non-Metallic Conduit Coupling, Liquid-Tight",

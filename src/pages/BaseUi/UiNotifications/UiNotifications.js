@@ -46,7 +46,7 @@ const UiNotifications = () => {
     const closeiconnotify = () => toast("Welcome Back ! This is a Toast Notification", { position: "top-right", hideProgressBar: true, className: 'bg-success text-white' });
     const durationnotify = () => toast("Toast Duration 5s", { position: "top-right", hideProgressBar: false, className: 'bg-success text-white' });
 
-    document.title = "Notifications | Velzon - React Admin & Dashboard Template";
+    document.title = "Notifications | Insulation Products Corporation";
 
     return (
         <React.Fragment>
@@ -219,7 +219,7 @@ const UiNotifications = () => {
                                                     <ToastHeader toggle={() => setToast11(!toast11)}>
                                                         <img src={logosm} className="rounded me-2"
                                                             alt="..." height="20" />
-                                                        <strong className="me-auto">Velzon</strong>
+                                                        <strong className="me-auto">Velzon
                                                         <small style={{ marginLeft: "150px" }}>11 mins ago</small>
                                                     </ToastHeader>
                                                     <ToastBody>

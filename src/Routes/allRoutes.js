@@ -12,7 +12,6 @@ import JobLanding from "../pages/Landing/Job";
 import ContactUs from "../pages/Pages/ContactUs/ContactUs";
 import OurSuppliers from "../pages/Pages/OurSuppliers/OurSuppliers";
 import Company from "../pages/Pages/About/company";
-import ProductInsights from "../pages/Pages/Products/ProductInsights";
 import HeatShrinkAdhesiveLinedPoly from "../pages/Pages/Products/ProductCategories/heatshrink-adhesivelinedpoly";
 import HeatShrinkEndCaps from "../pages/Pages/Products/ProductCategories/heatshrink-endcaps";
 import HeatShrinkPVC from "../pages/Pages/Products/ProductCategories/heatshrink-pvc";
@@ -48,7 +47,6 @@ const authProtectedRoutes = [
   { path: "/faqs", component: <Faqs /> },
   { path: "/contact", component: <ContactUs /> },
   { path: "/our-suppliers", component: <OurSuppliers /> },
-  { path: "/product-catalog", component: <ProductInsights /> },
   { path: "/product-specs", component: <ProductCatalog /> },
   { path: "/company", component: <Company /> },
 
@@ -86,7 +84,7 @@ const authProtectedRoutes = [
     component: <HeatShrinkKynar />,
   },
   {
-    path: "/products/heat-shrink-tubing/modified-fluoroelastomer",
+    path: "/products/heat-shrink-tubing/modified-fluoropolymer",
     component: <HeatShrinkModifiedFluoro />,
   },
   {

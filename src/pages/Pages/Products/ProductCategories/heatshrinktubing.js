@@ -3,16 +3,30 @@ import { Link } from "react-router-dom";
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
-import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
+import bgImg from "../../../../assets/images/background-image.png";
+import img2 from "../../../../assets/images/small/img-2.jpg";
+import { HST } from "../data/heatshrinktubing-data";
 
 const HeatShrinkTubing = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+  document.title = "Team | Insulation Products Corporation";
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -62,12 +76,50 @@ const HeatShrinkTubing = () => {
                           Specifications pages are also available to address
                           common inquiries.
                         </p>
-                        <Row>
-                          
-                        </Row>
                       </Row>
                     </CardBody>
                   </Card>
+                  <Row>
+                    {HST.map((item, index) => (
+                      <Col sm={6} xl={4} key={index}>
+                        <Card>
+                          <CardBody>
+                            <img
+                              src={item.image}
+                              alt={item.title}
+                              className="img-fluid rounded"
+                            />
+                          </CardBody>
+                          <CardBody>
+                            <ul className="list-inline fs-14 text-muted">
+                              <li className="list-inline-item">
+                                {item.subtitle}
+                              </li>
+                            </ul>
+                            <Link to="#!">
+                              <h5>{item.title}</h5>
+                            </Link>
+                            <p className="text-muted fs-14">
+                              {item.description.length > 150
+                                ? item.description.slice(
+                                    0,
+                                    item.description
+                                      .substr(0, 151)
+                                      .lastIndexOf(" ")
+                                  ) + " ..."
+                                : item.description}
+                            </p>
+                            <div>
+                              <Link to={item.link} className="link-success">
+                                Learn More{" "}
+                                <i className="ri-arrow-right-line align-bottom ms-1"></i>
+                              </Link>
+                            </div>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                    ))}
+                  </Row>
                 </Col>
                 <LeftSideTables />
               </Row>

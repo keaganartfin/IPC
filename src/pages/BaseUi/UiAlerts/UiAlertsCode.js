@@ -6,42 +6,42 @@ const defaultAlertsCode =
     `
 <!-- Primary Alert -->
 <Alert color="primary">
-    <strong> Hi! </strong> A simple <b>Primary alert</b> —check it out!
+     Hi!  A simple <b>Primary alert</b> —check it out!
 </Alert>
 
 <!-- Secondary Alert -->
 <Alert color="secondary">
-    <strong> How are you! </strong> A simple <b>secondary alert</b> —check it out!
+     How are you!  A simple <b>secondary alert</b> —check it out!
 </Alert>
 
 <!-- Success Alert -->
 <Alert color="success">
-    <strong> Yey! Everything worked! </strong> A simple <b>success alert</b> —check it out!
+     Yey! Everything worked!  A simple <b>success alert</b> —check it out!
 </Alert>
 
 <!-- Danger Alert -->
 <Alert color="danger">
-    <strong> Something is very wrong! </strong> A simple <b>danger alert</b> —check it out!
+     Something is very wrong!  A simple <b>danger alert</b> —check it out!
 </Alert>
 
 <!-- Warning Alert -->
 <Alert color="warning">
-    <strong> Uh oh, something went wrong </strong> A simple <b>warning alert</b> —check it out!
+     Uh oh, something went wrong  A simple <b>warning alert</b> —check it out!
 </Alert>
 
 <!-- Info Alert -->
 <Alert color="info">
-    <strong> Don't forget' it ! </strong> A simple <b>info alert</b> —check it out!
+     Don't forget' it !  A simple <b>info alert</b> —check it out!
 </Alert>
 
 <!-- Light Alert -->
 <Alert color="light">
-    <strong> Mind Your Step! </strong> A simple <b>light alert</b> —check it out!
+     Mind Your Step!  A simple <b>light alert</b> —check it out!
 </Alert>
 
 <!-- Dark Alert -->
 <Alert color="dark">
-    <strong> Did you know? </strong> A simple <b>dark alert</b> —check it out!
+     Did you know?  A simple <b>dark alert</b> —check it out!
 </Alert>
 `;
 
@@ -59,42 +59,42 @@ const DefaultAlertsExample = () => (
 const borderlessAlertsCode = `
 <!-- Primary Alert -->
 <Alert color="primary" className="border-0">
-    <strong> Hi! </strong> A simple <b>Primary alert</b> —check it out!
+     Hi!  A simple <b>Primary alert</b> —check it out!
 </Alert>
 
 <!-- Secondary Alert -->
 <Alert color="secondary" className="border-0">
-    <strong> How are you! </strong> A simple <b>secondary alert</b> —check it out!
+     How are you!  A simple <b>secondary alert</b> —check it out!
 </Alert>
 
 <!-- Success Alert -->
 <Alert color="success" className="border-0">
-    <strong> Yey! Everything worked! </strong> A simple <b>success alert</b> —check it out!
+     Yey! Everything worked!  A simple <b>success alert</b> —check it out!
 </Alert>
 
 <!-- Danger Alert -->
 <Alert color="danger" className="border-0 mb-xl-0">
-    <strong> Something is very wrong! </strong> A simple danger alert—check it out!
+     Something is very wrong!  A simple danger alert—check it out!
 </Alert>
 
 <!-- Warning Alert -->
 <Alert color="warning" className="border-0">
-    <strong> Uh oh, something went wrong </strong> A simple <b>warning alert</b> —check it out!
+     Uh oh, something went wrong  A simple <b>warning alert</b> —check it out!
 </Alert>
 
 <!-- Info Alert -->
 <Alert color="info" className="border-0">
-    <strong>Don't forget' it !</strong> A simple <b>info alert</b> —check it out!
+    Don't forget' it ! A simple <b>info alert</b> —check it out!
 </Alert>
 
 <!-- Light Alert -->
 <Alert color="light" className="border-0 bg-light">
-    <strong>Mind Your Step!</strong> A simple <b>light alert</b> —check it out!
+    Mind Your Step! A simple <b>light alert</b> —check it out!
 </Alert>
 
 <!-- Dark Alert -->
 <Alert color="dark" className="border-0 mb-0">
-    <strong>Did you know?</strong> A simple <b>dark alert</b> —check it out!
+    Did you know? A simple <b>dark alert</b> —check it out!
 </Alert>`;
 
 const BorderlessExample = () => (
@@ -110,42 +110,42 @@ const BorderlessExample = () => (
 const dismissingAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary">
-    <strong> Hi! </strong> A simple <b>Dismissible primary Alert </b> — check it out!
+     Hi!  A simple <b>Dismissible primary Alert </b> — check it out!
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary">
-    <strong> How are you! </strong> A simple <b>Dismissible secondary alert</b> —check it out!
+     How are you!  A simple <b>Dismissible secondary alert</b> —check it out!
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success">
-    <strong>Right Way !</strong> A simple <b>Dismissible success alert</b> —check it out!
+    Right Way ! A simple <b>Dismissible success alert</b> —check it out!
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="mb-xl-0">
-    <strong> Something is very wrong! </strong> A simple <b>Dismissible danger alert</b> —check it out!
+     Something is very wrong!  A simple <b>Dismissible danger alert</b> —check it out!
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning">
-    <strong>Welcome Back!</strong> A simple <b>Dismissible warning alert</b> —check it out!
+    Welcome Back! A simple <b>Dismissible warning alert</b> —check it out!
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info">
-    <strong>Don't forget' it !</strong> A simple <b>Dismissible info alert</b> —check it out!
+    Don't forget' it ! A simple <b>Dismissible info alert</b> —check it out!
 </UncontrolledAlert>
 
 <!-- Light Alert -->
 <UncontrolledAlert color="light">
-    <strong>Mind Your Step!</strong> A simple <b>Dismissible light alert</b> —check it out!
+    Mind Your Step! A simple <b>Dismissible light alert</b> —check it out!
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="mb-0">
-    <strong>Did you know?</strong> A simple <b>Dismissible dark alert</b> —check it out!
+    Did you know? A simple <b>Dismissible dark alert</b> —check it out!
 </UncontrolledAlert>`;
 
 const DismissingExample = () => (
@@ -229,37 +229,37 @@ const LiveExample = () => (
 const outlineAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary" className="border-2 bg-body-secondary">
-    <strong> Hi! </strong> - Outline <b>primary alert</b> example
+     Hi!  - Outline <b>primary alert</b> example
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary" className="border-2 bg-body-secondary">
-    <strong> How are you! </strong> - Outline <b>secondary alert</b> example
+     How are you!  - Outline <b>secondary alert</b> example
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success" className="border-2 bg-body-secondary">
-    <strong> Yey! Everything worked! </strong> - Outline <b>success alert</b> example
+     Yey! Everything worked!  - Outline <b>success alert</b> example
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="border-2 bg-body-secondary mb-xl-0">
-    <strong> Something is very wrong! </strong> - Outline <b>danger alert</b> example
+     Something is very wrong!  - Outline <b>danger alert</b> example
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning" className="border-2 bg-body-secondary">
-    <strong> Uh oh, something went wrong! </strong> - Outline <b>warning alert</b> example
+     Uh oh, something went wrong!  - Outline <b>warning alert</b> example
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info" className="border-2 bg-body-secondary">
-    <strong>Don't forget' it !</strong> - Outline <b>info alert</b> example
+    Don't forget' it ! - Outline <b>info alert</b> example
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="border-2 bg-body-secondary mb-0">
-    <strong>Did you know?</strong> - Outline <b>dark alert</b> example
+    Did you know? - Outline <b>dark alert</b> example
 </UncontrolledAlert>`;
 
 const OutlineAlertsExample = () => (
@@ -276,42 +276,42 @@ const OutlineAlertsExample = () => (
 const leftBorderAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary" className="alert-border-left">
-    <i className="ri-user-smile-line me-3 align-middle fs-16"></i><strong>Primary</strong> - Left border alert
+    <i className="ri-user-smile-line me-3 align-middle fs-16"></i>Primary - Left border alert
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary" className="alert-border-left">
-    <i className="ri-check-double-line me-3 align-middle fs-16"></i><strong>Secondary</strong> - Left border alert
+    <i className="ri-check-double-line me-3 align-middle fs-16"></i>Secondary - Left border alert
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success" className="alert-border-left">
-    <i className="ri-notification-off-line me-3 align-middle fs-16"></i><strong>Success</strong> - Left border alert
+    <i className="ri-notification-off-line me-3 align-middle fs-16"></i>Success - Left border alert
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="alert-border-left mb-xl-0">
-    <i className="ri-error-warning-line me-3 align-middle fs-16"></i><strong>Danger</strong> - Left border alert
+    <i className="ri-error-warning-line me-3 align-middle fs-16"></i>Danger - Left border alert
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning" className="alert-border-left">
-    <i className="ri-alert-line me-3 align-middle fs-16"></i><strong>Warning</strong> - Left border alert
+    <i className="ri-alert-line me-3 align-middle fs-16"></i>Warning - Left border alert
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info" className="alert-border-left">
-    <i className="ri-airplay-line me-3 align-middle fs-16"></i><strong>Info</strong> - Left border alert
+    <i className="ri-airplay-line me-3 align-middle fs-16"></i>Info - Left border alert
 </UncontrolledAlert>
 
 <!-- Light Alert -->
 <UncontrolledAlert color="light" className="alert-border-left">
-    <i className="ri-mail-line me-3 align-middle fs-16"></i><strong>Light</strong> - Left border alert
+    <i className="ri-mail-line me-3 align-middle fs-16"></i>Light - Left border alert
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="alert-border-left mb-0">
-    <i className="ri-refresh-line me-3  align-middle fs-16"></i><strong>Dark</strong> - Left border alert
+    <i className="ri-refresh-line me-3  align-middle fs-16"></i>Dark - Left border alert
 </UncontrolledAlert>`;
 
 const LeftBorderAlertsExample = () => (
@@ -328,48 +328,48 @@ const LeftBorderAlertsExample = () => (
 const labelIconAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary" className="bg-primary text-white alert-label-icon" closeClassName="btn-close-white">
-    <i className="ri-user-smile-line label-icon"></i><strong>Primary</strong> -Label icon alert
+    <i className="ri-user-smile-line label-icon"></i>Primary -Label icon alert
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary" className="bg-secondary text-white alert-label-icon" closeClassName="btn-close-white" >
-    <i className="ri-check-double-line label-icon"></i><strong>Secondary</strong>
+    <i className="ri-check-double-line label-icon"></i>Secondary
     - Label icon alert
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success" className="bg-success text-white alert-label-icon" closeClassName="btn-close-white">
-    <i className="ri-notification-off-line label-icon"></i><strong>Success</strong>
+    <i className="ri-notification-off-line label-icon"></i>Success
     - Label icon alert
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="bg-danger text-white alert-label-icon mb-xl-0" closeClassName="btn-close-white">
-    <i className="ri-error-warning-line label-icon"></i><strong>Danger</strong>
+    <i className="ri-error-warning-line label-icon"></i>Danger
     - Label icon alert
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning" className="bg-warning text-white alert-label-icon" closeClassName="btn-close-white">
-    <i className="ri-alert-line label-icon"></i><strong>warning</strong> - Label
+    <i className="ri-alert-line label-icon"></i>warning - Label
     icon alert
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info" className="bg-info text-white alert-label-icon" closeClassName="btn-close-white">
-    <i className="ri-airplay-line label-icon"></i><strong>Info</strong> - Label
+    <i className="ri-airplay-line label-icon"></i>Info - Label
     icon alert
 </UncontrolledAlert>
 
 <!-- Light Alert -->
 <UncontrolledAlert color="light" className="bg-light text-body alert-label-icon" closeClassName="btn-close-white">
-    <i className="ri-mail-line label-icon"></i><strong>Light</strong> -
+    <i className="ri-mail-line label-icon"></i>Light -
     Label icon alert
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="bg-dark text-white alert-label-icon mb-0" closeClassName="btn-close-white">
-    <i className="ri-refresh-line label-icon"></i><strong>Dark</strong> -
+    <i className="ri-refresh-line label-icon"></i>Dark -
     Label icon alert
 </UncontrolledAlert>`;
 
@@ -387,42 +387,42 @@ const LabelIconAlertsExample = () => (
 const topBarAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary" className="alert-top-border">
-    <i className="ri-user-smile-line me-3 align-middle fs-16 text-primary"></i><strong>Primary</strong> - Top border alert
+    <i className="ri-user-smile-line me-3 align-middle fs-16 text-primary"></i>Primary - Top border alert
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary" className="alert-top-border">
-    <i className="ri-check-double-line me-3 align-middle fs-16 text-secondary"></i><strong>Secondary</strong> - Top border alert
+    <i className="ri-check-double-line me-3 align-middle fs-16 text-secondary"></i>Secondary - Top border alert
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success" className="alert-top-border">
-    <i className="ri-notification-off-line me-3 align-middle fs-16 text-success"></i><strong>Success</strong> - Top border alert
+    <i className="ri-notification-off-line me-3 align-middle fs-16 text-success"></i>Success - Top border alert
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="alert-top-border mb-xl-0">
-    <i className="ri-error-warning-line me-3 align-middle fs-16 text-danger "></i><strong>Danger</strong> - Top border alert
+    <i className="ri-error-warning-line me-3 align-middle fs-16 text-danger "></i>Danger - Top border alert
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning" className="alert-top-border">
-    <i className="ri-alert-line me-3 align-middle fs-16 text-warning"></i><strong>Warning</strong> - Top border alert
+    <i className="ri-alert-line me-3 align-middle fs-16 text-warning"></i>Warning - Top border alert
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info" className="alert-top-border">
-    <i className="ri-airplay-line me-3 align-middle fs-16 text-info"></i><strong>Info</strong> - Top border alert
+    <i className="ri-airplay-line me-3 align-middle fs-16 text-info"></i>Info - Top border alert
 </UncontrolledAlert>
 
 <!-- Light Alert -->
 <UncontrolledAlert color="light" className="alert-top-border">
-    <i className="ri-mail-line me-3 align-middle fs-16 text-body"></i><strong>Light</strong> - Top border alert
+    <i className="ri-mail-line me-3 align-middle fs-16 text-body"></i>Light - Top border alert
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="alert-top-border mb-0">
-    <i className="ri-refresh-line me-3 align-middle fs-16 text-body"></i><strong>Dark</strong> - Top border alert
+    <i className="ri-refresh-line me-3 align-middle fs-16 text-body"></i>Dark - Top border alert
 </UncontrolledAlert>`;
 
 const TopBarAlertsExample = () => (
@@ -439,42 +439,42 @@ const TopBarAlertsExample = () => (
 const labelIconArrowAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary" className="alert-label-icon label-arrow ">
- <i className="ri-user-smile-line label-icon"></i><strong>Primary</strong> - Label icon arrow alert
+ <i className="ri-user-smile-line label-icon"></i>Primary - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary" className="alert-label-icon label-arrow ">
-    <i className="ri-check-double-line label-icon"></i><strong>Secondary</strong> - Label icon arrow alert
+    <i className="ri-check-double-line label-icon"></i>Secondary - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success" className="alert-label-icon label-arrow ">
-    <i className="ri-notification-off-line label-icon"></i><strong>Success</strong> - Label icon arrow alert
+    <i className="ri-notification-off-line label-icon"></i>Success - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="alert-label-icon label-arrow mb-xl-0">
-    <i className="ri-error-warning-line label-icon"></i><strong>Danger</strong> - Label icon arrow alert
+    <i className="ri-error-warning-line label-icon"></i>Danger - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning" className="alert-label-icon label-arrow ">
-    <i className="ri-alert-line label-icon"></i><strong>Warning</strong> - Label icon arrow alert
+    <i className="ri-alert-line label-icon"></i>Warning - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info" className="alert-label-icon label-arrow ">
-    <i className="ri-airplay-line label-icon"></i><strong>Info</strong> - Label icon arrow alert
+    <i className="ri-airplay-line label-icon"></i>Info - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Light Alert -->
 <UncontrolledAlert color="light" className="alert-label-icon label-arrow ">
-    <i className="ri-mail-line label-icon"></i><strong>Light</strong> - Label icon arrow alert
+    <i className="ri-mail-line label-icon"></i>Light - Label icon arrow alert
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="alert-label-icon label-arrow mb-0">
-    <i className="ri-refresh-line label-icon"></i><strong>Dark</strong> - Label icon arrow alert
+    <i className="ri-refresh-line label-icon"></i>Dark - Label icon arrow alert
 </UncontrolledAlert>`;
 
 const LabelIconArrowAlertsExample = () => (
@@ -491,42 +491,42 @@ const LabelIconArrowAlertsExample = () => (
 const roundedLabelIconAlertsCode = `
 <!-- Primary Alert -->
 <UncontrolledAlert color="primary" className="alert-label-icon rounded-label">
-    <i className="ri-user-smile-line label-icon"></i><strong>Primary</strong> - Rounded label alert 
+    <i className="ri-user-smile-line label-icon"></i>Primary - Rounded label alert 
 </UncontrolledAlert>
 
 <!-- Secondary Alert -->
 <UncontrolledAlert color="secondary" className="alert-label-icon rounded-label">
-    <i className="ri-check-double-line label-icon"></i><strong>Secondary</strong> - Rounded label alert
+    <i className="ri-check-double-line label-icon"></i>Secondary - Rounded label alert
 </UncontrolledAlert>
 
 <!-- Success Alert -->
 <UncontrolledAlert color="success" className="alert-label-icon rounded-label">
-    <i className="ri-notification-off-line label-icon"></i><strong>Success</strong> - Rounded label alert
+    <i className="ri-notification-off-line label-icon"></i>Success - Rounded label alert
 </UncontrolledAlert>
 
 <!-- Danger Alert -->
 <UncontrolledAlert color="danger" className="alert-label-icon rounded-label">
-    <i className="ri-error-warning-line label-icon"></i><strong>Danger</strong> - Rounded label alert
+    <i className="ri-error-warning-line label-icon"></i>Danger - Rounded label alert
 </UncontrolledAlert>
 
 <!-- Warning Alert -->
 <UncontrolledAlert color="warning" className="alert-label-icon rounded-label">
-    <i className="ri-alert-line label-icon"></i><strong>Warning</strong> - Rounded label alert 
+    <i className="ri-alert-line label-icon"></i>Warning - Rounded label alert 
 </UncontrolledAlert>
 
 <!-- Info Alert -->
 <UncontrolledAlert color="info" className="alert-label-icon rounded-label">
-    <i className="ri-airplay-line label-icon"></i><strong>Info</strong> - Rounded label alert
+    <i className="ri-airplay-line label-icon"></i>Info - Rounded label alert
 </UncontrolledAlert>
 
 <!-- Light Alert -->
 <UncontrolledAlert color="light" className="alert-label-icon rounded-label">
-    <i className="ri-mail-line label-icon"></i><strong>Light</strong> - Rounded label alert
+    <i className="ri-mail-line label-icon"></i>Light - Rounded label alert
 </UncontrolledAlert>
 
 <!-- Dark Alert -->
 <UncontrolledAlert color="dark" className="alert-label-icon rounded-label">
-    <i className="ri-refresh-line label-icon"></i><strong>Dark</strong> - Rounded label alert
+    <i className="ri-refresh-line label-icon"></i>Dark - Rounded label alert
 </UncontrolledAlert>`;
 
 const RoundedLabelIconAlertsExample = () => (
@@ -629,42 +629,42 @@ const AdditionalContentAlertsExample = () => (
 const solidAlertsCode = `
 <!-- Primary Alert -->
 <Alert color="primary" className="alert-solid">
-    <strong>Hi!</strong> - Solid <b>primary alert</b> example
+    Hi! - Solid <b>primary alert</b> example
 </Alert>
 
 <!-- Secondary Alert -->
 <Alert color="secondary" className="alert-solid">
-    <strong>How are you!</strong> - Solid <b>secondary alert</b> example
+    How are you! - Solid <b>secondary alert</b> example
 </Alert>
 
 <!-- Success Alert -->
 <Alert color="success" className="alert-solid">
-    <strong>Yey! Everything worked! </strong> - Solid <b>success alert</b> example
+    Yey! Everything worked!  - Solid <b>success alert</b> example
 </Alert>
 
 <!-- Danger Alert -->
 <Alert color="danger" className="alert-solid mb-xl-0">
-    <strong>Something is very wrong!</strong> - Solid <b>danger alert</b> example
+    Something is very wrong! - Solid <b>danger alert</b> example
 </Alert>
 
 <!-- Warning Alert -->
 <Alert color="warning" className="alert-solid">
-    <strong>Uh oh, something went wrong!</strong> - Solid <b>warning alert</b> example
+    Uh oh, something went wrong! - Solid <b>warning alert</b> example
 </Alert>
 
 <!-- Info Alert -->
 <Alert color="info" className="alert-solid">
-    <strong>Don't forget' it !</strong> - Solid <b>info alert</b> example
+    Don't forget' it ! - Solid <b>info alert</b> example
 </Alert>
 
 <!-- Light Alert -->
 <Alert color="light" className="alert-solid">
-    <strong>Mind Your Step!</strong> - Solid <b>secondary alert</b> example
+    Mind Your Step! - Solid <b>secondary alert</b> example
 </Alert>
 
 <!-- Dark Alert -->
 <Alert color="dark" className="alert-solid mb-0">
-    <strong>Did you know?</strong> - Solid <b>dark alert</b> example
+    Did you know? - Solid <b>dark alert</b> example
 </Alert>`;
 
 const SolidAlertsExample = () => (

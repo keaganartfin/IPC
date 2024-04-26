@@ -7,14 +7,27 @@ import picture1 from "../../../../assets/images/ipc/IP38FE.png";
 import picture2 from "../../../../assets/images/ipc/IP37SH-IP36TH-IP39LH.png";
 import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
+import bgImg from "../../../../assets/images/background-image.png";
 
 const HeatShrinkHighTemp = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+  document.title = "Team | Insulation Products Corporation";
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -53,9 +66,9 @@ const HeatShrinkHighTemp = () => {
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
                           Our{" "}
-                          <strong>
+                          
                             High-Temperature Heat Shrinkable Tubing
-                          </strong>{" "}
+                          {" "}
                           offerings at Insulation Products Corporation provide
                           unparalleled electrical insulation and feature special
                           properties unavailable in standard tubing. If you're

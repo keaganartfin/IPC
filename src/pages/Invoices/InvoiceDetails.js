@@ -12,7 +12,7 @@ const InvoiceDetails = () => {
     window.print();
   };
 
-  document.title = "Invoice Details | Velzon - React Admin & Dashboard Template";
+  document.title = "Invoice Details | Insulation Products Corporation";
 
   return (
     <div className="page-content">

@@ -3,7 +3,7 @@ import { Card, CardBody, Col, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 //import images
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../../assets/images/background-image.png";
 import avatar4 from "../../../assets/images/users/avatar-4.jpg";
 import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 import avatar2 from "../../../assets/images/users/avatar-2.jpg";

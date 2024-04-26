@@ -11,7 +11,7 @@ import { RoundedRibbonExample, RibbonShapeExample, FilledRibbonsExample, BoxedRi
 
 
 const UiRibbons = () => {
-    document.title="Ribbons | Velzon - React Admin & Dashboard Template";
+    document.title="Ribbons | Insulation Products Corporation";
     return (
         <React.Fragment>
             <UiContent />

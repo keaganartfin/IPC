@@ -28,7 +28,7 @@ import SimpleBar from 'simplebar-react';
 
 
 const FileManager = () => {
-    document.title = "File Manager | Velzon - React Admin & Dashboard Template";
+    document.title = "File Manager | Insulation Products Corporation";
 
     const dispatch = useDispatch();
 

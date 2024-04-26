@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import {
   Button,
   Card,
@@ -20,7 +19,7 @@ import {
 } from "reactstrap";
 import { partDataOld } from "../../../../common/data";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
-import faqImg from "../../../../assets/images/faq-img.png";
+import bgImg from "../../../../assets/images/background-image.png";
 
 const ProductCatalog = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -77,8 +76,20 @@ const ProductCatalog = () => {
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -105,55 +116,13 @@ const ProductCatalog = () => {
                         <Container fluid>
                           <Row>
                             <Col>
-                              <Card className="rounded-0 bg-success-subtle mx-n4 mt-n3 border-top pt-10">
-                                <div className="px-4">
-                                  <Row>
-                                    <Col xxl={5} className="align-self-center">
-                                      <div className="py-4">
-                                        <h4 className="display-6 coming-soon-text">
-                                          Product Catalog & Specifications
-                                        </h4>
-                                        <p className="text-success fs-15 mt-3">
-                                          If you can not find answer to your
-                                          question in our FAQ, you can always
-                                          contact us or email us. We will answer
-                                          you shortly!
-                                        </p>
-                                        <div className="hstack gap-2">
-                                          <button
-                                            type="button"
-                                            className="btn btn-primary btn-label rounded-pill me-1"
-                                            href="mailto:sales@insulationproducts.com"
-                                          >
-                                            <i className="ri-mail-line label-icon align-middle rounded-pill fs-16 me-2"></i>{" "}
-                                            Email Us
-                                          </button>
-                                          <button
-                                            type="button"
-                                            className="btn btn-info btn-label rounded-pill"
-                                            href="tel:+16307710700"
-                                          >
-                                            <i className="ri-phone-line label-icon align-middle rounded-pill fs-16 me-2"></i>{" "}
-                                            Give us a call
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </Col>
-                                    <div className="col-xxl-3 ms-auto">
-                                      <div className="mb-n5 pb-1 faq-img d-none d-xxl-block">
-                                        <img
-                                          src={faqImg}
-                                          alt=""
-                                          className="img-fluid"
-                                        />
-                                      </div>
-                                    </div>
-                                  </Row>
-                                </div>
-                              </Card>
                               <Card>
                                 <CardHeader className="align-items-center d-flex">
-                                  <div className="card-title mb-0 flex-grow-1"></div>
+                                  <div className="card-title mb-0 flex-grow-1">
+                                    <h4 className="card-title">
+                                      PRODUCT CATALOG & SPECIFICATIONS
+                                    </h4>
+                                  </div>
                                   <div className="search-box ms-3">
                                     <input
                                       type="text"
@@ -225,7 +194,11 @@ const ProductCatalog = () => {
                                             <tr key={key}>
                                               <td>{item.PartID}</td>
                                               <td>{item.PartType}</td>
-                                              <td>{item.Description}</td>
+                                              <td
+                                                dangerouslySetInnerHTML={{
+                                                  __html: item.Description,
+                                                }}
+                                              ></td>
                                               <td>{item.OperatingTemp}</td>
                                               <td>{item.AMS}</td>
                                               <td>
@@ -253,9 +226,7 @@ const ProductCatalog = () => {
                                                     color="primary"
                                                     onClick={() =>
                                                       window.open(
-                                                        getPdfFilePath(
-                                                          item.SpecSheet
-                                                        ),
+                                                        item.SpecSheet,
                                                         "_blank"
                                                       )
                                                     }

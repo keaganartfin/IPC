@@ -28,13 +28,13 @@ const LeftSideTables = () => {
                   </div>
                   <ul className="second-list list-unstyled">
                     <li>
-                      <Link to="/company?tab=1">About Us</Link>
+                      <Link to="/company?tab=aboutus">About Us</Link>
                     </li>
                     <li>
-                      <Link to="/company?tab=2">FAQs</Link>
+                      <Link to="/company?tab=faqs">FAQs</Link>
                     </li>
                     <li>
-                      <Link to="/company?tab=3">Contact Us</Link>
+                      <Link to="/company?tab=contact">Contact Us</Link>
                     </li>
                   </ul>
                 </div>

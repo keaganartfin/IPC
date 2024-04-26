@@ -12,7 +12,7 @@ import {
 
 
 const MixedCharts = () => {
-    document.title="Mixed Charts | Velzon - React Admin & Dashboard Template";
+    document.title="Mixed Charts | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

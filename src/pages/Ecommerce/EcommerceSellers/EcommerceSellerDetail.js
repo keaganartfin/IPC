@@ -178,7 +178,7 @@ const EcommerceSellerDetail = () => {
     ],
     []
   );
-document.title ="Sellers Details | Velzon - React Admin & Dashboard Template";
+document.title ="Sellers Details | Insulation Products Corporation";
 
   return (
     <React.Fragment>

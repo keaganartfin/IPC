@@ -7,7 +7,7 @@ import TimeTracking from "./TimeTracking";
 
 
 const TaskDetails = () => {
-    document.title="Task Details | Velzon - React Admin & Dashboard Template";
+    document.title="Task Details | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

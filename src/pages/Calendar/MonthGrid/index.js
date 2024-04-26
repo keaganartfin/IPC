@@ -317,7 +317,7 @@ const MonthGrid = () => {
         }
     };
 
-    document.title = "Month Grid Calendar | Velzon - React Admin & Dashboard Template";
+    document.title = "Month Grid Calendar | Insulation Products Corporation";
     return (
         <React.Fragment>
             <DeleteModal

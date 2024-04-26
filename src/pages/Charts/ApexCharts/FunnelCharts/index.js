@@ -5,7 +5,7 @@ import { FunnelChartCode, PyramidChartCode } from './FunnelCharts';
 
 
 const FunnelChart = () => {
-    document.title = "Apex Funnel Charts | Velzon - React Admin & Dashboard Template";
+    document.title = "Apex Funnel Charts | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

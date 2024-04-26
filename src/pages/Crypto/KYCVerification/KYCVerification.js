@@ -543,7 +543,7 @@ const KYCVerification = () => {
                                 {f.name}
                               </Link>
                               <p className="mb-0">
-                                <strong>{f.formattedSize}</strong>
+                                {f.formattedSize}
                               </p>
                             </Col>
                           </Row>

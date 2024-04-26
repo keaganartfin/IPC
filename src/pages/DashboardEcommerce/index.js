@@ -12,7 +12,7 @@ import TopSellers from "./TopSellers";
 
 
 const DashboardEcommerce = () => {
-  document.title = "Dashboard | Velzon - React Admin & Dashboard Template";
+  document.title = "Dashboard | Insulation Products Corporation";
 
   const [rightColumn, setRightColumn] = useState(true);
   const toggleRightColumn = () => {

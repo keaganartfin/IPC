@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, CardBody, Col, Row } from "reactstrap";
 import StaffPhoto from "../../../assets/images/ipc/staff.jpg";
+import bgImg from "../../../assets/images/background-image.png";
 
 const AboutUs = () => {
   return (
@@ -171,8 +172,9 @@ const AboutUs = () => {
               Experience the IPC difference firsthand. Reach out to us at{" "}
               <a href="tel:6307710700">(630) 771-0700</a> or via email at{" "}
               <a href="mailto:sales@insulationproducts.com">
-                Sales@InsulationProducts.com
-              {" "} <i className="bx bx-link-external"></i></a>{" "}
+                Sales@InsulationProducts.com{" "}
+                <i className="bx bx-link-external"></i>
+              </a>{" "}
               for any queries, further information, or to start your journey
               with us.
               <br />
@@ -183,39 +185,6 @@ const AboutUs = () => {
               new project or seeking innovative solutions for ongoing needs, IPC
               is here to support you every step of the way.
             </p>
-            <Row>
-              <Col xs={6} md={4}>
-                <div className="d-flex mt-4">
-                  <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                    <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                      <i className="ri-user-2-fill"></i>
-                    </div>
-                  </div>
-                  <div className="flex-grow-1 overflow-hidden">
-                    <p className="mb-1">Designation :</p>
-                    <h6 className="text-truncate mb-0">
-                      Lead Designer / Developer
-                    </h6>
-                  </div>
-                </div>
-              </Col>
-
-              <Col xs={6} md={4}>
-                <div className="d-flex mt-4">
-                  <div className="flex-shrink-0 avatar-xs align-self-center me-3">
-                    <div className="avatar-title bg-light rounded-circle fs-16 text-primary">
-                      <i className="ri-global-line"></i>
-                    </div>
-                  </div>
-                  <div className="flex-grow-1 overflow-hidden">
-                    <p className="mb-1">Website :</p>
-                    <Link to="#" className="fw-semibold">
-                      www.velzon.com
-                    </Link>
-                  </div>
-                </div>
-              </Col>
-            </Row>
           </Row>
         </CardBody>
       </Card>

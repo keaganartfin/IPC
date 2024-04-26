@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 
 const Navdata = () => {
   // Actual Website Navigation
   const [isProducts, setIsProducts] = useState(false);
   const [isSpecialtyProducts, setIsSpecialtyProducts] = useState(false);
-  const [isServices, setIsServices] = useState(false);
   const [isHeatShrinkTubing, setIsHeatShrinkTubing] = useState(false);
   const [isNonShrinkTubing, setIsNonShrinkTubing] = useState(false);
   const [isSupport, setIsSupport] = useState(false);
@@ -56,25 +54,19 @@ const Navdata = () => {
         {
           id: "contactus",
           label: "Contact Us",
-          link: "/company?tab=3",
+          link: "/company?tab=contact",
           parentId: "support",
         },
         {
           id: "faqs",
           label: "FAQs",
-          link: "/company?tab=2",
+          link: "/company?tab=faqs",
           parentId: "support",
         },
         {
           id: "customersurvey",
           label: "Customer Survey",
-          link: "/company?tab=5",
-          parentId: "support",
-        },
-        {
-          id: "wheretobuy",
-          label: "Where To Buy",
-          link: "/company?tab=9",
+          link: "/company?tab=survey",
           parentId: "support",
         },
       ],
@@ -98,25 +90,25 @@ const Navdata = () => {
         {
           id: "companyprofile",
           label: "Company Profile",
-          link: "/company?tab=1",
+          link: "/company?tab=aboutus",
           parentId: "aboutcompany",
         },
-        {
-          id: "ipcpartners",
-          label: "IPC Partners",
-          link: "/company?tab=6",
-          parentId: "aboutcompany",
-        },
-        {
-          id: "awards",
-          label: "Awards",
-          link: "/company?tab=7",
-          parentId: "aboutcompany",
-        },
+        // {
+        //   id: "ipcpartners",
+        //   label: "IPC Partners",
+        //   link: "/company?tab=6",
+        //   parentId: "aboutcompany",
+        // },
+        // {
+        //   id: "awards",
+        //   label: "Awards",
+        //   link: "/company?tab=7",
+        //   parentId: "aboutcompany",
+        // },
         {
           id: "mediaresources",
           label: "Media Resources",
-          link: "/company?tab=8",
+          link: "/company?tab=resources",
           parentId: "aboutcompany",
         },
       ],
@@ -193,7 +185,7 @@ const Navdata = () => {
             {
               id: 8,
               label: "Modified Fluoropolymer",
-              link: "/products/heat-shrink-tubing/modified-fluoroelastomer",
+              link: "/products/heat-shrink-tubing/modified-fluoropolymer",
             },
             {
               id: 9,

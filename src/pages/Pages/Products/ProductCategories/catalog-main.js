@@ -4,9 +4,10 @@ import { Card, CardBody, Col, Container, Row } from "reactstrap";
 import profileBg from "../../../../assets/images/profile-bg.jpg";
 import * as Pdfs from "../../../../assets/images/pdfs";
 import LeftSideTables from "../../About/LeftSideTables";
+import bgImg from "../../../../assets/images/background-image.png";
 
 const CatalogMain = () => {
-  document.title = "PDF Display | Velzon - React Admin & Dashboard Template";
+  document.title = "PDF Display | Insulation Products Corporation";
   const { pdfName } = useParams();
   const pdfPath = Pdfs[pdfName];
   document.title = `${pdfName} | PDF Display`;
@@ -16,8 +17,20 @@ const CatalogMain = () => {
   }
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />

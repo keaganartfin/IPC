@@ -1,7 +1,8 @@
 import React from "react";
-import { Col, Container, Row, NavLink } from "reactstrap";
+import { NavLink } from "react-router-dom";
+import { Col, Container, Row } from "reactstrap";
 
-const Footer = () => {
+const SmallFooter = () => {
   return (
     <React.Fragment>
       <footer className="footer">
@@ -18,17 +19,17 @@ const Footer = () => {
                   style={{ color: "black" }}
                 >
                   <li className="list-inline-item">
-                    <NavLink to="/pages-privacy-policy">Privacy Policy</NavLink>
+                    <NavLink to="/privacy-policy">Privacy Policy</NavLink>
                   </li>
                   <li className="list-inline-item">-</li>
                   <li className="list-inline-item">
-                    <NavLink to="/pages-term-conditions">
+                    <NavLink to="/term-conditions">
                       Terms & Conditions
                     </NavLink>
                   </li>
                   <li className="list-inline-item">-</li>
                   <li className="list-inline-item">
-                    <NavLink to="/pages-privacy-policy">Site Map</NavLink>
+                    <NavLink to="/sitemap">Site Map</NavLink>
                   </li>
                 </ul>
               </div>
@@ -40,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default SmallFooter;

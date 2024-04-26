@@ -35,11 +35,10 @@ const JobLanding = () => {
         <Home />
         <WorkProcess />
         <Features />
-        <Client />
+        {/* <Client /> */}
         <Categories />
         <Faqs />
         <Blog />
-        <Footer />
       </div>
     </React.Fragment>
   );

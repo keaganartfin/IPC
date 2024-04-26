@@ -22,7 +22,7 @@ import ImgGif5 from "../../../assets/images/nft/gif/img-5.gif";
 import BgPattern from "../../../assets/images/nft/bg-pattern.png";
 
 const Marketplace = () => {
-    document.title = "Marketplace | Velzon - React Admin & Dashboard Template";
+    document.title = "Marketplace | Insulation Products Corporation";
 
     const favouriteBtn = (ele) => {
         if (ele.closest("button").classList.contains("active")) {

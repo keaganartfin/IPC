@@ -9,7 +9,7 @@ import BreadCrumb from '../../../Components/Common/BreadCrumb';
 import PreviewCardHeader from '../../../Components/Common/PreviewCardHeader';
 
 // Import Images
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../../assets/images/background-image.png";
 import avatar2 from "../../../assets/images/users/avatar-2.jpg";
 
 import img2 from "../../../assets/images/small/img-2.jpg";
@@ -17,7 +17,7 @@ import { StacksVerticalExample, StacksHorizontalExample, TextSelectionExample, P
 
 
 const UiUtilities = () => {
-    document.title = "Utilities | Velzon - React Admin & Dashboard Template";
+    document.title = "Utilities | Insulation Products Corporation";
     return (
         <React.Fragment>
             <UiContent />

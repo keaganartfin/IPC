@@ -44,7 +44,7 @@ const CompaniesList = () => {
     setCompaniesList(currentdata)
   }, [currentdata]);
 
-  document.title = "Companies | Velzon - React Admin & Dashboard Template";
+  document.title = "Companies | Insulation Products Corporation";
 
   return (
     <React.Fragment>

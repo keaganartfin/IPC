@@ -1,24 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardBody, Col, Row, Label, Input } from "reactstrap";
 
 import customerreview from "../../../assets/images/illustrations/reviews.png";
+import Rating from "react-rating";
 
 const CustomerSurvey = () => {
+  const [customize, setcustomize] = useState("");
+
   return (
     <Col xxl={9}>
       <Card>
         <CardBody>
-          <Card className="rounded-0 bg-info-subtle mx-n4 mt-n3 border-top pt-10">
+          <Card className="rounded-0 bg-light mx-n4 mt-n3 border-top pt-10">
             <div className="px-4">
               <Row>
                 <Col xxl={5} className="align-self-center">
                   <div className="py-4">
                     <h4 className="display-6 coming-soon-text2">
-                      Contact Us <br /> Directly
+                      Rate Your Experience
                     </h4>
-                    <p className="text-info fs-15 mt-3">
-                      Drop us a line and we will be sure to get back to you as
-                      soon as possible!
+                    <p className="text-primary fs-15 mt-3">
+                      Leave us some feedback letting us know what we're doing
+                      right or what we need to work on.
                     </p>
                     <div className="hstack gap-2">
                       <button
@@ -51,7 +54,7 @@ const CustomerSurvey = () => {
           <Row className="justify-content-evenly mb-4">
             <Col md={6}>
               <div className="mb-3">
-                <Label for="firstNameinput" className="form-label">
+                <Label for="FirstNameInput" className="form-label">
                   First Name
                 </Label>
                 <Input
@@ -59,13 +62,13 @@ const CustomerSurvey = () => {
                   type="text"
                   className="form-control"
                   placeholder="First Name"
-                  id="firstNameinput"
+                  id="FirstNameInput"
                 />
               </div>
             </Col>
             <Col md={6}>
               <div className="mb-3">
-                <Label for="lastNameinput" className="form-label">
+                <Label for="LastNameInput" className="form-label">
                   Last Name
                 </Label>
                 <Input
@@ -73,13 +76,13 @@ const CustomerSurvey = () => {
                   type="text"
                   className="form-control"
                   placeholder="Last Name"
-                  id="lastNameinput"
+                  id="LastNameInput"
                 />
               </div>
             </Col>
             <Col md={12}>
               <div className="mb-3">
-                <Label for="compnayNameinput" className="form-label">
+                <Label for="CompnayInput" className="form-label">
                   Company Name
                 </Label>
                 <Input
@@ -87,13 +90,13 @@ const CustomerSurvey = () => {
                   type="text"
                   className="form-control"
                   placeholder="Company Name"
-                  id="compnayNameinput"
+                  id="CompnayInput"
                 />
               </div>
             </Col>
             <Col md={6}>
               <div className="mb-3">
-                <Label for="phonenumberInput" className="form-label">
+                <Label for="PhoneInput" className="form-label">
                   Phone Number
                 </Label>
                 <Input
@@ -101,13 +104,13 @@ const CustomerSurvey = () => {
                   type="tel"
                   className="form-control"
                   placeholder="+1 (000) 000-0000"
-                  id="phonenumberInput"
+                  id="PhoneInput"
                 />
               </div>
             </Col>
             <Col md={6}>
               <div className="mb-3">
-                <Label for="emailidInput" className="form-label">
+                <Label for="EmailInput" className="form-label">
                   Email Address
                 </Label>
                 <Input
@@ -115,93 +118,37 @@ const CustomerSurvey = () => {
                   type="email"
                   className="form-control"
                   placeholder="example@insulationproducts.com"
-                  id="emailidInput"
+                  id="EmailInput"
                 />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className="mb-3">
-                <Label for="address1ControlTextarea" className="form-label">
-                  Address Line 1
-                </Label>
-                <Input
-                  required
-                  type="text"
-                  className="form-control"
-                  placeholder="250 Gibraltar Dr"
-                  id="address1ControlTextarea"
-                />
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className="mb-3">
-                <Label for="address1ControlTextareaTwo" className="form-label">
-                  Address Line 2
-                </Label>
-                <Input
-                  required
-                  type="text"
-                  className="form-control"
-                  placeholder="Suite 111"
-                  id="address1ControlTextareaTwo"
-                />
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className="mb-3">
-                <Label for="citynameInput" className="form-label">
-                  City
-                </Label>
-                <Input
-                  required
-                  type="email"
-                  className="form-control"
-                  placeholder="Bolingbrook"
-                  id="citynameInput"
-                />
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className="mb-3">
-                <Label for="zipcodeInput" className="form-label">
-                  Zip Code
-                </Label>
-                <Input
-                  required
-                  type="text"
-                  className="form-control"
-                  placeholder="60440"
-                  id="zipcodeInput"
-                />
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className="mb-3">
-                <Label for="ForminputState" className="form-label">
-                  State
-                </Label>
-                <select
-                  id="ForminputState"
-                  className="form-select"
-                  data-choices
-                  data-choices-sorting="true"
-                >
-                  <option>Choose...</option>
-                  <option>...</option>
-                </select>
               </div>
             </Col>
             <Col md={12}>
               <div className="mb-3">
-                <Label for="ForminputState" className="form-label">
-                  Message
+                <Label for="FeedbackInput" className="form-label d-flex">
+                  Rate your experience today
                 </Label>
-                <Input
+                <Rating
+                  initialRating={customize}
+                  stop={5}
+                  emptySymbol="mdi mdi-star-outline text-muted "
+                  fullSymbol="mdi mdi-star-outline text-warning "
+                  onChange={(customize) => setcustomize(customize)}
+                  className="d-flex display-4"
+                />
+              </div>
+            </Col>
+            <Col md={12}>
+              <div className="mb-3">
+                <Label for="FeedbackInput" className="form-label">
+                  Feedback
+                </Label>
+                <textarea
                   required
                   type="url"
                   className="form-control"
-                  id="contactMessage"
-                  placeholder="What can we help with, today?"
+                  placeholder="Leave us a message letting us know how your experience was for today."
+                  id="FeedbackInput"
+                  rows="4"
                 />
               </div>
             </Col>

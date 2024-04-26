@@ -183,7 +183,7 @@ const Faqs = () => {
     }
   };
 
-  document.title = "FAQs | Velzon - React Admin & Dashboard Template";
+  document.title = "FAQs | Insulation Products Corporation";
 
   return (
     <React.Fragment>

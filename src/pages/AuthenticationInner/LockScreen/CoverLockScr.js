@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { Button, Card, Col, Container, Row } from 'reactstrap';
 
 //import images
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../../assets/images/background-image.png";
 
 import AuthSlider from '../authCarousel';
 
 const CoverLockScreen = () => {
-document.title="Lock Screen | Velzon - React Admin & Dashboard Template";
+document.title="Lock Screen | Insulation Products Corporation";
     return (
         <React.Fragment>
                 

@@ -93,7 +93,7 @@ const ContactUs = () => {
                   City
                 </Label>
                 <Input
-                  type="email"
+                  type="text"
                   className="form-control"
                   placeholder="Enter your city"
                   id="citynameInput"
@@ -102,18 +102,15 @@ const ContactUs = () => {
             </Col>
             <Col md={6}>
               <div className="mb-3">
-                <Label for="ForminputState" className="form-label">
+                <Label for="statenameInput" className="form-label">
                   State
                 </Label>
-                <select
-                  id="ForminputState"
-                  className="form-select"
-                  data-choices
-                  data-choices-sorting="true"
-                >
-                  <option>Choose...</option>
-                  <option>...</option>
-                </select>
+                <Input
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter your state"
+                  id="statenameInput"
+                />
               </div>
             </Col>
             <Col md={12}>

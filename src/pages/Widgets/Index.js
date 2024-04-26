@@ -12,7 +12,7 @@ import EcommerceWidgets from './EcommerceWidgets';
 import CreditCard from './CreditCard';
 
 const Widgets = () => {
-    document.title="Widgets | Velzon - React Admin & Dashboard Template";
+    document.title="Widgets | Insulation Products Corporation";
     return (
         <React.Fragment>
             <div className="page-content">

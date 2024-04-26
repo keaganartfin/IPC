@@ -5,14 +5,28 @@ import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
 import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
+import bgImg from "../../../../assets/images/background-image.png";
+import { NST } from "../data/nonshrinktubing-data";
 
 const NonShrinkTubing = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+  document.title = "Team | Insulation Products Corporation";
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -41,13 +55,13 @@ const NonShrinkTubing = () => {
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
                           At Insulation Products Corporation, we specialize in
-                          providing <strong>Non-Heat Shrink Tubing</strong> for
+                          providing Non-Heat Shrink Tubing for
                           a variety of needs within the electronic and
                           electrical industries. Our tubing options serve as
                           excellent electrical insulators and are versatile
                           enough for uses ranging from fluid transfer to various
                           other applications. We pride ourselves on delivering{" "}
-                          <strong>premium quality products</strong>, with an
+                          premium quality products, with an
                           unrivaled attention to detail and deep industry
                           knowledge that sets us apart from our competitors.
                         </p>
@@ -61,23 +75,23 @@ const NonShrinkTubing = () => {
                         <p className="mt-3 mb-5 fs-5 px-5">
                           Among the most popular types of non-heat shrink tubing
                           we offer is{" "}
-                          <strong>
+                          
                             extruded polyvinylchloride (PVC) tubing
-                          </strong>
+                          
                           . Known for its inherent flame-retardant properties,
                           our PVC tubing is available in a wide array of grades,
                           sizes, and colors to meet your specific needs.
-                          Additionally, we supply <strong>PTFE tubing</strong>{" "}
+                          Additionally, we supply PTFE tubing{" "}
                           for applications requiring non-toxic materials or
                           resistance to high temperatures. Our catalog also
                           includes various forms of{" "}
-                          <strong>slit conduit and spiral wrap tubing</strong>,
+                          slit conduit and spiral wrap tubing,
                           ideal for bundling purposes where flexibility and easy
                           access are key.
                           <br />
                           <br />
                           Beyond Non-Shrink Tubing, our product range extends to{" "}
-                          <strong>woven and expandable sleeving</strong> for
+                          woven and expandable sleeving for
                           scenarios demanding superior abrasion resistance. Our
                           selection features woven fiberglass and expandable
                           polyester sleevings, engineered to accommodate a broad
@@ -94,7 +108,7 @@ const NonShrinkTubing = () => {
                         <p className="mt-3 mb-5 fs-5 px-5">
                           For more detailed information about our Non-Shrink
                           electrical insulation tubing options, reach out to our{" "}
-                          <strong>dedicated customer service team</strong> at{" "}
+                          dedicated customer service team at{" "}
                           <a href="tel:6307710700">+1 (630) 771-0700</a> or
                           connect with our sales department via email at{" "}
                           <a href="mailto:sales@insulationproducts.com">
@@ -103,12 +117,51 @@ const NonShrinkTubing = () => {
                           . We're here to assist you in selecting the right
                           products for your needs.
                         </p>
-                        <Row>
-                          
-                        </Row>
+                        <Row></Row>
                       </Row>
                     </CardBody>
                   </Card>
+                  <Row>
+                    {NST.map((item, index) => (
+                      <Col sm={6} xl={4} key={index}>
+                        <Card>
+                          <CardBody>
+                            <img
+                              src={item.image}
+                              alt={item.title}
+                              className="img-fluid rounded"
+                            />
+                          </CardBody>
+                          <CardBody>
+                            <ul className="list-inline fs-14 text-muted">
+                              <li className="list-inline-item">
+                                {item.subtitle}
+                              </li>
+                            </ul>
+                            <Link to="#!">
+                              <h5>{item.title}</h5>
+                            </Link>
+                            <p className="text-muted fs-14">
+                              {item.description.length > 150
+                                ? item.description.slice(
+                                    0,
+                                    item.description
+                                      .substr(0, 151)
+                                      .lastIndexOf(" ")
+                                  ) + " ..."
+                                : item.description}
+                            </p>
+                            <div>
+                              <Link to={item.link} className="link-success">
+                                Learn More{" "}
+                                <i className="ri-arrow-right-line align-bottom ms-1"></i>
+                              </Link>
+                            </div>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                    ))}
+                  </Row>
                 </Col>
                 <LeftSideTables />
               </Row>

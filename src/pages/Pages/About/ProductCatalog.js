@@ -17,6 +17,7 @@ import {
   Container,
 } from "reactstrap";
 import { partDataOld } from "../../../common/data";
+import bgImg from "../../../assets/images/background-image.png";
 
 const ProductCatalog = () => {
   const [searchQuery, setSearchQuery] = useState("");

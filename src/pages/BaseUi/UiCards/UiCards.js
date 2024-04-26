@@ -24,7 +24,7 @@ import img10 from "../../../assets/images/small/img-10.jpg";
 import img11 from "../../../assets/images/small/img-11.jpg";
 import img12 from "../../../assets/images/small/img-12.jpg";
 
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
+import bgImg from "../../../../assets/images/background-image.png";
 import avatar2 from "../../../assets/images/users/avatar-2.jpg";
 import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 import avatar4 from "../../../assets/images/users/avatar-4.jpg";
@@ -70,7 +70,7 @@ const UiCards = () => {
         }, 3000);
     };
     
-    document.title="Cards | Velzon - React Admin & Dashboard Template";
+    document.title="Cards | Insulation Products Corporation";
 
     return (
         <React.Fragment>

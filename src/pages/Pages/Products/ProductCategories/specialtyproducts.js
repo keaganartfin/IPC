@@ -5,14 +5,28 @@ import profileBg from "../../../../assets/images/profile-bg.jpg";
 //Small Images
 import StaffPhoto from "../../../../assets/images/ipc/staff.jpg";
 import LeftSideTables from "../../About/LeftSideTables";
+import bgImg from "../../../../assets/images/background-image.png";
+import { SPS } from "../data/specialty-data";
 
 const SpecialtyProductsAndServices = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+  document.title = "Team | Insulation Products Corporation";
 
   return (
     <React.Fragment>
+      <img
+        src={bgImg}
+        alt=""
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          maxWidth: "100vw",
+          height: "100%",
+        }}
+      />
       <div className="page-content">
-        <Container fluid style={{ maxWidth: "1800px" }}>
+        <Container fluid style={{ maxWidth: "2800px" }}>
           <div className="profile-foreground position-relative mx-n4 mt-n4">
             <div className="profile-wid-bg">
               <img src={profileBg} alt="" className="profile-wid-img" />
@@ -40,17 +54,17 @@ const SpecialtyProductsAndServices = () => {
                           Specialty Products and Services
                         </h3>
                         <p className="mt-3 mb-5 px-5 fs-5">
-                          At <strong>Insulation Products Corporation</strong>,
+                          At Insulation Products Corporation,
                           we are proud to offer an extensive array of{" "}
-                          <strong>Specialty Products and Services</strong>{" "}
+                          Specialty Products and Services{" "}
                           tailored to meet the diverse needs of electrical
                           insulation tubing and wire harness applications. Our
                           selection includes{" "}
-                          <strong>
+                          
                             printed wire & cable markers, custom spooling,
                             cutting-to-length services, bagging, tubing kits,
                             industrial adhesives, heat guns,
-                          </strong>{" "}
+                          {" "}
                           and various other complementary products designed to
                           facilitate your project requirements efficiently.
                         </p>
@@ -62,7 +76,7 @@ const SpecialtyProductsAndServices = () => {
                         </h3>
 
                         <p className="mt-3 mb-5 fs-5 px-5">
-                          Our <strong>Value-Added Services</strong> are
+                          Our Value-Added Services are
                           carefully crafted to enhance your operational
                           efficiencies and boost your profits. Backed by a vast
                           inventory and the expertise of our experienced
@@ -70,7 +84,7 @@ const SpecialtyProductsAndServices = () => {
                           guidance and solutions for all your tubing, sleeving,
                           and adhesive needs. Our commitment to excellence is
                           underscored by our adherence to strict{" "}
-                          <strong>ISO quality standards</strong>, ensuring you
+                          ISO quality standards, ensuring you
                           receive only the highest level of performance and
                           reliability from our products and services.
                         </p>
@@ -86,17 +100,55 @@ const SpecialtyProductsAndServices = () => {
                           tubing, value-added services, or to explore our range
                           of specialty products, please don't hesitate to
                           contact our friendly{" "}
-                          <strong>customer service team</strong> at{" "}
-                          <a href="tel:6307710700">+1 (630) 771-0700</a>. We
-                          are here to support your project's success from start
-                          to finish.
+                          customer service team at{" "}
+                          <a href="tel:6307710700">+1 (630) 771-0700</a>. We are
+                          here to support your project's success from start to
+                          finish.
                         </p>
-                        <Row>
-                          
-                        </Row>
                       </Row>
                     </CardBody>
                   </Card>
+                  <Row>
+                    {SPS.map((item, index) => (
+                      <Col sm={6} xl={4} key={index}>
+                        <Card>
+                          <CardBody>
+                            <img
+                              src={item.image}
+                              alt={item.title}
+                              className="img-fluid rounded"
+                            />
+                          </CardBody>
+                          <CardBody>
+                            <ul className="list-inline fs-14 text-muted">
+                              <li className="list-inline-item">
+                                {item.subtitle}
+                              </li>
+                            </ul>
+                            <Link to="#!">
+                              <h5>{item.title}</h5>
+                            </Link>
+                            <p className="text-muted fs-14">
+                              {item.description.length > 150
+                                ? item.description.slice(
+                                    0,
+                                    item.description
+                                      .substr(0, 151)
+                                      .lastIndexOf(" ")
+                                  ) + " ..."
+                                : item.description}
+                            </p>
+                            <div>
+                              <Link to={item.link} className="link-success">
+                                Learn More{" "}
+                                <i className="ri-arrow-right-line align-bottom ms-1"></i>
+                              </Link>
+                            </div>
+                          </CardBody>
+                        </Card>
+                      </Col>
+                    ))}
+                  </Row>
                 </Col>
                 <LeftSideTables />
               </Row>

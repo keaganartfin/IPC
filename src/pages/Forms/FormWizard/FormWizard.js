@@ -71,7 +71,7 @@ const FormWizard = () => {
     }
   }
 
-document.title ="Wizard | Velzon - React Admin & Dashboard Template";
+document.title ="Wizard | Insulation Products Corporation";
   return (
     <React.Fragment>
       <div className="page-content">        
@@ -1103,7 +1103,7 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                           </li>
                           <li className="list-group-item d-flex justify-content-between">
                             <span>Total (USD)</span>
-                            <strong>$20</strong>
+                            $20
                           </li>
                         </ul>
                       </Col>

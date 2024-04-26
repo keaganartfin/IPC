@@ -320,13 +320,12 @@ const HorizontalLayout = (props) => {
       })}
       <div className="d-flex align-items-center" style={{ marginLeft: "auto" }}>
         <Link
-          to="/company?tab=3"
+          to="/company?tab=contact"
           type="button"
           className="nav-link menu-link"
           style={{ color: "#055c9e" }}
         >
-          <i className="ri-phone-fill label-icon me-n2"></i>
-          <b>Contact Us</b>
+          <b>Need Help?</b>
         </Link>
       </div>
 

@@ -21,11 +21,9 @@ const Features = () => {
                       </div>
                     </div>
                     <h5 className="fs-15 lh-base mb-0">
-                      Search Over{" "}
-                      <span className="text-secondary fw-semibold">
-                        5,000+
-                      </span>{" "}
-                      Parts
+                      Search Through{" "}
+                      <span className="text-secondary fw-semibold">5,000+</span>{" "}
+                      Unique Parts
                     </h5>
                   </CardBody>
                 </Card>
@@ -63,8 +61,8 @@ const Features = () => {
             <Col lg={6}>
               <div className="text-muted">
                 <h2 className="mb-3 lh-base fw-semibold">
-                  Find The <span className="text-primary">Parts You Need</span> in
-                  One Place
+                  Find The <span className="text-primary">Parts You Need</span>{" "}
+                  in One Place
                 </h2>
                 <p className="ff-secondary fs-16 mb-2">
                   Since 1974, Insulation Products Corporation has been committed
@@ -121,7 +119,7 @@ const Features = () => {
                 </div>
 
                 <div>
-                  <Link to="#!" className="btn btn-primary">
+                  <Link to="/product-specs" className="btn btn-primary">
                     View Catalog{" "}
                     <i className="ri-arrow-right-line align-bottom ms-1"></i>
                   </Link>

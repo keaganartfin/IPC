@@ -15,6 +15,7 @@ import classnames from "classnames";
 // Import Images
 import faqImg from "../../../assets/images/illustrations/faqs.png";
 import BreadCrumb from "../../../Components/Common/BreadCrumb";
+import bgImg from "../../../assets/images/background-image.png";
 
 const Faqs = () => {
   const [col1, setcol1] = useState(true);
@@ -184,7 +185,7 @@ const Faqs = () => {
     }
   };
 
-  document.title = "FAQs | Velzon - React Admin & Dashboard Template";
+  document.title = "FAQs | Insulation Products Corporation";
 
   return (
     <Col xxl={9}>

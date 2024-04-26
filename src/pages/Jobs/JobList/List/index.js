@@ -88,7 +88,7 @@ const JobList = () => {
                         className="alert alert-success mb-0 text-center"
                         role="alert"
                       >
-                        <strong id="total-result">253</strong> jobs found
+                        <strong id="total-result">253 jobs found
                       </div>
                     </Col>
                   </Row>

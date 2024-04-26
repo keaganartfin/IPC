@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Card, CardBody, Col, Container, Row } from "reactstrap";
-import img8 from "../../../assets/images/small/img-8.jpg";
-import img6 from "../../../assets/images/small/img-6.jpg";
-import img9 from "../../../assets/images/small/img-9.jpg";
+import img8 from "../../../assets/images/ipc/IP30HS.png";
+import img6 from "../../../assets/images//ipc/ip17tw.jpg";
+import img9 from "../../../assets/images/ipc/Non-Metallic-Coupling.jpg";
 const Blog = () => {
   return (
     <React.Fragment>
@@ -28,29 +28,38 @@ const Blog = () => {
             <Col lg={4} md={6}>
               <Card>
                 <CardBody>
-                  <img src={img8} alt="" className="img-fluid rounded" />
+                  <img
+                    src={img8}
+                    alt="Heat Shrink PVC"
+                    className="img-fluid rounded"
+                  />
                 </CardBody>
                 <CardBody>
                   <ul className="list-inline fs-14 text-muted">
                     <li className="list-inline-item">
-                      <i className="ri-calendar-line align-bottom me-1"></i> 30
-                      Oct, 2021
-                    </li>
-                    <li className="list-inline-item">
-                      <i className="ri-message-2-line align-bottom me-1"></i>{" "}
-                      364 Comment
+                      <Link
+                        className="text-muted"
+                        to={"/products/heat-shrink-tubing"}
+                      >
+                        Heat Shrink Tubing
+                      </Link>
                     </li>
                   </ul>
-                  <Link to="#!">
-                    <h5>Design your apps in your own way ?</h5>
+                  <Link to="/products/heat-shrink-tubing/pvc">
+                    <h5>Heat Shrink PVC</h5>
                   </Link>
                   <p className="text-muted fs-14">
-                    One disadvantage of Lorum Ipsum is that in Latin layouts
-                    certain letters appear more frequently than others.
+                    Heat Shrinkable PVC Tubing has one of the lowest shrink
+                    temperatures of any electrical insulation tubing. This
+                    tubing is the best alternative for avoiding heat damage for
+                    enclosed or adjacent components. PVC tubing shrinks a full
+                    50% quickly at 200°F.
                   </p>
-
                   <div>
-                    <Link to="#!" className="link-success">
+                    <Link
+                      to="/products/heat-shrink-tubing/pvc"
+                      className="link-success"
+                    >
                       Learn More{" "}
                       <i className="ri-arrow-right-line align-bottom ms-1"></i>
                     </Link>
@@ -61,29 +70,39 @@ const Blog = () => {
             <Col lg={4} md={6}>
               <Card>
                 <CardBody>
-                  <img src={img6} alt="" className="img-fluid rounded" />
+                  <img
+                    src={img6}
+                    alt="PTFE Spaghetti Tubing"
+                    className="img-fluid rounded"
+                  />
                 </CardBody>
                 <CardBody>
                   <ul className="list-inline fs-14 text-muted">
                     <li className="list-inline-item">
-                      <i className="ri-calendar-line align-bottom me-1"></i> 02
-                      Oct, 2021
-                    </li>
-                    <li className="list-inline-item">
-                      <i className="ri-message-2-line align-bottom me-1"></i>{" "}
-                      245 Comment
+                      <Link
+                        className="text-muted"
+                        to={"/products/non-shrink-tubing"}
+                      >
+                        Non-Shrink Tubing
+                      </Link>
                     </li>
                   </ul>
-                  <Link to="#!">
-                    <h5>Smartest applications for business ?</h5>
+                  <Link to="/products/non-shrink-tubing/ptfe-spaghetti-tubing">
+                    <h5>PTFE Spaghetti Tubing</h5>
                   </Link>
                   <p className="text-muted fs-14">
-                    Due to its widespread use as filler text for layouts,
-                    non-readability is of great importance: human perception.
+                    PTFE Tubing is the most versatile insulating material,
+                    offering highly stable electrical properties at virtually
+                    all electronic frequencies throughout an operating range of
+                    -70°C to 260°C. PTFE tubing is nontoxic and will not burn in
+                    normal atmosphere at any temperature, and is inert to
+                    practically all lubricants, solvents, and reagents.
                   </p>
-
                   <div>
-                    <Link to="#!" className="link-success">
+                    <Link
+                      to="/products/non-shrink-tubing/ptfe-spaghetti-tubing"
+                      className="link-success"
+                    >
                       Learn More{" "}
                       <i className="ri-arrow-right-line align-bottom ms-1"></i>
                     </Link>
@@ -94,30 +113,36 @@ const Blog = () => {
             <Col lg={4} md={6}>
               <Card>
                 <CardBody>
-                  <img src={img9} alt="" className="img-fluid rounded" />
+                  <img
+                    src={img9}
+                    alt="Non-Metallic Conduit Connectors And Couplings"
+                    className="img-fluid rounded"
+                  />
                 </CardBody>
                 <CardBody>
                   <ul className="list-inline fs-14 text-muted">
                     <li className="list-inline-item">
-                      <i className="ri-calendar-line align-bottom me-1"></i> 23
-                      Sept, 2021
-                    </li>
-                    <li className="list-inline-item">
-                      <i className="ri-message-2-line align-bottom me-1"></i>{" "}
-                      354 Comment
+                      <Link
+                        className="text-muted"
+                        to="/products/specialty-products-services"
+                      >
+                        Specialty Products & Services
+                      </Link>
                     </li>
                   </ul>
-                  <Link to="#!">
-                    <h5>How apps is changing the IT world</h5>
+                  <Link to="/products/specialty-products-services/non-metallic-conduit-connectors-and-couplings">
+                    <h5>Non-Metallic Conduit Connectors And Couplings</h5>
                   </Link>
                   <p className="text-muted fs-14">
-                    Intrinsically incubate intuitive opportunities and real-time
-                    potentialities Appropriately communicate one-to-one
-                    technology.
+                    IPC carries several types of Conduit Connectors & Couplings.
+                    Be sure to contact our service representatives with any
+                    questions!
                   </p>
-
                   <div>
-                    <Link to="#!" className="link-success">
+                    <Link
+                      to="/products/specialty-products-services/non-metallic-conduit-connectors-and-couplings"
+                      className="link-success"
+                    >
                       Learn More{" "}
                       <i className="ri-arrow-right-line align-bottom ms-1"></i>
                     </Link>

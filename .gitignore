@@ -9,7 +9,7 @@
 /coverage
 
 # production
-# /build
+/build
 
 # misc
 .DS_Store
@@ -27,3 +27,8 @@ yarn-error.log*
 Velzon-React-2.0.zip
 yarn.lock
 yarn.lock
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://keaganartfin.github.io/IPC/static/css/main.416bca0f.css",
-    "main.js": "https://keaganartfin.github.io/IPC/static/js/main.22cb28d6.js",
+    "main.js": "https://keaganartfin.github.io/IPC/static/js/main.20b9e40e.js",
     "static/js/685.7c2bad41.chunk.js": "https://keaganartfin.github.io/IPC/static/js/685.7c2bad41.chunk.js",
     "static/media/IPC-Catalog-2.pdf": "https://keaganartfin.github.io/IPC/static/media/IPC-Catalog-2.e095c93ef66ee59f9a0d.pdf",
     "static/media/IPC-Catalog.pdf": "https://keaganartfin.github.io/IPC/static/media/IPC-Catalog.7d27d0f448f2f72001cb.pdf",
@@ -456,6 +456,6 @@
   },
   "entrypoints": [
     "static/css/main.416bca0f.css",
-    "static/js/main.22cb28d6.js"
+    "static/js/main.20b9e40e.js"
   ]
 }

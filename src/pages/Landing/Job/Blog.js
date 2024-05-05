@@ -54,7 +54,7 @@ const Blog = () => {
                     tubing is the best alternative for avoiding heat damage for
                     enclosed or adjacent components. PVC tubing shrinks a full
                     50% quickly at 200°F.
-                  </p>
+                  </p> 
                   <div>
                     <Link
                       to="/products/heat-shrink-tubing/pvc"

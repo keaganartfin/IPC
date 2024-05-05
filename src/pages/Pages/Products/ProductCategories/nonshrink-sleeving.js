@@ -58,14 +58,14 @@ const NonShrinkSleeving = () => {
                             <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP61ESIP62EF"
+                              href="/product-catalog/IP61ESIP62EF"
                             >
                               IP61ES <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP61ESIP62EF"
+                              href="/product-catalog/IP61ESIP62EF"
                             >
                               IP62EF <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -127,14 +127,14 @@ const NonShrinkSleeving = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP61ESIP62EF"
+                              href="/product-catalog/IP61ESIP62EF"
                             >
                               IP61ES <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-info-subtle text-info badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP61ESIP62EF"
+                              href="/product-catalog/IP61ESIP62EF"
                             >
                               IP62EF <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -179,35 +179,35 @@ const NonShrinkSleeving = () => {
                             <a
                               className="badge bg-warning-subtle text-warning badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP63ES"
+                              href="/product-catalog/IP63ES"
                             >
                               IP63ES <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP64FS"
+                              href="/product-catalog/IP64FS"
                             >
                               IP64FS <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC"
+                              href="/product-catalog/IP64FSIP65VCIP66ACIP67SC"
                             >
                               IPC65VC <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC"
+                              href="/product-catalog/IP64FSIP65VCIP66ACIP67SC"
                             >
                               IP66AC <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-success-subtle text-success badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP64FSIP65VCIP66ACIP67SC"
+                              href="/product-catalog/IP64FSIP65VCIP66ACIP67SC"
                             >
                               IP67SC <i className="bx bx-link-external"></i>
                             </a>{" "}

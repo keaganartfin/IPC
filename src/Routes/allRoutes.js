@@ -10,7 +10,6 @@ import PrivacyPolicy from "../pages/Pages/PrivacyPolicy";
 import TermsCondition from "../pages/Pages/TermsCondition";
 import JobLanding from "../pages/Landing/Job";
 import ContactUs from "../pages/Pages/ContactUs/ContactUs";
-import OurSuppliers from "../pages/Pages/OurSuppliers/OurSuppliers";
 import Company from "../pages/Pages/About/company";
 import HeatShrinkAdhesiveLinedPoly from "../pages/Pages/Products/ProductCategories/heatshrink-adhesivelinedpoly";
 import HeatShrinkEndCaps from "../pages/Pages/Products/ProductCategories/heatshrink-endcaps";
@@ -38,15 +37,15 @@ import SpecialtyTubingKits from "../pages/Pages/Products/ProductCategories/speci
 import HeatShrinkTubing from "../pages/Pages/Products/ProductCategories/heatshrinktubing";
 import NonShrinkTubing from "../pages/Pages/Products/ProductCategories/nonshrinktubing";
 import SpecialtyProductsAndServices from "../pages/Pages/Products/ProductCategories/specialtyproducts";
+import CatalogMain from "../pages/Pages/Products/ProductCategories/catalog-main";
 
-const authProtectedRoutes = [
+const publicRoutes = [
   { path: "/home", component: <JobLanding /> },
   { path: "/sitemap", component: <SiteMap /> },
   { path: "/privacy-policy", component: <PrivacyPolicy /> },
   { path: "/term-conditions", component: <TermsCondition /> },
   { path: "/faqs", component: <Faqs /> },
   { path: "/contact", component: <ContactUs /> },
-  { path: "/our-suppliers", component: <OurSuppliers /> },
   { path: "/product-specs", component: <ProductCatalog /> },
   { path: "/company", component: <Company /> },
 
@@ -155,6 +154,10 @@ const authProtectedRoutes = [
     path: "/products/specialty-products-services/tubing-kits",
     component: <SpecialtyTubingKits />,
   },
+  {
+    path: "/product-catalog/:pdfName",
+    component: <CatalogMain />
+  },
   // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
   {
@@ -165,6 +168,6 @@ const authProtectedRoutes = [
   { path: "*", component: <Navigate to="/home" /> },
 ];
 
-const publicRoutes = [];
+const authProtectedRoutes = [];
 
 export { authProtectedRoutes, publicRoutes };

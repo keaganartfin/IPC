@@ -56,7 +56,7 @@ const SpecialtyTubingKits = () => {
                             <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/TubingKits"
+                              href="/product-catalog/TubingKits"
                             >
                               Tubing Kits{" "}
                               <i className="bx bx-link-external"></i>

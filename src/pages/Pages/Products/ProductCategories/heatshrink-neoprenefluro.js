@@ -58,14 +58,14 @@ const HeatShrinkNeopreneFluro = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP41NEIP43VT"
+                              href="/product-catalog/IP41NEIP43VT"
                             >
                               IP41NE <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-info-subtle text-info badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP41NEIP43VT"
+                              href="/product-catalog/IP41NEIP43VT"
                             >
                               IP43VT <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -164,7 +164,7 @@ const HeatShrinkNeopreneFluro = () => {
                             <a
                               className="badge bg-success-subtle text-success badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP56DR"
+                              href="/product-catalog/IP56DR"
                             >
                               IP56DR <i className="bx bx-link-external"></i>
                             </a>{" "}

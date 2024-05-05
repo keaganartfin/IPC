@@ -62,7 +62,7 @@ const NonShrinkPVC = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP32IP"
+                              href="/product-catalog/IP32IP"
                             >
                               IP32IP <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -129,7 +129,7 @@ const NonShrinkPVC = () => {
                             <a
                               className="badge bg-secondary-subtle text-secondary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP10EX"
+                              href="/product-catalog/IP10EX"
                             >
                               IP10EX <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -194,7 +194,7 @@ const NonShrinkPVC = () => {
                             <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP12GA"
+                              href="/product-catalog/IP12GA"
                             >
                               IP12GA <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -255,7 +255,7 @@ const NonShrinkPVC = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP15PV"
+                              href="/product-catalog/IP15PV"
                             >
                               IP15PV <i className="bx bx-link-external"></i>
                             </a>{" "}

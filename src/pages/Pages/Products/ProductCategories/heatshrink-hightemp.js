@@ -58,7 +58,7 @@ const HeatShrinkHighTemp = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP38FE"
+                              href="/product-catalog/IP38FE"
                             >
                               IP38FE <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -133,21 +133,21 @@ const HeatShrinkHighTemp = () => {
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP37SHIP36THIP39LH"
+                              href="/product-catalog/IP37SHIP36THIP39LH"
                             >
                               IP37SH <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP37SHIP36THIP39LH"
+                              href="/product-catalog/IP37SHIP36THIP39LH"
                             >
                               IP36TH <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/IP37SHIP36THIP39LH"
+                              href="/product-catalog/IP37SHIP36THIP39LH"
                             >
                               IP39LH <i className="bx bx-link-external"></i>
                             </a>{" "}

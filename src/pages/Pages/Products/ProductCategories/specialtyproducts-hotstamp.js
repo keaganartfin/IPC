@@ -56,7 +56,7 @@ const SpecialtyHotStamp = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/IPC/product-catalog/Markers"
+                              href="/product-catalog/Markers"
                             >
                               Identification Markers{" "}
                               <i className="bx bx-link-external"></i>

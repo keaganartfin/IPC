@@ -10,6 +10,7 @@ import PrivacyPolicy from "../pages/Pages/PrivacyPolicy";
 import TermsCondition from "../pages/Pages/TermsCondition";
 import JobLanding from "../pages/Landing/Job";
 import ContactUs from "../pages/Pages/ContactUs/ContactUs";
+import OurSuppliers from "../pages/Pages/OurSuppliers/OurSuppliers";
 import Company from "../pages/Pages/About/company";
 import HeatShrinkAdhesiveLinedPoly from "../pages/Pages/Products/ProductCategories/heatshrink-adhesivelinedpoly";
 import HeatShrinkEndCaps from "../pages/Pages/Products/ProductCategories/heatshrink-endcaps";
@@ -39,13 +40,14 @@ import NonShrinkTubing from "../pages/Pages/Products/ProductCategories/nonshrink
 import SpecialtyProductsAndServices from "../pages/Pages/Products/ProductCategories/specialtyproducts";
 import CatalogMain from "../pages/Pages/Products/ProductCategories/catalog-main";
 
-const publicRoutes = [
+const authProtectedRoutes = [
   { path: "/home", component: <JobLanding /> },
   { path: "/sitemap", component: <SiteMap /> },
   { path: "/privacy-policy", component: <PrivacyPolicy /> },
   { path: "/term-conditions", component: <TermsCondition /> },
   { path: "/faqs", component: <Faqs /> },
   { path: "/contact", component: <ContactUs /> },
+  { path: "/our-suppliers", component: <OurSuppliers /> },
   { path: "/product-specs", component: <ProductCatalog /> },
   { path: "/company", component: <Company /> },
 
@@ -156,7 +158,7 @@ const publicRoutes = [
   },
   {
     path: "/product-catalog/:pdfName",
-    component: <CatalogMain />
+    component: <CatalogMain />,
   },
   // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
@@ -168,6 +170,6 @@ const publicRoutes = [
   { path: "*", component: <Navigate to="/home" /> },
 ];
 
-const authProtectedRoutes = [];
+const publicRoutes = [];
 
 export { authProtectedRoutes, publicRoutes };

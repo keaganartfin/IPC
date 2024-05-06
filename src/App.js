@@ -10,10 +10,10 @@ import Route from "./Routes";
 // import { initFirebaseBackend } from "./helpers/firebase_helper";
 
 // Fake Backend
-// import fakeBackend from "./helpers/AuthType/fakeBackend";
+import fakeBackend from "./helpers/AuthType/fakeBackend";
 
 // Activating fake backend
-// fakeBackend();
+fakeBackend();
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyDKMa8mzmTG4duMo7wWw6b2KeA6br2zkpw",

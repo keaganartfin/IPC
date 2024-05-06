@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 //Layouts
+import NonAuthLayout from "../Layouts/NonAuthLayout";
 import VerticalLayout from "../Layouts/index";
 //routes
 import { authProtectedRoutes, publicRoutes } from "./allRoutes";
@@ -9,12 +10,12 @@ import { authProtectedRoutes, publicRoutes } from "./allRoutes";
 
 const Index = () => {
   return (
-    <Router>
+    <React.Fragment>
       <Routes>
         {publicRoutes.map((route, idx) => (
           <Route
             path={route.path}
-            element={<VerticalLayout>{route.component}</VerticalLayout>}
+            element={<NonAuthLayout>{route.component}</NonAuthLayout>}
             key={`public-${idx}`}
           />
         ))}
@@ -27,7 +28,7 @@ const Index = () => {
           />
         ))}
       </Routes>
-    </Router>
+    </React.Fragment>
   );
 };
 

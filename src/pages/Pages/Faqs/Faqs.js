@@ -588,9 +588,7 @@ const Faqs = () => {
                         <i className="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></i>
                       </div>
                       <div className="flex-grow-1">
-                        <h5 className="fs-16 mb-0 fw-semibold">
-                          Privacy &amp; Security
-                        </h5>
+                        
                       </div>
                     </div>
 

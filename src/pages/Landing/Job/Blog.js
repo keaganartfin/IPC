@@ -13,7 +13,7 @@ const Blog = () => {
             <Col lg={8}>
               <div className="text-center mb-5">
                 <h1 className="mb-3 fw-semibold text-capitalize lh-base">
-                  Our Latest <span className="text-primary">News</span>
+                  Our Latest <span className="text-primary">Products</span>
                 </h1>
                 <p className="text-muted mb-4">
                   We thrive when coming up with innovative ideas but also

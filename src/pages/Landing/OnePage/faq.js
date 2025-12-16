@@ -187,10 +187,7 @@ const Faqs = () => {
             <Col lg={6}>
               <div className="d-flex align-items-center mb-2">
                 <div className="flex-shrink-0 me-1">
-                  <i className="ri-shield-keyhole-line fs-24 align-middle text-success me-1"></i>
-                </div>
-                <div className="flex-grow-1">
-                  <h5 className="mb-0 fw-semibold">Privacy &amp; Security</h5>
+                  <i className=" fs-24 "></i>
                 </div>
               </div>
 

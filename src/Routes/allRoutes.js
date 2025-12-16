@@ -160,13 +160,14 @@ const authProtectedRoutes = [
     path: "/product-catalog/:pdfName",
     component: <CatalogMain />,
   },
-  // this route should be at the end of all other routes
   // eslint-disable-next-line react/display-name
   {
     path: "/",
     exact: true,
     component: <Navigate to="/home" />,
   },
+  // this route should be at the end of all other routes
+  // eslint-disable-next-line react/display-name
   { path: "*", component: <Navigate to="/home" /> },
 ];
 

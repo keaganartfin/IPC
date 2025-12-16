@@ -15,7 +15,11 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", scrollNavigation, true);
-  });
+
+    return () => {
+      window.removeEventListener("scroll", scrollNavigation, true);
+    };
+  }, []);
 
   const [activeLink, setActiveLink] = useState();
 

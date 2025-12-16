@@ -114,7 +114,11 @@ const Layout = (props) => {
   // class add remove in header
   useEffect(() => {
     window.addEventListener("scroll", scrollNavigation, true);
-  });
+
+    return () => {
+      window.removeEventListener("scroll", scrollNavigation, true);
+    };
+  }, []);
   function scrollNavigation() {
     var scrollup = document.documentElement.scrollTop;
     if (scrollup > 50) {

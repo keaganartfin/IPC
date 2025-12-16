@@ -1,13 +1,13 @@
 import React from "react";
 
-//import Scss
+// Import SCSS
 import "./assets/scss/themes.scss";
 
-//imoprt Route
+// Import Route
 import Route from "./Routes";
 
 // Import Firebase Configuration file
-// import { initFirebaseBackend } from "./helpers/firebase_helper";
+// Import { initFirebaseBackend } from "./helpers/firebase_helper";
 
 // Fake Backend
 import fakeBackend from "./helpers/AuthType/fakeBackend";

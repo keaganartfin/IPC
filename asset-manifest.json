@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IPC/static/css/main.741206f4.css",
-    "main.js": "/IPC/static/js/main.1b99e1e1.js",
+    "main.js": "/IPC/static/js/main.df911918.js",
     "static/js/488.c8fda7c1.chunk.js": "/IPC/static/js/488.c8fda7c1.chunk.js",
     "static/media/IPC-Catalog-2.pdf": "/IPC/static/media/IPC-Catalog-2.e095c93ef66ee59f9a0d.pdf",
     "static/media/IPC-Catalog.pdf": "/IPC/static/media/IPC-Catalog.7d27d0f448f2f72001cb.pdf",
@@ -33,7 +33,7 @@
     "static/media/IP12GA-M631-Grade-A-PVC-Tubing-(1).pdf": "/IPC/static/media/IP12GA-M631-Grade-A-PVC-Tubing-(1).19d8a6eba3088f5095d9.pdf",
     "static/media/IP12GA-M631-Grade-A-PVC-Tubing-(2).pdf": "/IPC/static/media/IP12GA-M631-Grade-A-PVC-Tubing-(2).19d8a6eba3088f5095d9.pdf",
     "static/media/IP12GA-M631-Grade-A-PVC-Tubing.pdf": "/IPC/static/media/IP12GA-M631-Grade-A-PVC-Tubing.19d8a6eba3088f5095d9.pdf",
-    "static/media/IP32IP-Irradiated-Heat-Shrink-PVC.pdf": "/IPC/static/media/IP32IP-Irradiated-Heat-Shrink-PVC.a3e807cf1e00a975ecaa.pdf",
+    "static/media/IP32IP.pdf": "/IPC/static/media/IP32IP.a3e807cf1e00a975ecaa.pdf",
     "static/media/faqs.png": "/IPC/static/media/faqs.334b12145c42cf907798.png",
     "static/media/materialdesignicons-webfont.woff?v=7.2.96": "/IPC/static/media/materialdesignicons-webfont.2e62b6565e8fb8e62ffc.woff",
     "static/media/IP53MD-Medical-Grade-Poly.pdf": "/IPC/static/media/IP53MD-Medical-Grade-Poly.5dffa4faaa8cd9d21bdb.pdf",
@@ -453,11 +453,11 @@
     "static/media/de.svg": "/IPC/static/media/de.0fce3f5135eaf251a726573f8471b664.svg",
     "static/media/bd.svg": "/IPC/static/media/bd.5ec0fab3bc8aa5078e1610b715b7427c.svg",
     "main.741206f4.css.map": "/IPC/static/css/main.741206f4.css.map",
-    "main.1b99e1e1.js.map": "/IPC/static/js/main.1b99e1e1.js.map",
+    "main.df911918.js.map": "/IPC/static/js/main.df911918.js.map",
     "488.c8fda7c1.chunk.js.map": "/IPC/static/js/488.c8fda7c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.741206f4.css",
-    "static/js/main.1b99e1e1.js"
+    "static/js/main.df911918.js"
   ]
 }

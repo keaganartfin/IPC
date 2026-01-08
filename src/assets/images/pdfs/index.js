@@ -72,7 +72,7 @@ import IP15PV from './IP15PV.pdf';
 import Layflat from './Layflat.pdf';
 import IP29CGCommercialGradePoly from './IP29CG-Commercial-Grade-Poly.pdf';
 import IdentificationMarkers from './Identification-Markers.pdf';
-import IP32IPIrradiatedHeatShrinkPVC from './IP32IP-Irradiated-Heat-Shrink-PVC.pdf';
+import IP32IP from './IP32IP.pdf';
 import IP49VPVeryFlexibleHeatShrinkPolyolefin from './IP49VP-Very-Flexible-Heat-Shrink-Polyolefin.pdf';
 import IP46MDIP47HV from './IP46MD-IP47HV.pdf';
 import ConduitConnectors90 from './Conduit-Connectors-90.pdf';
@@ -157,7 +157,7 @@ export {
   Layflat,
   IP29CGCommercialGradePoly,
   IdentificationMarkers,
-  IP32IPIrradiatedHeatShrinkPVC,
+  IP32IP,
   IP49VPVeryFlexibleHeatShrinkPolyolefin,
   IP46MDIP47HV,
   ConduitConnectors90,

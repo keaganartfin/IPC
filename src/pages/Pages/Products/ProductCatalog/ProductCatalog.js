@@ -181,9 +181,9 @@ const ProductCatalog = () => {
                                           <th scope="col">
                                             Operating Temperature
                                           </th>
-                                          <th scope="col">AMS/ASTM</th>
-                                          <th scope="col">MIL-Spec</th>
-                                          <th scope="col">U/L CSA</th>
+                                          {/* <th scope="col">AMS/ASTM</th> */}
+                                          {/* <th scope="col">MIL-Spec</th> */}
+                                          {/* <th scope="col">U/L CSA</th> */}
                                           <th scope="col">Spec Sheet</th>
                                         </tr>
                                       </thead>
@@ -200,7 +200,7 @@ const ProductCatalog = () => {
                                                 }}
                                               ></td>
                                               <td>{item.OperatingTemp}</td>
-                                              <td>{item.AMS}</td>
+                                              {/* <td>{item.AMS}</td>
                                               <td>
                                                 {item.MIL}
                                                 {item.QPL && (
@@ -211,7 +211,7 @@ const ProductCatalog = () => {
                                                   </div>
                                                 )}
                                               </td>
-                                              <td>{item.UL}</td>
+                                              <td>{item.UL}</td> */}
                                               <td>
                                                 <div
                                                   className="fw-medium link-primary w-100"

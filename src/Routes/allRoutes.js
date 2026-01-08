@@ -155,7 +155,7 @@ const authProtectedRoutes = [
     component: <SpecialtyTubingKits />
   },
   {
-    path: "/product-catalog/:pdfName",
+    path: "/products/product-catalog/:pdfName",
     component: <CatalogMain />
   },
   // this route should be at the end of all other routes

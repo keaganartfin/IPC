@@ -57,7 +57,7 @@ const HeatShrinkPVC = () => {
                             <a
                               className="badge bg-success-subtle text-success badge-border"
                               target="_blank"
-                              href="/product-catalog/IP30HS"
+                              href="/IPC/products/product-catalog/IP30HS"
                             >
                               IP30HS <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -121,7 +121,7 @@ const HeatShrinkPVC = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/product-catalog/LayflatPVC"
+                              href="/IPC/products/product-catalog/LayflatPVC"
                             >
                               IP3L <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -189,7 +189,7 @@ const HeatShrinkPVC = () => {
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/product-catalog/IP32IP"
+                              href="/IPC/products/product-catalog/IP32IP"
                             >
                               IP32IP <i className="bx bx-link-external"></i>
                             </a>{" "}

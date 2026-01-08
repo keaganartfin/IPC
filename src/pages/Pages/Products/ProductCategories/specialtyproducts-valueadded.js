@@ -56,7 +56,7 @@ const SpecialtyValueAdded = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/product-catalog/ValueAdded"
+                              href="/IPC/products/product-catalog/ValueAdded"
                             >
                               Value Added Spec Sheet{" "}
                               <i className="bx bx-link-external"></i>

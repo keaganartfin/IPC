@@ -56,7 +56,7 @@ const SpecialtyAdhesives = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/product-catalog/IP75AD"
+                              href="/IPC/products/product-catalog/IP75ADAdhesives"
                             >
                               IP75AD <i className="bx bx-link-external"></i>
                             </a>{" "}

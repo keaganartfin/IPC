@@ -58,14 +58,14 @@ const NonShrinkSleeving = () => {
                             <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/product-catalog/IP61ESIP62EF"
+                              href="/IPC/products/product-catalog/IP61ESIP62EF"
                             >
                               IP61ES <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/product-catalog/IP61ESIP62EF"
+                              href="/IPC/products/product-catalog/IP61ESIP62EF"
                             >
                               IP62EF <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -106,7 +106,7 @@ const NonShrinkSleeving = () => {
                           <div>
                             <img
                               className="img-fluid rounded img-thumbnail"
-                              src={picture2}
+                              src={picture1}
                               alt=""
                             />
                           </div>
@@ -125,18 +125,11 @@ const NonShrinkSleeving = () => {
                           <span className="fs-5 float float-end">
                             Product Number:{" "}
                             <a
-                              className="badge bg-primary-subtle text-primary badge-border"
+                              className="badge bg-warning-subtle text-warning badge-border"
                               target="_blank"
-                              href="/product-catalog/IP61ESIP62EF"
+                              href="/IPC/products/product-catalog/IP63ESRoundit2000"
                             >
-                              IP61ES <i className="bx bx-link-external"></i>
-                            </a>{" "}
-                            <a
-                              className="badge bg-info-subtle text-info badge-border"
-                              target="_blank"
-                              href="/product-catalog/IP61ESIP62EF"
-                            >
-                              IP62EF <i className="bx bx-link-external"></i>
+                              IP63ES <i className="bx bx-link-external"></i>
                             </a>{" "}
                           </span>
                         </h3>
@@ -158,7 +151,7 @@ const NonShrinkSleeving = () => {
                           <div>
                             <img
                               className="img-fluid rounded img-thumbnail"
-                              src={picture3}
+                              src={picture2}
                               alt=""
                             />
                           </div>
@@ -177,37 +170,30 @@ const NonShrinkSleeving = () => {
                           <span className="fs-5 float float-end">
                             Product Number:{" "}
                             <a
-                              className="badge bg-warning-subtle text-warning badge-border"
-                              target="_blank"
-                              href="/product-catalog/IP63ES"
-                            >
-                              IP63ES <i className="bx bx-link-external"></i>
-                            </a>{" "}
-                            <a
                               className="badge bg-danger-subtle text-danger badge-border"
                               target="_blank"
-                              href="/product-catalog/IP64FS"
+                              href="/IPC/products/product-catalog/IP64656667"
                             >
                               IP64FS <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/product-catalog/IP64FSIP65VCIP66ACIP67SC"
+                              href="/IPC/products/product-catalog/IP64656667"
                             >
                               IPC65VC <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/product-catalog/IP64FSIP65VCIP66ACIP67SC"
+                              href="/IPC/products/product-catalog/IP64656667"
                             >
                               IP66AC <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-success-subtle text-success badge-border"
                               target="_blank"
-                              href="/product-catalog/IP64FSIP65VCIP66ACIP67SC"
+                              href="/IPC/products/product-catalog/IP64656667"
                             >
                               IP67SC <i className="bx bx-link-external"></i>
                             </a>{" "}
@@ -243,7 +229,7 @@ const NonShrinkSleeving = () => {
                           <div>
                             <img
                               className="img-fluid rounded img-thumbnail"
-                              src={picture1}
+                              src={picture3}
                               alt=""
                             />
                           </div>

@@ -119,7 +119,7 @@ const HeatShrinkAdhesiveLinedPoly = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/product-catalog/IP42MW"
+                              href="/IPC/products/product-catalog/IP42MW"
                             >
                               IP42MW <i className="bx bx-link-external"></i>
                             </a>
@@ -172,14 +172,14 @@ const HeatShrinkAdhesiveLinedPoly = () => {
                             <a
                               className="badge bg-secondary-subtle text-secondary badge-border"
                               target="_blank"
-                              href="/product-catalog/IP44A2"
+                              href="/IPC/products/product-catalog/IP44A2IP45A3"
                             >
                               IP44A2 <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-info-subtle text-info badge-border"
                               target="_blank"
-                              href="/product-catalog/IP44A2IP45A3"
+                              href="/IPC/products/product-catalog/IP44A2IP45A3"
                             >
                               IP45A3 <i className="bx bx-link-external"></i>
                             </a>
@@ -232,14 +232,14 @@ const HeatShrinkAdhesiveLinedPoly = () => {
                             <a
                               className="badge bg-success-subtle text-success badge-border"
                               target="_blank"
-                              href="/product-catalog/IP46MD"
+                              href="/IPC/products/product-catalog/IP46MDIP47HV"
                             >
                               IP46MD <i className="bx bx-link-external"></i>
                             </a>{" "}
                             <a
                               className="badge bg-dark-subtle text-dark badge-border"
                               target="_blank"
-                              href="/product-catalog/IP47HV"
+                              href="/IPC/products/product-catalog/IP46MDIP47HV"
                             >
                               IP47HV <i className="bx bx-link-external"></i>
                             </a>
@@ -315,7 +315,7 @@ const HeatShrinkAdhesiveLinedPoly = () => {
                             <a
                               className="badge bg-primary-subtle text-primary badge-border"
                               target="_blank"
-                              href="/product-catalog/IP52EC"
+                              href="/IPC/products/product-catalog/IP52ECHeatShrinkEndCaps"
                             >
                               IP52EC <i className="bx bx-link-external"></i>
                             </a>

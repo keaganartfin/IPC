@@ -7,7 +7,7 @@ import LeftSideTables from "../../About/LeftSideTables";
 import bgImg from "../../../../assets/images/background-image.png";
 
 const HeatShrinkMylar = () => {
-  document.title = "Team | Insulation Products Corporation";
+  document.title = "Mylar Heat Shrink Tubing | Insulation Products Corporation";
 
   return (
     <React.Fragment>

@@ -43,7 +43,7 @@ const Categories = () => {
                 </Card>
               </Col>
             ))}
-          </Row>
+          </Row> 
         </Container>
       </section>
       <section className="py-5 bg-info position-relative">

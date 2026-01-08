@@ -89,7 +89,7 @@ const Navdata = () => {
       subItems: [
         {
           id: "companyprofile",
-          label: "Company Profile",
+          label: "Our Story",
           link: "/company?tab=aboutus",
           parentId: "aboutcompany",
         },
@@ -131,7 +131,7 @@ const Navdata = () => {
       subItems: [
         {
           id: "productspecifications",
-          label: "Product Specifications",
+          label: "Product Catalog",
           link: "/product-specs",
           parentId: "products",
         },
